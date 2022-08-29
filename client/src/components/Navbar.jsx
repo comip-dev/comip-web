@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css'
-import logo from '../assets/logo-comip.png'
+import logo from '../assets/logo-comip2.png'
 import { useNavigate } from "react-router-dom";
 import {  useLocation } from "react-router-dom";
 
@@ -40,8 +40,10 @@ const Navbar = () => {
                         )
                     })
                 }
-                <div className="separator" ></div>
-                <span class="material-symbols-outlined search-icon">search</span>
+                <div className={location.pathname=== "/home" ? " separator-home" :"separator "} ></div>
+                <span 
+                class={`material-symbols-outlined search-icon${location.pathname=== "/home" ? " search-icon-home" :"search-icon "}`}
+                >search</span>
             </div>
 
         </div>

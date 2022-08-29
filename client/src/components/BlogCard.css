@@ -1,0 +1,13 @@
+.card-title{
+    position: absolute;
+    margin-left: 1rem;
+    bottom: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color:white
+}
+
+.blog-img{
+    border-radius: 0.5rem;
+}

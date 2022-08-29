@@ -1,4 +1,4 @@
-.navbar-container{
+.navbar-container{margin-top: 1rem;
     position:absolute;
     top:0px;
     z-index: 1;
@@ -46,12 +46,20 @@
 .homeNav:hover{
     color:rgb(58, 58, 58)
 }
-.search-icon{
+.search-icon-home{
     color:white
 }
+.search-icon{
+    color:black
+}
 
-.separator{
+.separator-home{
     width: 2.5px;
     height: 1.5rem;
     background-color: white;
+}
+.separator{
+    width: 2.5px;
+    height: 1.5rem;
+    background-color: black;
 }
