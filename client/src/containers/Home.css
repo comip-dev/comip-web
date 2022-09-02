@@ -3,7 +3,7 @@
     top:0px;
     height:100vh;
     width: 100%;
-    background-image: url('../../public/images/IMG2.jpg');
+    /* background-image: url('../../public/images/IMG2.jpg'); */
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -16,5 +16,37 @@
     bottom: 10vh;
     color:white;
     font-size: 3rem;
-    
+
+}
+
+/* .mySlides{
+    height:100vh;
+    width: 100%;
+    animation: fadeIn 5s;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  } */
+.mySlides{
+    height:100vh;
+    width: 100%;
+    /* -webkit-animation: fadeinout 10s linear forwards; */
+    animation: fadeinout 10s linear forwards;
+}
+
+/* @-webkit-keyframes fadeinout {
+  0%,50% { opacity: 0.5; }
+  50% { opacity: 1; }
+} */
+
+@keyframes fadeinout {
+    0% {opacity: 0.1;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0.1;}
+  /* 0%,100% { opacity: 0.25; }
+  50% { opacity: 1; } */
 }

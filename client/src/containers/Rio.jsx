@@ -1,10 +1,10 @@
 import React from "react";
 import BottomCards from "../components/BottomCards";
-import './Institutional.css'
+// import './Rio.css'
 
 
 
-const Institutional = () =>{
+const Rio = () =>{
     
     
     return(
@@ -12,7 +12,7 @@ const Institutional = () =>{
 
         <div className="institutional-container" >
             <div className="left-area">
-                <img className="mainp" src="https://picsum.photos/600/400?grayscale" alt="Main article pic" />
+                <img className="mainp" src="https://picsum.photos/500/400?grayscale" alt="Main article pic" />
             </div>
             <div className="right-area">
                 <div className="title"> Ullamcorper hac magnis sociosqu fames, leo dis vehicula</div>
@@ -29,4 +29,4 @@ const Institutional = () =>{
     )
 }
 
-export default Institutional
+export default Rio

@@ -1,5 +1,8 @@
+.card-container{
+    width:20%
+}
 .card-title{
-    position: absolute;
+    position: relative;
     margin-left: 1rem;
     bottom: 4rem;
     font-family: 'Raleway', sans-serif;
@@ -9,5 +12,6 @@
 }
 
 .blog-img{
+    width: 100%;
     border-radius: 0.5rem;
 }

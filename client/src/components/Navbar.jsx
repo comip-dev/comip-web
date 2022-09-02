@@ -15,7 +15,7 @@ const Navbar = () => {
         {id:"rio", text:"El Rio"},
         {id:"fauna", text:"Fauna ítica"},
         {id:"nav", text:"Navegación"},
-        {id:"royecto", text:"Proyecto"},
+        {id:"proyecto", text:"Proyecto"},
         {id:"agua", text:"El agua"},
         {id:"mapa", text:"Mapa interactivo"},
 

@@ -1,7 +1,10 @@
 .cards-container{
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
+    width: 100vw;
     
     
 }
