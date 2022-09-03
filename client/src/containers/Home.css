@@ -8,8 +8,18 @@
     background-position: bottom;
     background-attachment: fixed;
     display: block;
+    overflow: scroll;
+    overflow-x: hidden;
 }
-
+.home-container::-webkit-scrollbar {     
+	width: 0rem;
+    z-index: 3;
+}
+.home-container::-webkit-scrollbar-thumb {
+	background: #e7c793;
+	border-radius: 0.3125rem;
+    z-index: 3;
+}
 .mouse-icon{
     position: absolute;
     width: 2%;
