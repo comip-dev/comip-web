@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import './Home.css'
 import slide1 from '../assets/IMG1.jpg'
 import slide2 from '../assets/IMG2.jpg'
+import slide3 from '../assets/IMG3.jpg'
 
 const Home = () =>{
     var slideIndex = 0;
@@ -33,7 +34,8 @@ const Home = () =>{
 
     return(
         <div className="home-container" >
-            <img className="mySlides" src={slide1} alt={"home slides"}/>
+            {/* <img className="mySlides" src={slide1} alt={"home slides"}/> */}
+            <img className="mySlides" src={slide3} alt={"home slides"}/>
             <img className="mySlides" src={slide2} alt={"home slides"}/>
             <span class="material-symbols-outlined mouse-icon" >
                 mouse
