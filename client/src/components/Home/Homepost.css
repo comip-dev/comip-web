@@ -1,0 +1,37 @@
+.post-container{
+    display: flex;
+    /* position:absolute; */
+    height:100vh;
+    width: 100%;
+    padding-top: 11rem;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.right{
+    background-color: #F5F5F5;
+}
+.article-img{
+
+    width: 47rem;
+    height: 27rem;
+    object-fit: cover;
+    
+}
+
+.article-description{
+    padding: 5rem;
+}
+
+.article-title{
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif ;
+    font-weight: 700;
+}
+
+.article-text{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif ;
+    font-weight: 400;
+
+}
