@@ -33,14 +33,14 @@ const Navbar = () => {
                     options.map(item=>{
                         return(
                             <button
-                                className={location.pathname=== "/home" ? " homeNav" :"nav-button "}
+                                className={(location.pathname=== "/home" || location.pathname==="/" ) ? " homeNav" :"nav-button "}
                                 key={item.id}
                                 onClick={()=>goTo(item.id)}
                             >{item.text}</button>
                         )
                     })
                 }
-                <div className={location.pathname=== "/home" ? " separator-home" :"separator "} ></div>
+                <div className={(location.pathname=== "/home" || location.pathname==="/" )? " separator-home" :"separator "} ></div>
                 <span 
                 class={`material-symbols-outlined search-icon${location.pathname=== "/home" ? " search-icon-home" :"search-icon "}`}
                 >search</span>
