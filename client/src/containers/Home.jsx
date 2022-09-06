@@ -5,6 +5,7 @@ import slide2 from '../assets/IMG2.jpg'
 import slide3 from '../assets/IMG3.jpg'
 import Homepost from "../components/Home/Homepost";
 import { homeposts } from "../assets/homeposts";
+import Footer from "../components/Footer/Footer";
 
 const Home = () =>{
     var slideIndex = 0;
@@ -43,7 +44,7 @@ const Home = () =>{
             <span class="material-symbols-outlined mouse-icon" >
                 mouse
                 </span>
-        <div className="post-list" >
+        {/* <div className="post-list" >
             {
                 
                 homeposts?.map(post=>{
@@ -58,7 +59,8 @@ const Home = () =>{
                     )
                 })
             }
-        </div>
+        </div> */}
+        <Footer/>
         </div>
                 </>
     )
