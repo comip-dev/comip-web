@@ -23,9 +23,9 @@ const Footer = () =>{
                     <img className="footer-social-icon" src={mailIcon} alt="Mail icon"/>
                 </div>
             <div className="footer-shields" >
-                <img className="footer-big-icons" height="180" src={esc_arg} alt="logo-COMIP" ></img>
-                <img className="footer-big-icons" height="140" src={logo} alt="logo-COMIP" ></img>
-                <img className="footer-big-icons" height="140" src={esc_par} alt="logo-COMIP" ></img>
+                <img className="footer-big-icons arg"  src={esc_arg} alt="logo-COMIP" ></img>
+                <img className="footer-big-icons"  src={logo} alt="logo-COMIP" ></img>
+                <img className="footer-big-icons"  src={esc_par} alt="logo-COMIP" ></img>
             </div>
             </div>
             <div className="right-foot" >

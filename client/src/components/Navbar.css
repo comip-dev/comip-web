@@ -63,3 +63,21 @@
     height: 1.5rem;
     background-color: black;
 }
+
+
+@media (max-width: 1150px) {
+    .homeNav {
+        font-size: 0.8rem;
+    }
+    .nav-button {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 1000px) {
+    .homeNav {
+        font-size: 0.7rem;
+    }
+    .nav-button {
+        font-size: 0.7rem;
+    }
+}

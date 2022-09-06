@@ -1,7 +1,7 @@
 .footer-container{
     padding:2rem;
     width: 100vw;
-    height: 27vh;
+    /* height: 27vh; */
     display: flex;
     justify-content: space-between;
     background-color:  #36A9E1;
@@ -17,9 +17,12 @@
 
 }
 .footer-big-icons{
+    height:7rem
+}
+.arg{
+    height:8rem
     
 }
-
 .middle-foot{
     display: flex;
     flex-direction: column;
@@ -27,11 +30,12 @@
     width: 33%;
 }
 .left-foot{
-    width: 20vw;
-
+    width: 30vw;
 }
 .right-foot{
-    width: 20vw;
+    width: 30vw;
+    right:0px;
+    
 }
 
 .contact-icons{
@@ -41,10 +45,32 @@
 }
 
 .footer-shields{
-    
     width: 100%;
     display: flex;
-    height:11rem;
+    height:10rem;
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 1500px) {
+    .contact-icons {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .footer-big-icons{
+        height:6rem
+    }
+    .arg{
+        height:7rem
+    }
+    }
+@media (max-width: 1000px) {
+    .footer-big-icons{
+        height:5rem
+    }
+    .arg{
+        height:6rem
+    }
+    }

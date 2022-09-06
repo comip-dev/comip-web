@@ -1,8 +1,17 @@
 .footer-section-title{
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
+    font-family: 'Raleway';
+    font-weight: 600;
 }
 
 .city-container{
     padding-bottom: 1rem;
+    font-family: 'Raleway';
+}
+
+@media (max-width: 1000px) {
+    .contact-info {
+        font-size: 0.8rem;
+    }
 }
