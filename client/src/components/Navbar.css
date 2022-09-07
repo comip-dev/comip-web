@@ -1,18 +1,21 @@
-.navbar-container{margin-top: 1rem;
+.navbar-container{
+    margin-top: 1rem;
     position:absolute;
     top:0px;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
-.nav-logo{
-    padding-left:2rem ;
+
+.comip-logo-container{
+    width: 8vw;
 }
 
 .nav-options{
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
     width: 70%;
     display: flex;
     justify-content: space-between;

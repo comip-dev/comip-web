@@ -1,5 +1,5 @@
 import React from "react";
-import { footerInfo } from "../../assets/footerInfo";
+import { footerInfo } from "../../assets/data/footerInfo";
 import CountryInfo from "./CountryInfo";
 import twitterIcon from '../../assets/twt-icon4.png'
 import linkedinIcon from '../../assets/in-icon3.png'
@@ -22,11 +22,11 @@ const Footer = () =>{
                     <img className="footer-social-icon" src={linkedinIcon} alt="Linkedin icon"/>
                     <img className="footer-social-icon" src={mailIcon} alt="Mail icon"/>
                 </div>
-            <div className="footer-shields" >
-                <img className="footer-big-icons arg"  src={esc_arg} alt="logo-COMIP" ></img>
-                <img className="footer-big-icons"  src={logo} alt="logo-COMIP" ></img>
-                <img className="footer-big-icons"  src={esc_par} alt="logo-COMIP" ></img>
-            </div>
+                <div className="footer-shields" >
+                    <img className="footer-big-icons arg"  src={esc_arg} alt="logo-COMIP" ></img>
+                    <img className="footer-big-icons"  src={logo} alt="logo-COMIP" ></img>
+                    <img className="footer-big-icons"  src={esc_par} alt="logo-COMIP" ></img>
+                </div>
             </div>
             <div className="right-foot" >
                 <CountryInfo country="Paraguay" info={footerInfo.paraguay} />

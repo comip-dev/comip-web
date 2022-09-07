@@ -1,10 +1,7 @@
 import React, { useRef } from "react";
 import './Home.css'
-import slide1 from '../assets/IMG1.jpg'
 import slide2 from '../assets/IMG2.jpg'
 import slide3 from '../assets/IMG3.jpg'
-import Homepost from "../components/Home/Homepost";
-import { homeposts } from "../assets/homeposts";
 import Footer from "../components/Footer/Footer";
 
 const Home = () =>{

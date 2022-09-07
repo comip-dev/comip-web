@@ -1,0 +1,29 @@
+.auth-list-container{
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.auth-country{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 2rem;
+    color:#36A9E1;
+}
+.auth-position{
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+.auth-name{
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+.auth-item{
+    margin-top: 1rem;
+}
+.delegado{
+    color:#36A9E1
+}

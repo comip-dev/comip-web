@@ -1,0 +1,40 @@
+.rio-container{
+    display: flex;
+    padding-top: 8rem;
+    justify-content: space-around;
+    /* width: 100%; */
+}
+.left-area-rio{
+
+    width: 40%;
+}
+
+.mainp-rio{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+
+}
+.right-area-rio{
+    width: 40%;
+    /* position: absolute;
+    top: 8rem; */
+}
+
+.title-rio{
+    font-family: 'Raleway', sans-serif ;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.subtitle-rio{
+    font-family: 'Raleway', sans-serif ;
+    font-weight: 550;
+    font-size: 1.5rem;
+    
+}
+.text-rio{
+    font-family: 'Noto sans', sans-serif ;
+    /* font-weight: 550; */
+    font-size: 0.9rem;
+
+}

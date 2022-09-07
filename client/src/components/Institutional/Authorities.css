@@ -1,0 +1,36 @@
+.authorities-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: 10;
+    position: relative;
+    /* border:solid 1px red; */
+    padding-top: 1rem;
+}
+
+.authorities-title{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 4rem;
+    color:#36A9E1;
+    /* margin-top: 3.8rem; */
+    padding-left: 4rem;
+    
+}
+
+.separator-auth-line{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    width:9.25rem;
+    height: 0px;
+    border:5px solid #36A9E1
+
+}
+
+.lists-auth-container{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}

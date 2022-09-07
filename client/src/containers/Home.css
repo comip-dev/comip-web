@@ -36,6 +36,7 @@
     width: 100%;
     /* -webkit-animation: fadeinout 10s linear forwards; */
     animation: fadeinout 10s linear forwards;
+    object-fit: cover;
 }
 
 @keyframes fadeinout {

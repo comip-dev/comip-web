@@ -26,7 +26,7 @@ const Navbar = () => {
     return(
         <div className="navbar-container" >
             <div className="nav-logo">
-                <img width="110" src={logo} alt="logo-COMIP" ></img>
+                <img className="comip-logo-container" src={logo} alt="logo-COMIP" ></img>
             </div>
             <div className="nav-options" >
                 {
