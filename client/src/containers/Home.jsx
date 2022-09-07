@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import './Home.css'
-import slide2 from '../assets/IMG2.jpg'
-import slide3 from '../assets/IMG3.jpg'
+import slide2 from '../assets/images/IMG2.jpg'
+import slide3 from '../assets/images/IMG3.jpg'
 import Footer from "../components/Footer/Footer";
 
 const Home = () =>{

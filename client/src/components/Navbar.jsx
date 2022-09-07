@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css'
-import logo from '../assets/logo-comip2.png'
+import logo from '../assets/images/logo-comip2.png'
 import { useNavigate } from "react-router-dom";
 import {  useLocation } from "react-router-dom";
 

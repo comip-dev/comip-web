@@ -1,5 +1,5 @@
 import React from "react";
-import { authorities } from "../../assets/data/authorities";
+import { authorities } from "../../assets/data/institucional/authorities";
 import AuthList from "./AuhtsList";
 import './Authorities.css'
 const Authorities = () =>{

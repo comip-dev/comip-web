@@ -1,6 +1,6 @@
 .authorities-container{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #FFFFFF;
     z-index: 10;
     position: relative;
@@ -14,24 +14,25 @@
     font-size: 4rem;
     color:#36A9E1;
     /* margin-top: 3.8rem; */
-    padding-left: 4rem;
+    padding-left: 10%;
     
 }
 
 .separator-auth-line{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 4rem;
     width:9.25rem;
     height: 0px;
     border:5px solid #36A9E1;
     background-color: #36A9E1;
-
+    margin-left: 10%;
+    
 }
 
 .lists-auth-container{
     display: flex;
     justify-content: space-between;
+    margin-left: 10%;
 
-    width: 100%;
+    width: 80%;
 }

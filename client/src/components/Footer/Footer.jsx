@@ -1,13 +1,13 @@
 import React from "react";
 import { footerInfo } from "../../assets/data/footerInfo";
 import CountryInfo from "./CountryInfo";
-import twitterIcon from '../../assets/twt-icon4.png'
-import linkedinIcon from '../../assets/in-icon3.png'
-import mailIcon from '../../assets/apple-mail2.png'
-import logo from '../../assets/logo-comip34.png'
+import twitterIcon from '../../assets/images/twt-icon4.png'
+import linkedinIcon from '../../assets/images/in-icon3.png'
+import mailIcon from '../../assets/images/apple-mail2.png'
+import logo from '../../assets/images/logo-comip34.png'
 import './Footer.css'
-import esc_arg from '../../assets/escudo-argentina.png'
-import esc_par from '../../assets/escudo-paraguay.png'
+import esc_arg from '../../assets/images/escudo-argentina.png'
+import esc_par from '../../assets/images/escudo-paraguay.png'
 
 
 const Footer = () =>{
