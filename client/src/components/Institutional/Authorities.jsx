@@ -4,7 +4,7 @@ import AuthList from "./AuhtsList";
 import './Authorities.css'
 const Authorities = () =>{
     return(
-        <div className="authorities-container" >
+        <div  className="authorities-container" >
             <div className="authorities-title" >Autoridades</div>
             <div className="separator-auth-line" ></div>
             <div className="lists-auth-container" >

@@ -15,8 +15,8 @@ const Institutional = () =>{
         <div className="institutional-pic" >
             <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
         </div>
-            <Authorities/>
-            <ComipInfo/>
+            <Authorities  />
+            <ComipInfo  />
         </>
         
         
