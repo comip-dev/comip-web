@@ -11,4 +11,8 @@ export const homeposts = [
         imgSide:"right",
         text:"Breve descripción breve descripción breve descripción breve descripción breve descripción breve descripción breve descripción."
     },
+    {
+        title:"Determinantes",
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663011255/comip/determinantes_e5cfum.jpg"
+    }
 ]

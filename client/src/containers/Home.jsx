@@ -7,8 +7,8 @@ import slide3 from '../assets/images/large/IMG3.jpg'
 import Footer from "../components/Footer/Footer";
 import ProgressiveImg from "../components/ProgressiveImg";
 
-// import Homepost from '../components/Home/Homepost.jsx'
-// import {homeposts} from '../assets/data/homeposts.js'
+import Homepost from '../components/Home/Homepost.jsx'
+import {homeposts} from '../assets/data/homeposts.js'
 const Home = () =>{
     var slideIndex = 0;
     const started = useRef(false)
@@ -58,7 +58,7 @@ const Home = () =>{
                 mouse
                 </span>
         <div className="post-list" >
-            {/* {
+            {
                 
                 homeposts?.map(post=>{
                     return(
@@ -71,7 +71,7 @@ const Home = () =>{
                         />
                     )
                 })
-            } */}
+            }
         </div>
         <Footer/>
         </div>
