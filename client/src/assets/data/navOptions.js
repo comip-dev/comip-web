@@ -1,11 +1,10 @@
 export const navOptions=[
-    {id:"home",
-    text:"Inicio",
-},
+    
 {id:"institucional", text:"Institucional",
 sections:[
     { id: 1, text: "Autoridades"},
     { id: 2, text: "Que es Comip"},
+    {id:3, text:"Convenios de Cooperacion"}
 ]
     
 },

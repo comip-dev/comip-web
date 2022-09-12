@@ -31,7 +31,7 @@ const Navbar = () => {
         <>
             
             <div className={white?"navbar-container white":"navbar-container "} >
-                <div className="nav-logo">
+                <div onClick={()=>goTo("home")} className="nav-logo">
                     <img className="comip-logo-container" src={logo} alt="logo-COMIP" ></img>
                 </div>
                 <div className="nav-options" >
