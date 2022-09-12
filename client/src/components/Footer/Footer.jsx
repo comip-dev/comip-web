@@ -13,23 +13,23 @@ import esc_par from '../../assets/images/escudo-paraguay.png'
 const Footer = () =>{
     return(
         <div className="footer-container" >
-            <div className="left-foot" >
-                <CountryInfo country="Argentina" info={footerInfo.argentina} />
-            </div>
             <div className="middle-foot" >
+                <div >
+                    <img className="footer-big-icons"  src={logo} alt="logo-COMIP" ></img>
+                </div>
                 <div className="contact-icons">
                     <img className="footer-social-icon" src={twitterIcon} alt="Twitter icon"/>
                     <img className="footer-social-icon" src={linkedinIcon} alt="Linkedin icon"/>
                     <img className="footer-social-icon" src={mailIcon} alt="Mail icon"/>
                 </div>
-                <div className="footer-shields" >
-                    <img className="footer-big-icons arg"  src={esc_arg} alt="logo-COMIP" ></img>
-                    <img className="footer-big-icons"  src={logo} alt="logo-COMIP" ></img>
-                    <img className="footer-big-icons"  src={esc_par} alt="logo-COMIP" ></img>
-                </div>
+            </div>
+            <div className="left-foot" >
+                <CountryInfo country="Argentina" info={footerInfo.argentina} esc={esc_arg} />
+                <img className="shield-img" alt="escudo del pais" src={esc_arg} ></img>
             </div>
             <div className="right-foot" >
-                <CountryInfo country="Paraguay" info={footerInfo.paraguay} />
+                <CountryInfo country="Paraguay" info={footerInfo.paraguay} esc={esc_par} />
+                <img className="shield-img" alt="escudo del pais" src={esc_par} ></img>
             </div>
         </div>
     )
