@@ -1,7 +1,8 @@
 import React from "react";
 import BottomCards from "../components/BottomCards";
+import ProgressiveImg from "../components/ProgressiveImg";
 import './Rio.css'
-
+import loading from '../assets/images/small/loading.png'
 
 
 const Rio = () =>{
@@ -12,7 +13,14 @@ const Rio = () =>{
 
         <div className="rio-container" >
             <div className="left-area-rio">
-                <img className="mainp-rio" src="https://picsum.photos/500/400?grayscale" alt="Main article pic" />
+            <ProgressiveImg
+                src={"https://picsum.photos/500/400?grayscale"}
+                placeholderSrc={loading}
+                // width="300"
+                // height="305"
+                className="mainp-rio"
+             />
+                {/* <img className="mainp-rio" src="https://picsum.photos/500/400?grayscale" alt="Main article pic" /> */}
             </div>
             <div className="right-area-rio">
                 <div className="title-rio"> Ullamcorper hac magnis sociosqu fames, leo dis vehicula</div>
