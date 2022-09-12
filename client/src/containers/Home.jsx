@@ -9,6 +9,7 @@ import ProgressiveImg from "../components/ProgressiveImg";
 
 import Homepost from '../components/Home/Homepost.jsx'
 import {homeposts} from '../assets/data/homeposts.js'
+import News from "../components/Home/News/News";
 const Home = () =>{
     var slideIndex = 0;
     const started = useRef(false)
@@ -73,6 +74,7 @@ const Home = () =>{
                 })
             }
         </div>
+        <News/>
         <Footer/>
         </div>
                 </>
