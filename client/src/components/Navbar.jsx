@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 import './Navbar.css'
 import logo from '../assets/images/logo-comip2.png'
+import logoblanco from '../assets/images/logo-comip2blanco.png'
 import { useNavigate } from "react-router-dom";
 import {  useLocation } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
@@ -31,8 +32,10 @@ const Navbar = () => {
         <>
             
             <div className={white?"navbar-container white":"navbar-container "} >
+
                 <div onClick={()=>goTo("home")} className="nav-logo">
-                    <img className="comip-logo-container" src={logo} alt="logo-COMIP" ></img>
+                    <img className="comip-logo-container" src={white?logo:logoblanco} alt="logo-COMIP" ></img>
+
                 </div>
                 <div className="nav-options" >
                     {/* {
@@ -67,10 +70,10 @@ const Navbar = () => {
                     })
 
                     }
-                    <div className={(location.pathname=== "/home" || location.pathname==="/" )? " separator-home" :"separator "} ></div>
+                    {/* <div className={(location.pathname=== "/home" || location.pathname==="/" )? " separator-home" :"separator "} ></div>
                     <span 
                     class={`material-symbols-outlined search-icon${location.pathname=== "/home" ? " search-icon-home" :"search-icon "}`}
-                    >search</span>
+                    >search</span> */}
                 </div>
 
             </div>

@@ -12,7 +12,7 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 4rem;
-    color:#36A9E1;
+    /* color:#36A9E1; */
     /* margin-top: 3.8rem; */
     padding-left: 10%;
     
@@ -23,8 +23,8 @@
     margin-bottom: 1rem;
     width:9.25rem;
     height: 0px;
-    border:5px solid #36A9E1;
-    background-color: #36A9E1;
+    border:5px solid black;
+    background-color: black;
     margin-left: 10%;
     
 }

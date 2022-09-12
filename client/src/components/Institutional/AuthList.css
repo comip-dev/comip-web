@@ -7,23 +7,24 @@
     font-family: 'Raleway';
     font-weight: 300;
     font-size: 2rem;
-    color:#36A9E1;
+    /* color:#36A9E1; */
 }
 .auth-position{
     font-family: 'Noto Sans';
     font-weight: 700;
     font-size: 1rem;
+    color:#5C5C5C
 
 }
 .auth-name{
     font-family: 'Noto Sans';
     font-weight: 300;
     font-size: 1rem;
-
+    color:#5C5C5C
 }
 .auth-item{
     margin-top: 1rem;
 }
 .delegado{
-    color:#36A9E1
+    color:black
 }

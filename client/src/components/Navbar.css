@@ -1,6 +1,6 @@
 .navbar-container{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
     position:absolute;
     top:0px;
     z-index: 10;
@@ -13,8 +13,8 @@
 
 
 .comip-logo-container{
-    width: 8vw;
-    height:2rem;
+    /* width: 8vw; */
+    height:5rem;
     object-fit: contain;
 }
 

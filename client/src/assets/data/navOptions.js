@@ -14,5 +14,5 @@ sections:[
     {id:"proyecto", text:"Proyecto"},
     {id:"agua", text:"El agua"},
     {id:"mapa", text:"Mapa interactivo"},
-
+    {id:"contacto", text:"Contacto"}
 ]
