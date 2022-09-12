@@ -11,6 +11,8 @@ import Homepost from '../components/Home/Homepost.jsx'
 import {homeposts} from '../assets/data/homeposts.js'
 import News from "../components/Home/News/News";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
+import { homeslides } from "../assets/data/homeslides";
+
 const Home = () =>{
     var slideIndex = 0;
     const started = useRef(false)
@@ -40,20 +42,24 @@ const Home = () =>{
     return(
         <>
         <div className="home-container" >
-            <ProgressiveImg 
-                src={slide3}
-                placeholderSrc={slide3sm}
-                width="700"
-                height="465"
-                className="mySlides"
-             />
+        {
+            homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
+            )
+        }
+                    {/* <ProgressiveImg 
+                        src={item.uri}
+                        placeholderSrc={slide3sm}
+                        width="700"
+                        height="465"
+                        className="mySlides"
+                    />
             <ProgressiveImg 
                 src={slide2}
                 placeholderSrc={slide2sm}
                 width="700"
                 height="465"
                 className="mySlides"
-             />
+             /> */}
             
             <span class="material-symbols-outlined mouse-icon" >
                 mouse
