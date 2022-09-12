@@ -36,7 +36,9 @@ const HomeIcons = () =>{
                 return (
                     <div className="icon-container" >
                         <img className="icon-img" src={item.img} alt="icon"></img>
-                        {/* <p>{item.text}</p> */}
+                        <div className="overlay" >
+                            <div className="icon-text">{item.text}</div>
+                        </div>
                     </div>
                 )
             })

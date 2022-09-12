@@ -1,7 +1,6 @@
 export const homeslides = [
     {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022545/comip/home%20slides/rio2_otc1og.jpg"},
     {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022462/comip/home%20slides/Portadas-03_nfhh54.jpg"},
-    {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022462/comip/home%20slides/Portadas-03_nfhh54.jpg"},
     {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022410/comip/home%20slides/rio6_ukdewu.jpg"},
     {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022328/comip/home%20slides/Portadas-02_iupz2o.jpg"},
     {uri:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663022325/comip/home%20slides/rio1_aegn5r.jpg"},
