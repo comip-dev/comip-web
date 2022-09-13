@@ -17,6 +17,9 @@
     height:5rem;
     object-fit: contain;
 }
+.comip-logo-container:hover{
+    cursor:pointer
+}   
 
 .nav-options{
     /* padding-right: 3rem; */
@@ -138,9 +141,12 @@
     padding-top: 0.5rem;
 
 }
-
+.dropbtnblack{
+    color:black
+}
 .nav-bg-hover:hover{
     font-weight: 700;
+    cursor:pointer
 }
 .white{
     transform:translate(0,1);

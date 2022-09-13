@@ -5,17 +5,21 @@ import logoblanco from '../assets/images/logo-comip2blanco.png'
 import { useNavigate } from "react-router-dom";
 import {  useLocation } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
-import NavObserver from "./NavObserver";
+
 
 
 const Navbar = () => {
     const navigate= useNavigate()
     const location = useLocation()
+    
+    const section = location.pathname.split('/')[1]
+    console.log(section)
+
     const [white,setWhite] = useState(false)
     useEffect(function(){
         const onChange = (entries) =>{
             // console.log(entries)
-            const el = entries [0]
+            const el = entries[0]
             
             !el.isIntersecting ? setWhite(true) : setWhite(false)
         }
@@ -25,8 +29,10 @@ const Navbar = () => {
         observer.observe(document.getElementById("navObserver"))
     })
 
-    const goTo = (route) => {
-        navigate(`/${route}`)
+    const goTo = (route,seccion) => {
+        if(route==="institucional") navigate(`/${route}/${seccion}`)
+        // navigate(`/${route}`)
+        else navigate(`/${route}`)
     }
     return(
         <>
@@ -51,15 +57,16 @@ const Navbar = () => {
                     } */}
                     {
                     navOptions.map(item=>{
+                        console.log(item.id)
                         return(
                             <div className="dropdown" >
-                                <button onClick={()=>goTo(item.id)} className="dropbtn">{item.text}</button>
+                                <button  className={section===item.id ? "dropbtn dropbtnblack":"dropbtn"}>{item.text}</button>
                                 {item.sections &&
                                     <div className="dropdown-content" >
                                         {
                                             item.sections.map((section)=>{
                                                 return(
-                                                    <a key={section.id} href={section.href} className=" nav-bg-hover" >{section.text}</a>
+                                                    <a onClick={()=>goTo(item.id,section.id)} key={section.id} href={section.href} className=" nav-bg-hover" >{section.text}</a>
                                                 )
                                             })
                                         }

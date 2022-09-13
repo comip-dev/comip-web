@@ -1,5 +1,5 @@
 export const comipInfo = {
-    title:"¿Que es la COMIP?",
+    title:"¿Qué es la COMIP?",
     text:[
         "La República del Paraguay y la República Argentina suscribieron un Convenio por el que se crea la <strong> Comisión Mixta argentino – paraguaya del Río Paraná </strong>, COMIP. Este Convenio fue aprobado por Ley paraguaya Nº 270 del 30 de julio de 1.971 y por Ley argentina Nº 19.307 de fecha 11 de Octubre de 1971. El canje de los instrumentos de ratificación tuvo lugar el 29 de diciembre de 1971, fecha en la que el Convenio entró en vigor.",
         "La COMIP tiene por objeto el “estudio y evaluación de las posibilidades técnicas y económicas del aprovechamiento de los recursos del río Paraná en el tramo limítrofe entre los dos países, desde su confluencia con el río Paraguay hasta la desembocadura del Iguazú” (art. 1). Dentro de ese espacio, el artículo 2 del convenio excluye de la competencia de la COMIP las facultades otorgadas a la entonces Comisión Técnica Mixta Paraguayo Argentina Yacyretá-Apipé, a quien sucedió en 1973 la Entidad Binacional Yacyretá. El artículo 4 del Reglamento técnico-administrativo de la COMIP precisa que ésta es una organización internacional que goza de la capacidad jurídica necesaria para adquirir derechos, contraer obligaciones y realizar todos los actos necesarios para la obtención de sus fines.",
