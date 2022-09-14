@@ -1,18 +1,17 @@
 export const homeposts = [
     {
-        title:"Estacion R11",
+        title:"Estación R11",
         img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1662217235/comip/estacionR11_oujapc.png",
-        imgSide:"left",
-        text:"Informe diario sobre altura, medida en cota y caudal registrado en Estación R11, ubicada en Km. 1.922,3, según datos de la División de Estudios Hidrológicos y Energéticos (OPSH.DT). "
+        text:"Informe diario sobre altura, medida en cota y caudal registrado en Estación R11"
     },
     {
         title:"Mapa interactivo",
         img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1662217236/comip/mapainteractivo_aayyrh.png",
-        imgSide:"right",
-        text:"Breve descripción breve descripción breve descripción breve descripción breve descripción breve descripción breve descripción."
+        text:"Breve descripción"
     },
     {
         title:"Determinantes",
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663011255/comip/determinantes_e5cfum.jpg"
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663011255/comip/determinantes_e5cfum.jpg",
+        text:"Profundidades diarias de los principales pasos críticos del río Paraná"
     }
 ]

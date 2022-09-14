@@ -44,17 +44,6 @@ const Navbar = () => {
 
                 </div>
                 <div className="nav-options" >
-                    {/* {
-                        navOptions.map(item=>{
-                            return(
-                                <button
-                                    className={(location.pathname=== "/home" || location.pathname==="/" ) ? " homeNav" :"nav-button "}
-                                    key={item.id}
-                                    onClick={()=>goTo(item.id)}
-                                >{item.text}</button>
-                            )
-                        })
-                    } */}
                     {
                     navOptions.map(item=>{
                         console.log(item.id)
