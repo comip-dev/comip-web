@@ -4,7 +4,7 @@ import './Institutional.css'
 // import HeadingPic from '../assets/images/encabezado-autoridades.png'
 import Authorities from "../components/Institutional/Authorities";
 import ComipInfo from "../components/Institutional/ComipInfo";
-import { matchPath, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 
 const Institutional = (props) =>{

@@ -29,6 +29,7 @@
  }
  .icon-container:hover .overlay {
     height: 100%;
+    cursor:pointer
   }
 .icon-text {
     color: white;

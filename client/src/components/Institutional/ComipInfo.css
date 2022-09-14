@@ -11,9 +11,32 @@
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
+    margin-bottom: 1rem;
 }
 .comip-info-text{
     width: 50%;
+    height: 10rem;
     padding-left: 10%;
     font-family: 'Noto Sans';
+    
+    /* white-space:nowrap; */
+}
+
+.info-hidden{
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.info-vermas{
+    position: absolute;
+    /* right:0px; */
+    bottom: 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.info-vermenos{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+    
 }
