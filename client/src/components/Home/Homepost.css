@@ -5,6 +5,7 @@
 }
 .post-container:hover .carta{
     transform: rotateY(180deg);
+    cursor:pointer
 }
 .carta {
     transform-style: preserve-3d;
