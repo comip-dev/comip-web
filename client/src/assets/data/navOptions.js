@@ -6,7 +6,7 @@ export const navOptions=[
     sections:[
         { id: "autoridades", text: "Autoridades"},
         { id: "infoComip", text: "Que es Comip"},
-        // {id:"convenios" , text:"Convenios de Cooperacion"}
+        {id:"convenios" , text:"Convenios de Cooperacion"}
     ]    
 },
 {

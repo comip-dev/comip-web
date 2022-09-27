@@ -20,6 +20,7 @@ function App() {
         <Route exact path={'/proyecto'} element={[<NavObserver/>,<Navbar/>,<Rio/>]} />
         <Route exact path={'/agua'} element={[<NavObserver/>,<Navbar/>,<Rio/>]} />
         <Route exact path={'/mapa'} element={[<NavObserver/>,<Navbar/>,<Rio/>]} />
+        <Route exact path={'/convenios'} element={[<NavObserver/>,<Navbar/>,<Rio/>]} />
       </Routes>
     </Router>
   );

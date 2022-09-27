@@ -5,6 +5,7 @@ import './Institutional.css'
 import Authorities from "../components/Institutional/Authorities";
 import ComipInfo from "../components/Institutional/ComipInfo";
 import {  useParams } from "react-router-dom";
+import Rio from "./Rio";
 
 
 const Institutional = (props) =>{
@@ -22,7 +23,7 @@ const Institutional = (props) =>{
                 <Authorities  /> : (
                 seccion==="infoComip" ? 
                 <ComipInfo  /> : 
-                    null
+                    <Rio/>
                 )
 
 
