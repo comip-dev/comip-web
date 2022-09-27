@@ -64,6 +64,7 @@ const Home = () =>{
             {
                 
                 homeposts?.map(post=>{
+                    
                     return(
 
                     <Homepost

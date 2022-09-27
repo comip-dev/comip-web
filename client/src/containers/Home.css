@@ -48,10 +48,12 @@
 }
 
 .post-list{
-  display: flex;
-  width: 100%;
-  height: 30rem;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #F0F0F0;
+    display: flex;
+    width: 90%;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding-left:5% ;
+    padding-right:5% ;
 }
