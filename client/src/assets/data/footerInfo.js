@@ -27,5 +27,6 @@ export const footerInfo =  {
             email:"comip@comip.org.py"
         },
         
-    ]
+    ],
+    info:"La  COMIP está integrada por los delegados del Paraguay y la Argentina, con el objetivo de gestionar las posibilidades técnicas y económicas del aprovechamiento de los recursos del río Paraná, y la sustentabilidad y preservación de los mismos. "
 }
