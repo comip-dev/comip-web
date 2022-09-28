@@ -6,6 +6,7 @@ import './News.css'
 const News = () =>{
     return(
         <div className="news-container" >
+        <p className="news-title" >Novedades</p>
             <div className="news-list" >
                 {
                     bloginfo?.map(item=>{
@@ -18,7 +19,7 @@ const News = () =>{
                 }
 
             </div>
-        <button className="news-button" >Mas Noticias</button>
+        <button className="news-button" >Más Novedades</button>
         </div>
     )
 }

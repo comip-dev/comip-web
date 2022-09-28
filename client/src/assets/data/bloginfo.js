@@ -10,12 +10,12 @@ export const bloginfo=[
         text:`Río Paraná: estado de situación al lunes 05 de septiembre de 2022...`
     },
     {
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663012981/comip/blog/WhatsApp-Image-2022-08-29-at-2.05_rxgbk8.png",
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664332468/comip/blog/COMIP_en_el_webinar_kjacea.jpg",
         title:`COMIP, en el webinar “Desafíos del Transporte Fluvial en el Paraguay y Paraná Superior”`,
         text:"El día 25 de agosto de 2022, se llevó..."
     },
     {
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663012990/comip/blog/Desfios--800x400_qqdzwg.png",
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664332513/comip/blog/COMIP_enasd_xo9cdn.png",
         title:"COMIP en el Encuentro Argentino de Transporte Fluvial",
         text:"El día 25 de agosto a las 17:00 hs, se..."
     },

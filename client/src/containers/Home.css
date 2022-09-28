@@ -49,11 +49,12 @@
 
 .post-list{
     display: flex;
-    width: 90%;
+    width: 85%;
     height: 30rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #F5F5F5;
-    padding-left:5% ;
-    padding-right:5% ;
+    padding-left:7.5% ;
+    padding-right:7.5% ;
+    
 }
