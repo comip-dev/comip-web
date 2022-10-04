@@ -49,7 +49,7 @@ const Navbar = () => {
                         console.log(item.id)
                         return(
                             <div className="dropdown" >
-                                <button  className={section===item.id ? "dropbtn dropbtnblack":"dropbtn"}>{item.text}</button>
+                                <button  className={"dropbtn"}>{item.text}</button>
                                 {item.sections &&
                                     <div className="dropdown-content" >
                                         {
