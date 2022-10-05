@@ -10,13 +10,13 @@ export const bloginfo=[
         text:`Río Paraná: estado de situación al lunes 05 de septiembre de 2022...`
     },
     {
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664332468/comip/blog/COMIP_en_el_webinar_kjacea.jpg",
-        title:`COMIP, en el webinar “Desafíos del Transporte Fluvial en el Paraguay y Paraná Superior”`,
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664932313/comip/blog/WhatsApp-Image-2022-09-28-at-17.10.16-800x400_uwo5oc.jpg",
+        title:`FUNDELEC: la demanda eléctrica subió 1% en agosto y acumula 5 meses consecutivos de ascenso`,
         text:"El día 25 de agosto de 2022, se llevó..."
     },
     {
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664332513/comip/blog/COMIP_enasd_xo9cdn.png",
-        title:"COMIP en el Encuentro Argentino de Transporte Fluvial",
-        text:"El día 25 de agosto a las 17:00 hs, se..."
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664932261/comip/blog/Yacyreta-Represa-1-800x400_bwdvld.jpg",
+        title:"Río Paraná: estado de situación al lunes 03 de octubre de 2022",
+        text:""
     },
 ]

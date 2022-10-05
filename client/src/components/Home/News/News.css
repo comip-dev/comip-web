@@ -28,22 +28,24 @@
     width: 22%;
     height: 100%;
     position: relative;
-    border: solid 1px #B3B3B3;
+    border-right: solid 1px #B3B3B3;
+    border-bottom: solid 1px #B3B3B3;
     border-radius: 1rem;
+    border-left: solid 1px #B3B3B3;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
     
 }
 .new-img{
+    
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    width: 100%;
+    width: 100.5%;
     height: 50%;
     object-fit:cover;
     position: relative;
-    left: 0px;
-    
+    left: -1px;
 }
 
 .new-title{
@@ -107,7 +109,7 @@
 
 .new-overlay-text{
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Raleway';
     font-weight: 700;
     position: relative;
