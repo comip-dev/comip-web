@@ -7,7 +7,7 @@ import News from "../components/Home/News/News";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
 import { homeslides } from "../assets/data/homeslides";
 import ScrollToTop from "../components/ScrollToTop";
-
+import mouseIcon from "../assets/images/mouse-home-icon.svg"
 const Home = () =>{
     var slideIndex = 0;
     const started = useRef(false)
@@ -17,7 +17,6 @@ const Home = () =>{
         if(x.length>0 && started.current=== false) {
             started.current = true
             carousel()
-            
         }
     },[])
 
@@ -41,10 +40,7 @@ const Home = () =>{
                 homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
                 )
             }
-            
-                <span class="material-symbols-outlined mouse-icon" >
-                    mouse
-                    </span>
+            <img src={mouseIcon} alt="mouse icon" className="mouse-icon"/>
             <HomeIcons/>
             <div className="post-list" >
                 {
@@ -64,7 +60,6 @@ const Home = () =>{
                 }
             </div>
             <News/>
-            
             <Footer/>
         </div>
             <ScrollToTop/>
