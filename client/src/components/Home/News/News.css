@@ -22,10 +22,10 @@
     display: flex;
     justify-content: space-between;
     width: 85%;
-    height: 43%;
+    height: 50%;
 }
 .new-container{
-    width: 24%;
+    width: 22%;
     height: 100%;
     position: relative;
     border: solid 1px #B3B3B3;
