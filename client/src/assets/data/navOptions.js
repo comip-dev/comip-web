@@ -20,7 +20,7 @@ export const navOptions=[
 },
 {
     id:"fauna", 
-    text:"Fauna ítica",
+    text:"Fauna íctica",
     sections:[
         {id:1,text:"Convenios"},
         {id:2,text:"Estudios"},
