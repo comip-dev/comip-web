@@ -1,3 +1,8 @@
+.news-section{
+    height:46.4rem;
+    display: flex;
+    align-items: center;
+}
 .news-container{
     display: flex;
     flex-direction: column;
@@ -5,7 +10,7 @@
     align-items: center;
     /* padding-top: 2rem; */
     /* padding-bottom: 2rem; */
-    height:30rem;
+    height: 68%;
     width:100%;
 }
 .news-title{
@@ -17,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     width: 85%;
-    height: 60%;
+    height: 43%;
 }
 .new-container{
     width: 24%;

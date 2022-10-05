@@ -5,21 +5,23 @@ import './News.css'
 
 const News = () =>{
     return(
-        <div className="news-container" >
-        <p className="news-title" >Novedades</p>
-            <div className="news-list" >
-                {
-                    bloginfo?.map(item=>{
-                        return <New 
-                                img={item.img}
-                                title={item.title}
-                                text={item.text}
-                        />
-                    })
-                }
+        <div className="news-section" >
+            <div className="news-container" >
+            <p className="news-title" >Novedades</p>
+                <div className="news-list" >
+                    {
+                        bloginfo?.map(item=>{
+                            return <New 
+                                    img={item.img}
+                                    title={item.title}
+                                    text={item.text}
+                            />
+                        })
+                    }
 
+                </div>
+            <button className="news-button" >Más Novedades</button>
             </div>
-        <button className="news-button" >Más Novedades</button>
         </div>
     )
 }

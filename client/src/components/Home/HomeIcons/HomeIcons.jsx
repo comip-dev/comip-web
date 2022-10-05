@@ -36,7 +36,7 @@ const HomeIcons = () =>{
             data.map((item)=>{
                 return (
                     <div className="icon-container" >
-                        <img className="icon-img" src={item.img} alt="icon"></img>
+                        <img className={item.text==="Estado del río"?"icon-img rio-icon":"icon-img"} src={item.img} alt="icon"></img>
                             <div className="icon-text">{item.text}</div>
                         {/* <div className="overlay" >
                         </div> */}
