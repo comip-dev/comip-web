@@ -37,51 +37,37 @@ const Home = () =>{
     return(
         <>
         <div id="home-container" >
-        {
-            homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
-            )
-        }
-                    {/* <ProgressiveImg 
-                        src={item.uri}
-                        placeholderSrc={slide3sm}
-                        width="700"
-                        height="465"
-                        className="mySlides"
-                    />
-            <ProgressiveImg 
-                src={slide2}
-                placeholderSrc={slide2sm}
-                width="700"
-                height="465"
-                className="mySlides"
-             /> */}
-            
-            <span class="material-symbols-outlined mouse-icon" >
-                mouse
-                </span>
-        <HomeIcons/>
-        <div className="post-list" >
             {
-                
-                homeposts?.map(post=>{
-                    
-                    return(
-
-                    <Homepost
-                        title={post.title} 
-                        img={post.img}
-                        imgSide={post.imgSide}
-                        text={post.text}
-                        />
-                    )
-                })
+                homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
+                )
             }
+            
+                <span class="material-symbols-outlined mouse-icon" >
+                    mouse
+                    </span>
+            <HomeIcons/>
+            <div className="post-list" >
+                {
+                    
+                    homeposts?.map(post=>{
+                        
+                        return(
+
+                        <Homepost
+                            title={post.title} 
+                            img={post.img}
+                            imgSide={post.imgSide}
+                            text={post.text}
+                            />
+                        )
+                    })
+                }
+            </div>
+            <News/>
+            
+            <Footer/>
         </div>
-        <News/>
-        {/* <ScrollToTop/> */}
-        
-        <Footer/>
-        </div>
+            <ScrollToTop/>
                 </>
     )
 }

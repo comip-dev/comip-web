@@ -31,7 +31,7 @@ const HomeIcons = () =>{
         },
     ]    
     return(
-        <div className="icons-container" >
+        <div id="icons-container" >
         {
             data.map((item)=>{
                 return (

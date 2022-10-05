@@ -8,8 +8,9 @@
     background-position: bottom;
     background-attachment: fixed;
     display: block;
-    /* overflow: scroll; */
+    overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .home-container::-webkit-scrollbar {     
 	width: 0rem;

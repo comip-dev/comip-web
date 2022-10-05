@@ -1,39 +1,39 @@
 import React,{useState, useEffect} from "react";
-import upButton from '../assets/images/iconoupload.png'
+import upButton from '../assets/images/Icon-up.svg'
 import './ScrollToTop.css'
 
 const ScrollToTop = () =>{
 
-    const [showTopBtn, setShowTopBtn] = useState(false);
-
+    
+    const [scrollTop, setScrollTop] = useState(0);
+    const [showButton, setShowButton] = useState(false)
+    const onScroll = (e) => {
+        let offsetY = document.getElementById("home-container").scrollTop
+        offsetY>599 ?setShowButton(true): setShowButton(false)
+    }
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 400) {
-                setShowTopBtn(true);
-            } else {
-                setShowTopBtn(false);
-            }
-        });
-    }, []);
+        document.getElementById("home-container").addEventListener('scroll', onScroll);
+      },[]);
+    
+      useEffect(() => {
+        console.log(scrollTop)
+      }, [scrollTop])
     const goToTop = () => {
-        document.getElementsById("home-container").scroll(0,0)
-        // window.scrollTo({
-        //     top: 100,
-        //     left: 100,
-        //     behavior: 'smooth'
-        //   });
+        document.getElementById("home-container").scroll(0,0)
+
     };
-    // const goToTop =()=>{
-    //     console.log("scrolling")
-    //     window.scrollTo(0,0)
-    // }   
+
     
     return(
-        
-                <button
-                    className="up-button"
+            <div className={showButton? "up-button":"up-button display-none" } >
+                <img
+                    src={upButton}
+                    alt="up button"
+                    className="up-button-img"
                     onClick={goToTop}
-                >ARRIBA</button>
+                />
+
+            </div>
 
             
         
