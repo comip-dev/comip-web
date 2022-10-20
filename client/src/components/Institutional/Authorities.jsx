@@ -5,7 +5,8 @@ import './Authorities.css'
 // import HeadingPic from '../../assets/images/encabezado-autoridades.png'
 
 const Authorities = () =>{
-    const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1663102806/comip/institucional/encabezado-autoridades_gs6pry.png"
+    const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1666223906/comip/institucional/Banderas-Paraguay-Argentina_ed3pln.jpg"
+    // const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1666223907/comip/institucional/Cafiero_y_Acevedo_agenda_bilateral_y_regional_de_Argentina_y_..._imb8z7.jpg"
     return(
         <>
             <div className="institutional-pic" >
@@ -15,8 +16,7 @@ const Authorities = () =>{
                 <div className="authorities-title" >Autoridades</div>
                 <div className="separator-auth-line" ></div>
                 <div className="lists-auth-container" >
-                    <AuthList country="Argentina" list={authorities.argentina} />
-                    <AuthList country="Paraguay" list={authorities.paraguay} />
+                    <AuthList authorities={authorities} />
                 </div>
             </div>
         </>

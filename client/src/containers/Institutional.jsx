@@ -12,12 +12,8 @@ const Institutional = (props) =>{
     // const seccion = props.match.params.seccion
     const params = useParams();
     const {seccion} = params
-    
-    
     return(
-        
         <>
-            
             {
                 seccion==="autoridades" ? 
                 <Authorities  /> : (

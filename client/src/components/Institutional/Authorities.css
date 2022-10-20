@@ -12,7 +12,7 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 4rem;
-    /* color:#36A9E1; */
+    color:#5C5C5C;
     /* margin-top: 3.8rem; */
     padding-left: 10%;
     
@@ -23,8 +23,8 @@
     margin-bottom: 1rem;
     width:9.25rem;
     height: 0px;
-    border:5px solid black;
-    background-color: black;
+    border:5px solid #5C5C5C;
+    background-color: #5C5C5C;
     margin-left: 10%;
     
 }
@@ -32,8 +32,9 @@
 .lists-auth-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
-
-    width: 80%;
+    margin-left: 15%;
+    
+    width: 70%;
     margin-bottom: 3rem;
+    
 }
