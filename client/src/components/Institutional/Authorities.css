@@ -13,14 +13,14 @@
     font-weight: 700;
     font-size: 2.25rem;
     color:#5C5C5C;
-    /* margin-top: 3.8rem; */
+    margin-top: 2rem;
     padding-left: 10%;
     
 }
 
 .separator-auth-line{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width:9.25rem;
     height: 0px;
     border:5px solid #5C5C5C;

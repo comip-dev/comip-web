@@ -1,5 +1,6 @@
 import React from "react";
 import { authorities } from "../../assets/data/institucional/authorities";
+import Footer from "../Footer/Footer";
 import AuthList from "./AuhtsList";
 import './Authorities.css'
 // import HeadingPic from '../../assets/images/encabezado-autoridades.png'
@@ -18,6 +19,7 @@ const Authorities = () =>{
                 <div className="lists-auth-container" >
                     <AuthList authorities={authorities} />
                 </div>
+            <Footer/>
             </div>
         </>
     )

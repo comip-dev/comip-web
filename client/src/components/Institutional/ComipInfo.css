@@ -11,25 +11,25 @@
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-bottom: 1rem;
 }
 .comip-info-text{
+    /* padding-top: 1rem; */
     width: 50%;
-    height: 10rem;
     padding-left: 10%;
     font-family: 'Noto Sans';
-    
+    height: 95rem;
     /* white-space:nowrap; */
 }
 
 .info-hidden{
+    height: 11rem;
     overflow:hidden;
     text-overflow: ellipsis;
 }
 .info-vermas{
     position: absolute;
     /* right:0px; */
-    bottom: 0;
+    bottom: 27rem;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5rem;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { comipInfo } from "../../assets/data/institucional/comipInfo";
+import Footer from "../Footer/Footer";
 import './ComipInfo.css'
 
 const ComipInfo = ()=>{
@@ -32,6 +33,7 @@ const ComipInfo = ()=>{
                     ):<div className="info-vermenos" onClick={handleOpen} >Ver menos</div>
                 }
                 </div>
+                <Footer/>
             </div>
         </>
     )

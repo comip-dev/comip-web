@@ -1,0 +1,27 @@
+.convenios-container{
+    width: 70%;
+    margin-left: 15%;
+}
+.convenio-container{
+    width: 100%;
+    border: solid 1px #5C5C5C;
+    font-family: 'Raleway';
+    font-weight: 700;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.convenio-container a{
+    color:#5C5C5C;
+    text-decoration: none;
+}
+.convenio-container:hover{
+    background-color: #05488C;
+    
+}
+.convenio-container:hover a{
+    color:white;
+    text-decoration: none;
+}
