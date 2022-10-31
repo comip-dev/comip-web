@@ -24,7 +24,7 @@
 .auth-position{
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.25rem;
     color:#5C5C5C;
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@
     margin-top: 1rem;
     width: 100%;
     height: 25%;
-    border-bottom:#05488C solid 1px ;
+    border-bottom:#5C5C5C solid 1px ;
     /* border: solid 1px red */
 }
 .delegado{
