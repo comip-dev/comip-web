@@ -29,7 +29,7 @@ const ComipInfo = ()=>{
                     }
                 {
                     !open ? (
-                        <div className="info-vermas" onClick={handleOpen} >Ver más</div>
+                        <div className="info-vermas" onClick={handleOpen} >Seguir leyendo...</div>
                     ):<div className="info-vermenos" onClick={handleOpen} >Ver menos</div>
                 }
                 </div>

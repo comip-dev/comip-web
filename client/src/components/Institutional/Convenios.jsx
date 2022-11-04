@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import './Convenios.css'
-
+import HeadingPic from '../../assets/images/inst/Encabezado Convenios.jpg'
 const Convenios =() =>{
-    const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1666223906/comip/institucional/Banderas-Paraguay-Argentina_ed3pln.jpg"
     const conveniosList=[
         {
             title:"CONVENIO COMIP - SSPVNyMM - 27/10/2021",
