@@ -15,30 +15,39 @@
     .comip-info-text{
     /* padding-top: 1rem; */
     transition: height 1s;
-    width: 60%;
-    margin-left: 20%;
+    width: 65%;
+    margin-left: 17.5%;
     font-family: 'Noto Sans';
-    height: 95rem;
+    height: 70rem;
     /* white-space:nowrap; */
 }
 
 .info-hidden{
     /* transition: width 2s; */
-    height: 21rem;
+    height: 10rem;
     overflow:hidden;
     text-overflow: ellipsis;
 }
 .info-vermas{
-    position: absolute;
+    margin-left: 17.5%;
+    z-index: 9999;
+    
     /* right:0px; */
-    bottom: 27rem;
+    /* bottom: 27rem; */
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5rem;
+    height: 5rem;
 }
 .info-vermenos{
+    margin-left: 17.5%;
+    height: 5rem;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5rem;
     
+}
+.convenios-img{
+    width: 100%;
+    margin-bottom: 6rem;
 }

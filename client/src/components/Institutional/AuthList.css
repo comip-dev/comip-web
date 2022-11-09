@@ -19,6 +19,7 @@
     font-weight: 300;
     font-size: 1.5rem;
     width: 50%;
+    
     /* color:#36A9E1; */
 }
 .auth-position{
@@ -30,6 +31,7 @@
     display: flex;
     justify-content: center;
     
+    margin-bottom: 0.5rem;
 }
 .country-name{
     font-family: 'Noto Sans';
