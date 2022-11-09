@@ -1,11 +1,11 @@
 import React from "react";
 import BottomCards from "../components/BottomCards";
 import ProgressiveImg from "../components/ProgressiveImg";
-import './Rio.css'
+import './Mockup.css'
 import loading from '../assets/images/small/loading.png'
 
 
-const Rio = () =>{
+const Mockup = () =>{
     
     
     return(
@@ -37,4 +37,4 @@ const Rio = () =>{
     )
 }
 
-export default Rio
+export default Mockup
