@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Institutional from './containers/Institutional';
 import Mockup from './containers/Mockup';
 import NavObserver from './components/NavObserver';
+import Rio from './containers/Rio';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Route path='/' element={[<NavObserver/>,<Navbar/>,<Home/>]}/>
         <Route exact path={'/home'} element={[<NavObserver/>,<Navbar/>,<Home/>]} />
         <Route exact path={'/Institucional/:seccion'} element={[<NavObserver/>,<Navbar/>,<Institutional/>]} />
-        <Route exact path={'/rio'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
+        <Route exact path={'/rio/:seccion'} element={[<NavObserver/>,<Navbar/>,<Rio/>]} />
         <Route exact path={'/fauna'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
         <Route exact path={'/nav'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
         <Route exact path={'/proyecto'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />

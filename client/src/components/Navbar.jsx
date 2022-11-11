@@ -3,17 +3,12 @@ import './Navbar.css'
 import logo from '../assets/images/logo-comip2.png'
 import logoblanco from '../assets/images/logo-comip2blanco.png'
 import { useNavigate } from "react-router-dom";
-import {  useLocation } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
 
 
 
 const Navbar = () => {
     const navigate= useNavigate()
-    const location = useLocation()
-    
-    const section = location.pathname.split('/')[1]
-    console.log(section)
 
     const [white,setWhite] = useState(false)
     useEffect(function(){
@@ -30,7 +25,8 @@ const Navbar = () => {
     })
 
     const goTo = (route,seccion) => {
-        if(route==="institucional") navigate(`/${route}/${seccion}`)
+        console.log(route,seccion)
+        if(route==="institucional" || route==="rio") navigate(`/${route}/${seccion}`)
         // navigate(`/${route}`)
         else navigate(`/${route}`)
     }
@@ -46,7 +42,6 @@ const Navbar = () => {
                 <div className="nav-options" >
                     {
                     navOptions.map(item=>{
-                        console.log(item.id)
                         return(
                             <div className="dropdown" >
                                 <button  className={"dropbtn"}>{item.text}</button>

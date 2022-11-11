@@ -13,9 +13,9 @@ export const navOptions=[
     id:"rio", 
     text:"El Rio",
     sections:[
-        {id:1,text:"Cuenca del Plata"},
-        {id:2,text:"Río Paraná"},
-        {id:3,text:"El Tramo Comip"},
+        {id:"cuencadelplata",text:"Cuenca del Plata"},
+        {id:"rioparana",text:"Río Paraná"},
+        {id:"tramocomip",text:"El Tramo Comip"},
     ]
 },
 {

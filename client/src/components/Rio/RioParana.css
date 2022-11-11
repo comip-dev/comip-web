@@ -1,0 +1,21 @@
+.section-subtitle{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2.25rem;
+    color:#5C5C5C;
+    margin-top: 2rem;
+    
+}
+.separator-auth-line-section{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width:5.7rem;
+    height: 0px;
+    border:2px solid #5C5C5C;
+    background-color: #5C5C5C;
+}
+
+.trifinio-imagen{
+    width: 100%;
+    object-fit: contain;
+}

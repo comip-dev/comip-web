@@ -1,0 +1,56 @@
+.stretches-background{
+    background-color: #F5F5F5;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: absolute;
+    margin-left: -17.5%;
+}
+.stretches-content-container{
+    width: 65%;
+    margin-left: 17.5%;
+    
+}
+.stretches-place{
+    height:42rem ;
+}
+.stretches-buttons-container{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stretches-button{
+    width: 20%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #05488C;
+    color:white;
+    border: solid 1px #05488C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    height: 5rem;
+}
+.sbactive{
+    color: #05488C;
+    background-color:white;
+}
+
+.stretches-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    height: 25rem;
+    align-items:flex-start;
+}
+.stretches-container p{
+    width: 60%;
+}
+.stretches-container img{
+    width: 35%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
