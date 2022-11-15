@@ -3,6 +3,7 @@ import {  useParams } from "react-router-dom";
 import Section from '../components/Section';
 import CuencaDelPlata from '../components/Rio/CuencaDelPlata';
 import RioParana from '../components/Rio/RioParana';
+import TramoComip from '../components/Rio/TramoComip';
 import headingCuenca from '../assets/images/rio/1_Cuenca del Plata/Encabezado Cuenta del Plata.jpg'
 import headingRioParana from '../assets/images/rio/2_Río Paraná/1_Encabezado Río Paraná.jpg'
 import headingTramo from '../assets/images/rio/3_El Tramo COMIP/1_Tramo COMIP.jpg'
@@ -21,7 +22,7 @@ const Rio = ()=>{
         tramocomip:{
             headingPic:headingTramo,
             title:"El Tramo COMIP",
-            content:""
+            content:TramoComip
         },
     }
     const params = useParams();

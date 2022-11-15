@@ -1,0 +1,55 @@
+.map-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.map-options-container{
+    width: 27.5%;
+}
+.map-image{
+    width: 68.5%
+}
+.option-container{
+    background-color: #05488C;
+    color:white;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+.option-container-active{
+    color: #05488C;
+    background-color:#F5F5F5;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+
+}
+.option-container p{
+    width: 100%;
+    text-align: center;
+}
+.option-container-active p{
+    width: 100%;
+    text-align: center;
+}
+
+.mapas-title{
+    background-color: #05488C;
+    color:white;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.country-map-title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}

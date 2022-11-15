@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer/Footer'
 import './Section.css'
 const Section = ({headingPic,title,children}) =>{
 
@@ -11,6 +12,7 @@ const Section = ({headingPic,title,children}) =>{
                 <div className="authorities-title" >{title}</div>
                 <div className="separator-auth-line" ></div>
                 <div className='content-container' >{children}</div>
+                <Footer/>
             </div>
         </>
     )
