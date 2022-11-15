@@ -2,28 +2,46 @@
     width: 65%;
     margin-left: 17.5%;
 }
-.convenio-container{
+.convenio-title{
     width: 100%;
     border: solid 1px #5C5C5C;
+    color: #5C5C5C;
     font-family: 'Raleway';
     font-weight: 700;
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: center;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
-.convenio-container a{
-    color:#5C5C5C;
-    text-decoration: none;
-}
-.convenio-container:hover{
-    /* transition: background-color 0.25s; */
+
+.convenio-title:hover{
     background-color: #05488C;
+    color:white;
     
 }
-.convenio-container:hover a{
-    /* transition: color 0.25s; */
+.convenio-description{
+    display: none;
+}
+.convenio-description-show{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-family: 'Noto Sans';
+    color:#5C5C5C
+}
+.convenio-download-btn{
+    background-color: #05488C;
+    font-family: 'Noto Sans';
+    font-size: 0.8rem;
     color:white;
+    border-radius: 1rem;
+    padding: 0.3rem;
     text-decoration: none;
+}
+.conv-btn-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
 }
