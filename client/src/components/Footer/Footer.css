@@ -1,4 +1,5 @@
 .footer-container{
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -60,6 +61,7 @@
 }
 .second-footer p{
     font-family: 'Noto Sans';
+    font-size: 0.8rem;
     color:white
 }
 .logo-footer{

@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const goTo = (route,seccion) => {
         console.log(route,seccion)
-        if(route==="institucional" || route==="rio") navigate(`/${route}/${seccion}`)
+        if(route==="institucional" || route==="rio"|| route==="fauna") navigate(`/${route}/${seccion}`)
         // navigate(`/${route}`)
         else navigate(`/${route}`)
     }
@@ -46,25 +46,36 @@ const Navbar = () => {
                             <div className="dropdown" >
                                 <button  className={"dropbtn"}>{item.text}</button>
                                 {item.sections &&
-                                    <div className="dropdown-content" >
-                                        {
-                                            item.sections.map((section)=>{
-                                                return(
-                                                    <a onClick={()=>goTo(item.id,section.id)} key={section.id} href={section.href} className=" nav-bg-hover" >{section.text}</a>
-                                                )
-                                            })
-                                        }
-                                    </div>}
+                                <div className="dropdown-content" >
+                                    {
+                                    item.sections.map((section)=>{
+                                        return(
+                                            <>
+                                            <div className="nav-section-container" >
+                                                <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className=" nav-bg-hover" >{section.text}</a>
+
+                                                {section.subsections && 
+                                                    <div className="subsections-container" >
+                                                        {
+                                                    section.subsections.map(sub=>{
+                                                        return <a onClick={()=>goTo(item.id,sub.id)} key={sub.id} href={sub.href} className=" nav-subsection" >{sub.text}</a>
+                                                    })
+                                                            
+                                                        }
+                                                    </div>
+                                                }
+                                            </div>
+                                            </>
+                                        )
+                                    })
+                                    }
+                                </div>}
                             </div>
                             
                         )
                     })
 
                     }
-                    {/* <div className={(location.pathname=== "/home" || location.pathname==="/" )? " separator-home" :"separator "} ></div>
-                    <span 
-                    class={`material-symbols-outlined search-icon${location.pathname=== "/home" ? " search-icon-home" :"search-icon "}`}
-                    >search</span> */}
                 </div>
 
             </div>

@@ -1,16 +1,15 @@
 .news-section{
-    height:46.4rem;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
     display: flex;
     align-items: center;
 }
 .news-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
-    /* padding-top: 2rem; */
-    /* padding-bottom: 2rem; */
-    height: 68%;
+    height: 31.5rem;
     width:100%;
 }
 .news-title{
@@ -31,11 +30,7 @@
     border-right: solid 1px #B3B3B3;
     border-bottom: solid 1px #B3B3B3;
     border-radius: 1rem;
-    border-left: solid 1px #B3B3B3;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    
+    border-left: solid 1px #B3B3B3;    
 }
 .new-img{
     
@@ -49,7 +44,7 @@
 }
 
 .new-title{
-    font-family: 'Noto Sans';
+    font-family: 'Raleway';
     font-weight: 700;
     line-height: 1.5rem;
     font-size:1rem;

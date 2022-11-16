@@ -7,7 +7,7 @@ const News = () =>{
     return(
         <div className="news-section" >
             <div className="news-container" >
-            <p className="news-title" >Novedades</p>
+            <div className="news-title" >Novedades</div>
                 <div className="news-list" >
                     {
                         bloginfo?.map(item=>{

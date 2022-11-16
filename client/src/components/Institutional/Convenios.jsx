@@ -70,11 +70,16 @@ const Convenios =() =>{
             link:"https://comip.org.ar/wp-content/uploads/2017/11/002CONV-EBY-COMIP-2001-RENOVAC-AUTOMAT.pdf"
         },
     ]
-    const [showQuestions, setShowQuestions] = React.useState(new Array(conveniosList.length).fill(false))
+    const falseState=conveniosList.map(item=>false)
+    const [showQuestions, setShowQuestions] = React.useState(falseState)
     const toggleShow = (i) =>{
-        let items = [...showQuestions]
-        items[i] = !items[i]
+        const currentState=showQuestions[i]
+        console.log(currentState)
+        let items = [...falseState]
+        console.log(items)
+        items[i] = !currentState
         setShowQuestions(items)
+        console.log(showQuestions)
     }
     return(
         <>
@@ -89,7 +94,7 @@ const Convenios =() =>{
                         conveniosList.map((convenio,index)=>{
                             return (
                                 <div className="convenio-container" >
-                                    <div onClick={()=>toggleShow(index)} className="convenio-title" >
+                                    <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"convenio-title-active":"convenio-title"} >
                                         {convenio.title}
                                     </div>
                                     <div  className={showQuestions[index]?"convenio-description-show":"convenio-description"} dangerouslySetInnerHTML={{__html: convenio.description}} >

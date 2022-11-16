@@ -13,10 +13,9 @@ const Homepost = ({title, img, imgSide, text}) =>{
                     <img className='article-img' src={image} alt="related img"/>
                     <p className='article-title'>{title}</p>
                 </div>
-                <div className='cara detras' >
-
-                    <p className='article-title-back'>{title}</p>
-                    <p className='article-description'>{text}</p>
+                <div className='cara detras' >                    
+                    <div className='article-title-back'>{title}</div>
+                    <div className='article-description'>{text}</div>                    
                 </div>
 
             </div>

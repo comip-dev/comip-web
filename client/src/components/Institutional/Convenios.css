@@ -11,24 +11,40 @@
     display: flex;
     padding: 1.5rem;
     align-items: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     border-radius: 0.5rem;
 }
 
 .convenio-title:hover{
-    background-color: #05488C;
+    color: #05488C;
+    background-color:white;
+}
+.convenio-title-active{
+    background-color: #5AA1E2;
     color:white;
-    
+    width: 100%;
+    border: solid 1px #5C5C5C;
+    font-family: 'Raleway';
+    font-weight: 700;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
 .convenio-description{
-    display: none;
+    height: 0rem;
+    visibility:hidden;
+    transition: height 0.5s;
 }
 .convenio-description-show{
     display: block;
     width: 100%;
     padding: 1.5rem;
     font-family: 'Noto Sans';
-    color:#5C5C5C
+    color:#5C5C5C;
+    transition: height 0.5s;
+    height: 3rem;
 }
 .convenio-download-btn{
     background-color: #05488C;
@@ -36,12 +52,13 @@
     font-size: 0.8rem;
     color:white;
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.6rem;
     text-decoration: none;
 }
 .conv-btn-container{
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     margin-left: 1.5rem;
+    padding: 0.5rem;
 }

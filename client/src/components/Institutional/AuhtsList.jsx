@@ -8,22 +8,22 @@ const AuthList = ({authorities}) =>{
                 authorities.map(auth=>{
                     return (
                         <div className="authority-item" >
-                            <div  >
+                            
                                 <div className="auth-position" >
                                 {auth.position}
                                 </div>
                                 <div className="authority-countries" >
                                     <div className="authority-country" >
-                                        <p className="country-person" >{auth.argentina}</p>
-                                        <p className="country-name" >Argentina</p>
+                                        <div className="country-person" >{auth.argentina}</div>
+                                        <div className="country-name" >Argentina</div>
                                     </div>
                                     <div className="authority-country" >
-                                        <p className="country-person" >{auth.paraguay}</p>
-                                        <p className="country-name" >Paraguay</p>
+                                        <div className="country-person" >{auth.paraguay}</div>
+                                        <div className="country-name" >Paraguay</div>
                                     </div>
                                 </div>
 
-                            </div>
+                            
                             
                         </div>
                     )

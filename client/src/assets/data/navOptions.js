@@ -5,13 +5,13 @@ export const navOptions=[
     text:"Institucional",
     sections:[
         { id: "autoridades", text: "Autoridades"},
-        { id: "infoComip", text: "Que es Comip"},
+        { id: "infoComip", text: "¿Qué es la Comip?"},
         {id:"convenios" , text:"Convenios de Cooperacion"}
     ]    
 },
 {
     id:"rio", 
-    text:"El Rio",
+    text:"El Río",
     sections:[
         {id:"cuencadelplata",text:"Cuenca del Plata"},
         {id:"rioparana",text:"Río Paraná"},
@@ -22,8 +22,13 @@ export const navOptions=[
     id:"fauna", 
     text:"Fauna íctica",
     sections:[
-        {id:1,text:"Convenios"},
-        {id:2,text:"Estudios"},
+        {id:"convenios",text:"Convenios"},
+        {id:"especies",text:"Especies"},
+        {id:"estudios",text:"Estudios >",subsections:[
+            {id:"pescarecreativa",text:"Pesca Recreativa"},
+            {id:"piscicultura",text:"Piscicultura"},
+            {id:"otros",text:"Otros Estudios"},
+        ]},
     ]
 },
 {

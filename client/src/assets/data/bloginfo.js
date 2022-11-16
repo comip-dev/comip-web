@@ -5,7 +5,7 @@ export const bloginfo=[
         text:"Publicamos, aquí, el boletín fluvial de la Subsecretaría de Puertos, Vías Navegables y Marina Mercante; con información relevante para la..."
     },
     {
-        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1663012985/comip/blog/5ff75c35ba47a_671_377_wonnvx.png",
+        img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1668572152/comip/blog/5ff75c35ba47a_671_377_edovi9.jpg",
         title:"Río Paraná: informe semanal de EBY",
         text:`Río Paraná: estado de situación al lunes 05 de septiembre de 2022...`
     },

@@ -15,19 +15,14 @@ import fullMethbtn from '../../../assets/homeicons/full-btn-meth.svg'
 const HomeIcons = () =>{
     const data = [
         {
-            img:waterIcon,
-            hoverImg:hoverwaterIcon,
-            text:"Calidad del agua"
+            img:faunaIcon,
+            hoverImg:hoverfaunaIcon,
+            text:"Fauna íctica"
         },
         {
             img:riverIcon,
             hoverImg:hoverriverIcon,
             text:"Estado del río"
-        },
-        {
-            img:faunaIcon,
-            hoverImg:hoverfaunaIcon,
-            text:"Fauna íctica"
         },
         {
             img:methIcon,
@@ -38,6 +33,11 @@ const HomeIcons = () =>{
             img:navigationIcon,
             hoverImg:hovernavigationIcon,
             text:"Navegación"
+        },
+        {
+            img:waterIcon,
+            hoverImg:hoverwaterIcon,
+            text:"Calidad del agua"
         },
     ]
     function hover(element,item) {
@@ -51,11 +51,11 @@ const HomeIcons = () =>{
     return(
         <div id="icons-container" >
 
-            <div id="waterIcon" ></div>
-            <div id="riverIcon" ></div>
             <div id="faunaIcon" ></div>
+            <div id="riverIcon" ></div>
             <div id="methIcon" ></div>
             <div id="navigationIcon" ></div>
+            <div id="waterIcon" ></div>
             
             
         </div>

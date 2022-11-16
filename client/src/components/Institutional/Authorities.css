@@ -1,9 +1,9 @@
 .authorities-container{
-    width: 100%;
-    
+    width: 100%;    
     background-color: #FFFFFF;
     position: relative;
     padding-top: 1rem;
+    
 }
 
 .authorities-title{
@@ -11,8 +11,7 @@
     font-weight: 700;
     font-size: 2.25rem;
     color:#5C5C5C;
-    margin-top: 2rem;
-
+    margin-top: 4.4rem;
     margin-left: 17.5%;
     
 }
@@ -33,6 +32,6 @@
     margin-left: 17.5%;
     
     width: 65%;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     
 }
