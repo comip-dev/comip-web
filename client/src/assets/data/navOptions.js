@@ -22,7 +22,7 @@ export const navOptions=[
     id:"fauna", 
     text:"Fauna íctica",
     sections:[
-        {id:"convenios",text:"Convenios"},
+        {id:"convenio",text:"Convenio"},
         {id:"especies",text:"Especies"},
         {id:"estudios",text:"Estudios >",subsections:[
             {id:"pescarecreativa",text:"Pesca Recreativa"},
