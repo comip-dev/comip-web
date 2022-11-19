@@ -1,0 +1,68 @@
+.normativas-container{
+    width: 65%;
+    margin-left: 17.5%;
+    font-family: 'Noto Sans';
+    display: flex;
+    justify-content: space-between;
+}
+.normativas-title{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2.25rem;
+    color:#5C5C5C;
+    margin-top: 10rem;
+    margin-left: 17.5%;
+    
+}
+.normcard-container{
+    width: 31%;
+    height: 20.5rem;
+    border: #5C5C5C solid 1px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.normcard-content{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#464647;
+}
+.norm-card-title{
+    height: 25%;
+    font-weight: 700;
+}
+.norm-card-description{
+    height: 65%;
+}
+.norm-btn-container{
+    height: 10%;
+    position: relative;
+    display: block;
+    bottom: 0px;
+    
+}
+.norm-pdf-download{
+    background-color: #5AA1E2;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border: #5AA1E2 solid 1px;
+    
+}
+.norm-pdf-download:hover{
+    border: #5C5C5C solid 1px;
+    background-color: white;
+    color:#464647
+}
+@media (max-width:1600px) {
+    .normcard-container{
+      font-size: 0.8rem;
+    }
+  }

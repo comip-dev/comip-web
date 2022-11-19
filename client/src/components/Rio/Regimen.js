@@ -67,7 +67,6 @@ const Regimen = () => {
                             caudales.minimos.map((item,i)=>{
                                 const isTop=  i===0
                                 const isBottom= i===(caudales.minimos.length - 1)
-                                console.log(i,isTop,isBottom)
                                 return (
                                     <div className={isTop?"reg-table-line line-top":isBottom?"reg-table-line line-bottom":"reg-table-line"} >
                                         <div className="left-cell" >{item.year}</div>

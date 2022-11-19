@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import EstudiosConvenio from '../components/Fauna/EstudiosConvenio';
 import FaunaConv from '../components/Fauna/FaunaConv';
 import Section from '../components/Section';
 
@@ -9,6 +10,11 @@ const Fauna = () => {
             headingPic:"/images/Fauna/1_Convenio/Encabezado-03.png",
             title:"Convenio",
             content:FaunaConv
+        },
+        estudiosdelconvenio:{
+            headingPic:"",
+            title:"Estudios del convenio",
+            content:EstudiosConvenio
         },
         especies:{
             headingPic:"/images/Fauna/2_Especies/Encabezado-03.png",
@@ -28,11 +34,6 @@ const Fauna = () => {
         otros:{
             headingPic:"/images/Fauna/3_Estudios/3_Otros Estudios/Encabezado Otros estudios-05.png",
             title:"Otros estudios",
-            content:""
-        },
-        estudiosdelconvenio:{
-            headingPic:"",
-            title:"Estudios del convenio",
             content:""
         },
         normaBilaterales:{
