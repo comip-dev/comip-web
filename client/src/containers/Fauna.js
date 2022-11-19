@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import Especies from '../components/Fauna/Especies';
 import EstudiosConvenio from '../components/Fauna/EstudiosConvenio';
 import FaunaConv from '../components/Fauna/FaunaConv';
 import Section from '../components/Section';
@@ -19,7 +20,7 @@ const Fauna = () => {
         especies:{
             headingPic:"/images/Fauna/2_Especies/Encabezado-03.png",
             title:"Especies",
-            content:""
+            content:Especies
         },
         pescarecreativa:{
             headingPic:"/images/Fauna/3_Estudios/1_Pesca Recreativa/Encabezado pezca recreativa.png",

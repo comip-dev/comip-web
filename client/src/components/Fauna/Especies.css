@@ -1,0 +1,35 @@
+.subsection-especies-link{
+    text-decoration: none;
+    color:#05488C
+}
+.esp-libros-container{
+    width: 100%;
+    background-color: #F1F2F3;
+    display: flex;
+    flex-direction: column;
+    color: #464647;
+}
+.esp-libros-title{
+    font-size: 1.25rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-left: 5%;
+}
+.libros-line-separator{
+    width: 2rem;
+    height: 2px;
+    background-color: #464647;
+    margin-left: 5%;
+}
+.libros-list{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.libro-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
