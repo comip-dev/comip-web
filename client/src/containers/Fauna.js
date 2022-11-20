@@ -4,6 +4,7 @@ import Especies from '../components/Fauna/Especies';
 import EstudiosConvenio from '../components/Fauna/EstudiosConvenio';
 import FaunaConv from '../components/Fauna/FaunaConv';
 import PescaRecreativa from '../components/Fauna/PescaRecreativa';
+import Piscicultura from '../components/Fauna/Piscicultura';
 import Section from '../components/Section';
 
 const Fauna = () => {
@@ -31,7 +32,7 @@ const Fauna = () => {
         piscicultura:{
             headingPic:"/images/Fauna/3_Estudios/2_Piscicultura/Encabezado.png",
             title:"Piscicultura",
-            content:""
+            content:Piscicultura
         },
         otros:{
             headingPic:"/images/Fauna/3_Estudios/3_Otros Estudios/Encabezado.png",
