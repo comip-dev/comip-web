@@ -1,0 +1,29 @@
+.dl-table-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+}
+.dl-tl-single{
+    width: 48%;
+}
+.dl-table-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    
+    border-bottom: solid 1px #05488C;
+}
+.dl-table-line:first-child{
+    border-top: #05488C solid 1px;
+}
+.dl-table-line div{
+    margin-left: 1rem;
+}
+.dl-table-line a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #464647
+}

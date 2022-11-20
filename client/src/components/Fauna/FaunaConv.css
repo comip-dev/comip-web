@@ -87,10 +87,12 @@
     align-items: center;
     background-color: #5AA1E2;
     border-radius: 1rem;
-    height: 6rem;
+    height: 4rem;
     font-size: 1.1rem;
     color: white;
     border: solid 1px transparent;
+    font-family: 'Noto Sans';
+    font-weight: 700;
 }
 .faunaconv-button:active{
     background-color: white;
