@@ -1,0 +1,44 @@
+.otroscard-container{
+    width: 48%;
+    margin-bottom: 2rem;
+}
+.otroscard-container img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+.otroscard-subtitle{
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+}
+.otroscard-title-container{
+    height: 6rem;
+}
+.otroscard-button{
+    width: 30%;
+    height: 3rem;
+    background-color: #5AA1E2;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.otroscard-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+.otroscard-button:active{
+    background-color: transparent;
+    border: solid 1px #C6C6C6;
+    color:#777777
+}
+.otroscard-button:active a{
+    color:#777777
+
+}

@@ -4,61 +4,61 @@ import './DownloadTable.css'
 const DownloadTable = () =>{
     const leftCities= [
         {
-            city:"Eldorado",
+            text:"Eldorado",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Eldorado.pdf",
         },
         {
-            city:"Capitán Meza",
+            text:"Capitán Meza",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Capitán-Meza.pdf",
         },
         {
-            city:"Puerto Maní",
+            text:"Puerto Maní",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Puerto-Maní.pdf",
         },
         {
-            city:"Posadas",
+            text:"Posadas",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Posadas.pdf",
         },
         {
-            city:"San Cosme y Damián",
+            text:"San Cosme y Damián",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/San-Cosme-y-Damián.pdf",
         },
         {
-            city:"Ituzaingó",
+            text:"Ituzaingó",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Ituzaingó.pdf",
         },
         {
-            city:"Ayolas",
+            text:"Ayolas",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Ayolas.pdf",
         },
     ]
     const rightCities= [
         {
-            city:"Corateí",
+            text:"Corateí",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Corateí.pdf",
         },
         {
-            city:"Itá Ibaté",
+            text:"Itá Ibaté",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Itá-Ibaté.pdf",
         },
         {
-            city:"Cerrito",
+            text:"Cerrito",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Cerrito.pdf",
         },
         {
-            city:"Itatí",
+            text:"Itatí",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Itatí.pdf",
         },
         {
-            city:"Itá Corá",
+            text:"Itá Corá",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Itá-Corá.pdf",
         },
         {
-            city:"Paso de la Patria",
+            text:"Paso de la Patria",
             download:"https://comip.org.ar/wp-content/uploads/2019/05/Paso-de-la-Patria.pdf",
         },
         {
-            city:".",
+            text:".",
             download:"",
         },
     ]

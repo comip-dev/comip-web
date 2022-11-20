@@ -3,6 +3,7 @@ import {  useParams } from "react-router-dom";
 import Especies from '../components/Fauna/Especies';
 import EstudiosConvenio from '../components/Fauna/EstudiosConvenio';
 import FaunaConv from '../components/Fauna/FaunaConv';
+import OtrosEst from '../components/Fauna/OtrosEst';
 import PescaRecreativa from '../components/Fauna/PescaRecreativa';
 import Piscicultura from '../components/Fauna/Piscicultura';
 import Section from '../components/Section';
@@ -35,9 +36,9 @@ const Fauna = () => {
             content:Piscicultura
         },
         otros:{
-            headingPic:"/images/Fauna/3_Estudios/3_Otros Estudios/Encabezado.png",
+            headingPic:"/images/Fauna/3_Estudios/3_OtrosEstudios/Encabezado.png",
             title:"Otros estudios",
-            content:""
+            content:OtrosEst
         },
         normaBilaterales:{
             headingPic:"",

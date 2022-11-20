@@ -9,7 +9,7 @@ const SingleTable = ({list})=>{
                 list.map(item=>{
                     return(
                         <div className="dl-table-line" >
-                            <div>{item.city}</div>
+                            <div>{item.text}</div>
                             {item.download && <a href={item.download} target="blank" >
                                 <span class="material-symbols-outlined">download</span>
                             </a>}
