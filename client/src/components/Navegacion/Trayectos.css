@@ -1,0 +1,53 @@
+.tramo-table{
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+}
+.km-cell{
+    width: 15%;
+}
+.trayecto-cell{
+    width: 20%;
+    text-align: center;
+}
+
+.tramo-table tr{
+    border-top:white 1px solid ;
+    height: 5rem;
+    background-color: #5AA1E2;
+    text-align: left;
+}
+.tramo-table tr:first-child{
+    background-color: #F4F4F4;
+    color:#484849
+}
+.tramo-table tr:first-child:hover{
+    background-color: #F4F4F4;
+    color:#484849
+}
+.tramo-table tr:hover{
+    background-color: #F4F4F4;
+    color:#484849
+}
+
+.pasos-cell{
+    width: 50%;
+    text-align: left;
+}
+.tramo-btn-dl  {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.tramo-btn-dl span{
+    text-align: center;
+
+}
+.tramo-table tr:hover .tramo-btn-dl{
+    color:#484849
+
+}
+.tramo-btn-dl-head{
+    text-align: center;
+}
