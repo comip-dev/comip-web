@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import Encarnacion from '../components/Navegacion/Encarnacion';
 import TramoNav from '../components/Navegacion/TramoNav';
 import Trayectos from '../components/Navegacion/Trayectos';
 import Section from '../components/Section';
@@ -19,7 +20,7 @@ const Navegacion = () => {
         encarnacion:{
             headingPic:"/images/Navegacion/1_Tramo COMIP/3_Grupo de trabajo Encarnación/Encabezado.png",
             title:"Grupo de trabajo Encarnación",
-            content:""
+            content:Encarnacion
         },
         determinantes:{
             headingPic:"/images/Navegacion/2_Determinantes/Encabezado.png",
