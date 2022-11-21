@@ -4,6 +4,7 @@ import Comercial from '../components/Navegacion/Comercial';
 import Determinantes from '../components/Navegacion/Determinantes';
 import Encarnacion from '../components/Navegacion/Encarnacion';
 import Esclusa from '../components/Navegacion/Esclusa';
+import Puertos from '../components/Navegacion/Puertos';
 import TramoNav from '../components/Navegacion/TramoNav';
 import Trayectos from '../components/Navegacion/Trayectos';
 import Section from '../components/Section';
@@ -43,7 +44,7 @@ const Navegacion = () => {
         puertos:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/3_Puertos/Encabezado.png",
             title:"Puertos",
-            content:""
+            content:Puertos
         },
         publicaciones:{
             headingPic:"/images/Navegacion/4_Publicaciones/Encabezado.png",
