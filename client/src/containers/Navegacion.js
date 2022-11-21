@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import Determinantes from '../components/Navegacion/Determinantes';
 import Encarnacion from '../components/Navegacion/Encarnacion';
 import TramoNav from '../components/Navegacion/TramoNav';
 import Trayectos from '../components/Navegacion/Trayectos';
@@ -25,7 +26,7 @@ const Navegacion = () => {
         determinantes:{
             headingPic:"/images/Navegacion/2_Determinantes/Encabezado.png",
             title:"Determinantes",
-            content:""
+            content:Determinantes
         },
         comercial:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/1_Tráfico comercial/Encabezado.png",
