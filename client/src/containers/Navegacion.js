@@ -3,6 +3,7 @@ import {  useParams } from "react-router-dom";
 import Comercial from '../components/Navegacion/Comercial';
 import Determinantes from '../components/Navegacion/Determinantes';
 import Encarnacion from '../components/Navegacion/Encarnacion';
+import Esclusa from '../components/Navegacion/Esclusa';
 import TramoNav from '../components/Navegacion/TramoNav';
 import Trayectos from '../components/Navegacion/Trayectos';
 import Section from '../components/Section';
@@ -37,7 +38,7 @@ const Navegacion = () => {
         esclusa:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/Encabezado.png",
             title:"Esclusa de Yacyretá",
-            content:""
+            content:Esclusa
         },
         puertos:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/3_Puertos/Encabezado.png",
