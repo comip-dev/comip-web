@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import Comercial from '../components/Navegacion/Comercial';
 import Determinantes from '../components/Navegacion/Determinantes';
 import Encarnacion from '../components/Navegacion/Encarnacion';
 import TramoNav from '../components/Navegacion/TramoNav';
@@ -31,7 +32,7 @@ const Navegacion = () => {
         comercial:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/1_Tráfico comercial/Encabezado.png",
             title:"Tráfico comercial",
-            content:""
+            content:Comercial
         },
         esclusa:{
             headingPic:"/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/Encabezado.png",
