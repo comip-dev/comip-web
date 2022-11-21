@@ -12,6 +12,7 @@ import NormativasBilaterales from './components/Fauna/NormativasBilaterales';
 import Informe from './containers/Informe';
 import Biblioteca from './containers/Biblioteca';
 import Navegacion from './containers/Navegacion';
+import Proyectos from './containers/Proyectos';
 
 
 function App() {
@@ -28,10 +29,9 @@ function App() {
         <Route exact path={'/informe/:period'} element={[<NavObserver/>,<Navbar/>,<Informe/>]} />
         <Route exact path='/biblioteca/:section' element={[<NavObserver/>,<Navbar/>,<Biblioteca/>]} />
         <Route exact path={'/nav/:seccion'} element={[<NavObserver/>,<Navbar/>,<Navegacion/>]} />
-        <Route exact path={'/proyecto'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
+        <Route exact path={'/proyectos/:seccion'} element={[<NavObserver/>,<Navbar/>,<Proyectos/>]} />
         <Route exact path={'/agua'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
         <Route exact path={'/mapa'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
-        <Route exact path={'/convenios'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
       </Routes>
     </Router>
   );

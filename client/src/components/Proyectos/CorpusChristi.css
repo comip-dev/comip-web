@@ -1,0 +1,41 @@
+.proy-container{
+    width: 48%;
+    height: 100%;
+    position: relative;
+    
+    border-radius: 1rem;
+}
+.proy-container:hover .proy-overlay {
+    height: 100%;
+    cursor:pointer;
+    border: solid 1px #5AA1E2;
+    border-radius: 1rem;
+  }
+  .proy-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5AA1E2;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* transition: .5s ease; */
+    font-family: 'Raleway';
+}
+.proy-overlay span{
+    color: white;
+    text-decoration: none;
+}
+.proy-img{
+    /* height:  25rem; */
+    width:  100%;
+    object-fit: contain;
+    border-radius: 1rem;
+    /* border: solid 1px #F9E8E8; */
+}

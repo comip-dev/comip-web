@@ -1,5 +1,5 @@
 import React from "react";
-import './/Publicaciones.css'
+import './Publicaciones.css'
 const Publicaciones = () =>{
     const libros = [
         {
@@ -23,13 +23,13 @@ const Publicaciones = () =>{
                     return(
                         <div  className='pub-lib-container' >
                             <img className='pub-lib-img' src={item.img} alt="estadistica trafico comercial" />
-                            <div className='pub-lib-overlay' >
-                                <div>{item.title}</div>
-                                <div>{item.tomo}</div>
-                                <a href={item.link} target='blank' >
-                                <span class="material-symbols-outlined">download</span>
-                                </a>
-                            </div>
+                            <a href={item.link} target='blank' >
+                                <div className='pub-lib-overlay' >
+                                    <div>{item.title}</div>
+                                    <div>{item.tomo}</div>
+                                    <span class="material-symbols-outlined">download</span>
+                                </div>
+                            </a>
                         </div>
                     )
                 })

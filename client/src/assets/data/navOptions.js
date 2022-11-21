@@ -51,11 +51,12 @@ export const navOptions=[
     ]
 },
 {
-    id:"proyecto", 
+    id:"proyectos", 
     text:"Proyectos",
     sections:[
-        {id:1,text:"Itatí-Itacorá"},
-        {id:2,text:"Corpus-Christi"},
+        {id:"estudios",text:"El Porqué de los Estudios"},
+        {id:"itatiItacora",text:"Itatí-Itacorá"},
+        {id:'corpusChristi',text:"Corpus Christi - Situación actual"},
     ]
 },
 {
