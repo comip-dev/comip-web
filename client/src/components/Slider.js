@@ -11,10 +11,10 @@ const Slider = ({slides}) =>{
     return <Swiper
             spaceBetween={1}
             centeredSlides={true}
-            // autoplay={{
-            // delay: 10000,
-            // disableOnInteraction: false,
-            // }}
+            autoplay={{
+            delay: 10000,
+            disableOnInteraction: false,
+            }}
             navigation={true}
             pagination={{
             clickable: true,

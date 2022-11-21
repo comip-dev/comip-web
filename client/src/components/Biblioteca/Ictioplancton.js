@@ -87,9 +87,9 @@ const Ictioplancton = () =>{
                 <p>A continuación, se presentan trabajos realizados durante el período 1999-2017.</p>
                 <br/>
                 <div className="dl-table-container" >
-                <SingleTable list={left} />
-                <SingleTable list={right} />
-            </div>
+                    <SingleTable list={left} />
+                    <SingleTable list={right} />
+                </div>
             </div>
         </>
     )

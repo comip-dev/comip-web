@@ -39,12 +39,7 @@ const Fauna = () => {
             headingPic:"/images/Fauna/3_Estudios/3_OtrosEstudios/Encabezado.png",
             title:"Otros estudios",
             content:OtrosEst
-        },
-        normaBilaterales:{
-            headingPic:"",
-            title:"Normativas Bilaterales",
-            content:""
-        },
+        }
     }
     const params = useParams();
     const {seccion} = params

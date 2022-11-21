@@ -24,7 +24,7 @@ export const navOptions=[
     sections:[
         {id:"convenio",text:"Convenio"},
         {id:"especies",text:"Especies"},
-        {id:"estudios",text:"Estudios >",subsections:[
+        {id:"estudios",text:"Estudios ›",subsections:[
             {id:"pescarecreativa",text:"Pesca Recreativa"},
             {id:"piscicultura",text:"Piscicultura"},
             {id:"otros",text:"Otros Estudios"},
@@ -35,9 +35,19 @@ export const navOptions=[
     id:"nav", 
     text:"Navegación",
     sections:[
-        {id:1,text:"Tramo Comip"},
-        {id:2,text:"Determinantes"},
-        {id:3,text:"Publicaciones"},
+        {id:'tramo',text:"Tramo COMIP ›",subsections:[
+            {id:"navegacion",text:"Navegación Tramo COMIP"},
+            {id:"trayectos",text:"Trayectos"},
+            {id:"encarnacion",text:"Grupo de trabajo Encarnación"},
+        ]},
+        {id:'determinantes',text:"Determinantes"},
+        {id:'transFluvial',text:"Transporte Fluvial ›",subsections:[
+            {id:"comercial",text:"Tráfico comercial"},
+            {id:"esclusa",text:"Esclusa de Yacyretá"},
+            {id:"puertos",text:"Puertos"},
+
+        ]},
+        {id:'publicaciones',text:"Publicaciones"},
     ]
 },
 {

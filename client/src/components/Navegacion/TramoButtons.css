@@ -1,0 +1,54 @@
+.tramo-description{
+    height: 0rem;
+    visibility:hidden;
+    
+    max-height: 100%;
+    transition: max-height 2s ease-in;
+}
+
+.tramo-description-show{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    color:#5C5C5C;
+    height: auto;
+    max-height: 100%;
+    transition: max-height 2s ease-in;
+    
+}
+.tramo-btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: solid 1px #5C5C5C;
+    border-radius: 1rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.tramo-btn:hover{
+    color: #05488C;
+}
+.tramo-btn-active{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: #5AA1E2;
+    color:white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: solid 1px #5C5C5C;
+    justify-content: space-between;
+
+}
+.tramo-list-line{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: #5C5C5C 1px solid;
+}
+.tramo-list-line:first-child{
+    border-top: #5C5C5C 1px solid;
+
+}
