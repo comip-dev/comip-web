@@ -1,0 +1,46 @@
+.publicaciones-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    .pub-lib-container{
+        width: 40%;
+        height: 25rem;
+        position: relative;
+        border: solid 1px #C6C6C6;
+        border-radius: 1rem;
+    }
+.pub-lib-container:hover .pub-lib-overlay {
+    height: 25rem;
+    cursor:pointer;
+    border: solid 1px #5AA1E2;
+    border-radius: 1rem;
+  }
+  .pub-lib-img{
+    height:  25rem;
+    width:  100%;
+    object-fit: contain;
+    border-radius: 1rem;
+    /* border: solid 1px #F9E8E8; */
+}
+.pub-lib-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5AA1E2;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* transition: .5s ease; */
+    font-family: 'Raleway';
+}
+.pub-lib-overlay span{
+    color: white;
+    text-decoration: none;
+}

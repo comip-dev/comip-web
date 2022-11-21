@@ -4,6 +4,7 @@ import Comercial from '../components/Navegacion/Comercial';
 import Determinantes from '../components/Navegacion/Determinantes';
 import Encarnacion from '../components/Navegacion/Encarnacion';
 import Esclusa from '../components/Navegacion/Esclusa';
+import Publicaciones from '../components/Navegacion/Publicaciones';
 import Puertos from '../components/Navegacion/Puertos';
 import TramoNav from '../components/Navegacion/TramoNav';
 import Trayectos from '../components/Navegacion/Trayectos';
@@ -49,7 +50,7 @@ const Navegacion = () => {
         publicaciones:{
             headingPic:"/images/Navegacion/4_Publicaciones/Encabezado.png",
             title:"Libros Publicados",
-            content:""
+            content:Publicaciones
         },
     }
     const params = useParams();

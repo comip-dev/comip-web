@@ -24,13 +24,13 @@ const TrafficStat = ({slides}) =>{
         useOutsideAlerter(wrapperRef)
     return(
         <>
-            <div onClick={handleShow} className='trafficstat-container' >
+        <div onClick={handleShow} className='trafficstat-container' >
             <img className='trafficstat-img' src={slides[0]} alt="estadistica trafico comercial" />
             <div className='trafficstat-overlay' >
-            <span class="material-symbols-outlined">
-                search
-            </span>
-            </div>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+        </div>
         </div>
         <div className={show?'modal-background':'modal-background not-visible'} >
             <div ref={wrapperRef} className={show?'trafficstat-modal-container':'trafficstat-modal-container not-visible'} >
