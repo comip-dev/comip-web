@@ -1,0 +1,39 @@
+.hidro-line1-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.hidro-post-container{
+    width: 48%;
+    height: 11.5rem;
+}
+.hidro-post-container:hover .carta{
+    transform: rotateY(180deg);
+    cursor:pointer
+}
+.hidro-post-container a{
+    text-decoration: none;
+    color: black;
+}
+.hidro-dl-line{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 4rem;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #05488C;
+    border-top: solid 1px #05488C;
+    color: #464647;
+}
+.hidro-dl-line p a {
+    color: #05488C;
+    text-decoration: none;
+}
+.hidro-dl-line p:hover  a{
+    font-weight: 700;
+}

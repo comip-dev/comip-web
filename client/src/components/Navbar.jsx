@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const goTo = (route,seccion) => {
         console.log(route,seccion)
-        if(route==="institucional" || route==="rio"|| route==="fauna"|| route==="nav"|| route==="proyectos") navigate(`/${route}/${seccion}`)
+        if(route==="institucional" || route==="rio"|| route==="fauna"|| route==="nav"|| route==="proyectos" || route==="agua") navigate(`/${route}/${seccion}`)
         // navigate(`/${route}`)
         else navigate(`/${route}`)
     }

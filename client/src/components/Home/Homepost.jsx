@@ -4,7 +4,7 @@ const image=`../../assets/homepostsimgs/determinantes.svg`
 
 
 const Homepost = ({title, img, imgSide, text}) =>{
-    console.log(img)
+    
     const image = require( `../../assets/homepostsimgs/${img}`)
     return(
         <div className={'post-container'} >

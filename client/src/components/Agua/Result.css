@@ -1,0 +1,38 @@
+.result-container{
+    width:  30%;
+    height: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    border: solid 1px #B3B3B3;
+    border-radius: 1rem
+}
+
+.result-modal-container{
+    margin-top: 7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    z-index: 6;    
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    align-items: center;
+    width: 65%;
+    height: 70%;
+    
+}
+.result-container:hover .especie-overlay {
+    height: 12.5rem;
+    cursor:pointer;
+    border-radius: 1rem;
+}
+.result-container:hover .especie-overlay span{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.result-modal-img{
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    border-radius: 1rem;
+}

@@ -14,6 +14,7 @@ const Section = ({headingPic,title,children}) =>{
             <div className='comip-info-container' >
                 <div className="authorities-title" >{title}</div>
                 <div className="separator-auth-line" ></div>
+                <br/>
                 <div className='content-container' >{children}</div>
                 <Footer/>
             </div>

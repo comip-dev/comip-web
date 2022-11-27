@@ -1,0 +1,42 @@
+.calidad-btns-container{
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cal-btns-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.calidad-btn{
+    width: 44%;
+    background-color: #5AA1E2;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px transparent;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+}
+.calidad-btn:hover{
+    color: #777777;
+    border: solid 1px #777777;
+    background-color: white;
+    cursor: pointer;
+}
+.width-100{
+    width: 100%;
+    object-fit: contain;
+}
+.subtramo-link{
+    text-decoration: none;
+    color:#05488C
+}
+.subtramo-link:hover{
+    font-weight: 700;
+    cursor: pointer;
+}

@@ -13,6 +13,8 @@ import Informe from './containers/Informe';
 import Biblioteca from './containers/Biblioteca';
 import Navegacion from './containers/Navegacion';
 import Proyectos from './containers/Proyectos';
+import Agua from './containers/Agua';
+import Subtramo from './components/Agua/Subtramo';
 
 
 function App() {
@@ -30,7 +32,8 @@ function App() {
         <Route exact path='/biblioteca/:section' element={[<NavObserver/>,<Navbar/>,<Biblioteca/>]} />
         <Route exact path={'/nav/:seccion'} element={[<NavObserver/>,<Navbar/>,<Navegacion/>]} />
         <Route exact path={'/proyectos/:seccion'} element={[<NavObserver/>,<Navbar/>,<Proyectos/>]} />
-        <Route exact path={'/agua'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
+        <Route exact path={'/agua/:seccion'} element={[<NavObserver/>,<Navbar/>,<Agua/>]} />
+        <Route exact path={'/subtramo/:to'} element={[<NavObserver/>,<Navbar/>,<Subtramo/>]} />
         <Route exact path={'/mapa'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
       </Routes>
     </Router>
