@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ItatiSlider from "../Proyectos/ItatiSlider";
+import Slider from "../Slider";
 import './Calidad.css'
 const Calidad = () =>{
     const navigate = useNavigate()
     const goTo = (to) =>{
         navigate(`/subtramo/${to}`)
     }
+    const newArray = new Array(26).fill(null)
+    const slides =newArray.map((item,i)=>`/images/El agua/4_Calidad del agua/Galería de imágenes/${i+1}.jpg`)
     return(
         <>
             <p><strong>Para una relación responsable con el río, la calidad del agua es fundamental.<br/>Por el desarrollo sostenible del recurso y para los diferentes usos que se hagan de él.</strong></p>
@@ -34,6 +38,15 @@ const Calidad = () =>{
                     <div onClick={()=>goTo('arriba')} className="calidad-btn" >Subtramo Aguas Arriba</div>                
                 </div>
             </div>
+            <br/>
+            <br/>
+            <div className="final-slider-container" >
+                <div className="slider-content" >
+                    <ItatiSlider slides={slides}/>
+                </div>
+            </div>
+            <div className="final-slider-height" ></div>
+            
         </>
     )
 }
