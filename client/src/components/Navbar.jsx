@@ -25,7 +25,7 @@ const Navbar = () => {
     })
 
     const goTo = (route,seccion) => {
-        console.log(route,seccion)
+        if(route==='mapa') window.open("http://mapa.comip.ar/",'_blank');
         if(route==="institucional" || route==="rio"|| route==="fauna"|| route==="nav"|| route==="proyectos" || route==="agua") navigate(`/${route}/${seccion}`)
         // navigate(`/${route}`)
         else navigate(`/${route}`)
@@ -44,7 +44,7 @@ const Navbar = () => {
                     navOptions.map(item=>{
                         return(
                             <div className="dropdown" >
-                                <button  className={"dropbtn"}>{item.text}</button>
+                                <button onClick={item.id==='mapa' || item.id==='contacto'?()=>goTo(item.id):null} className={"dropbtn"}>{item.text}</button>
                                 {item.sections &&
                                 <div className="dropdown-content" >
                                     {
