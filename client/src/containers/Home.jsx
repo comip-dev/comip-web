@@ -63,7 +63,7 @@ const Home = () =>{
             <News/>
             <Footer/>
         </div>
-            <ScrollToTop/>
+            <ScrollToTop div="home-container" id={true} />
                 </>
     )
 }
