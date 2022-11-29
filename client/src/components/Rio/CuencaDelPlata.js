@@ -13,11 +13,12 @@ const CuencaDelPlata =()=>{
                 text.map(p=>{
                     return <>
                         <p dangerouslySetInnerHTML={{__html:p}}/>
-                        <br></br>
                     </>
                 })
             }
-
+            <br/>
+            <br/>
+            <br/>
         <img className="cuencadelplata-img" src={worldPic} alt="Mapa Cuenca del Plata" loading="lazy" />
         </>
     )

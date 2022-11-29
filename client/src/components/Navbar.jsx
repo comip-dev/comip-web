@@ -25,7 +25,7 @@ const Navbar = () => {
     })
 
     const goTo = (route,seccion) => {
-        if(route==='mapa') window.open("http://mapa.comip.ar/",'_blank');
+        if(route==='mapa') return window.open("http://mapa.comip.ar/",'_blank');
         if(route==="institucional" || route==="rio"|| route==="fauna"|| route==="nav"|| route==="proyectos" || route==="agua") navigate(`/${route}/${seccion}`)
         // navigate(`/${route}`)
         else navigate(`/${route}`)

@@ -63,11 +63,10 @@
     left: 0px;
 }
 .trafficstat-modal-container{
-    margin-top: 7rem;
+    margin-top: 2rem;
     position: relative;
     display: flex;
-    flex-direction: column;    
-    z-index: 6;    
+    flex-direction: column;       
     background-color: #F5F5F5;
     padding: 1rem;
     padding-top: 1rem;
@@ -75,8 +74,7 @@
     align-items: center;
     /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);; */
     width: 65%;
-    height: 50%;
-    
+    height: 70%;
 }
       .not-visible{
         display: none;

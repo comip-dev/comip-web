@@ -13,6 +13,7 @@ const Piscicultura = () => {
             <p>› Se determinaron las especies que se cultivan y aquellas que podrían cultivarse ante un potencial crecimiento de la actividad local.</p>
             <p>› Se evaluó la calidad del agua de los arroyos afluentes del Tramo para determinar sus condiciones de base.</p>
             <p>› Se cuantificaron las subcuencas que descargan en el Tramo que podrían aportar nutrientes alterando la calidad del agua ante un eventual crecimiento de la actividad.</p>
+            <br/>
             <p><strong>Resultados</strong></p>
             <p><strong>Cartografìa</strong></p>
             <p>› Se delimitaron las subcuencas de aporte al río Paraná.</p>
@@ -29,7 +30,9 @@ const Piscicultura = () => {
             <p>› Se constata la ausencia de aportes alóctonos que pudieran generar la eutrofización u otro tipo de alteración de la calidad del agua.</p>
             <WaterQuality/>
             <br/>
+            <br/>
             <p><strong>Piscicultura e Infraestructura</strong></p>
+            <br/>
             <p>› Se evidenció un escaso conocimiento sobre esta actividad productiva.</p>
             <p><strong>Se analizó la demanda comercial de carne de pescado:</strong></p>
             <p>› Existe una fuerte demanda de pescado de río en la región.</p>
@@ -37,10 +40,12 @@ const Piscicultura = () => {
             <p>› Se obtiene de las prácticas de pesca o en comercios de la región.</p>
             <p>› Puede estimarse que el sector gastronómico no relacionado con la pesca (hoteles, restaurantes, clubes) consumiría alrededor de 100 tn de pescado al año.</p>
             <p>› Mientras que las empresas que ofrecen servicio completo al turismo de pesca recreativa demandarían alrededor de 300 toneladas al año.</p>
+            <br/>
             <p><strong>Se analizó la infraestructura disponible:</strong></p>
             <p>› La mayoría de los establecimientos productores de arroz poseen sistemas de bombeo que les permitirían disponer del agua necesaria para los cultivos de peces.</p>
             <p>› Poseen maquinaria adecuada y personal capacitado para el movimiento de suelos que facilitaría la construcción de estanques. La mayoría presenta caminos consolidados que permitiría el acceso de camiones y maquinaria para la cosecha y el transporte de peces.</p>
             <p>› Esta región tiene potencial para el desarrollo del sistema de Rotación Arroz-Peces.</p>
+            <br/>
             <p><strong>Especies de interés para el cultivo:</strong></p>
             <p>› Corresponde a las especies blanco de la pesca recreativa y comercial: surubí, pacú, boga y dorado. También especies utilizadas como carnada viva.</p>
             <p>› Solo el cultivo de pacú cuenta con tecnologías debidamente validadas en el NEA.</p>

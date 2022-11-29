@@ -17,6 +17,7 @@ const Publicaciones = () =>{
     ]
     return(
         <>
+            <br/>
             <div className="publicaciones-container" >
             {
                 libros.map(item=>{

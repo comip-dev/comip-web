@@ -20,12 +20,22 @@ const RioParana =()=>{
             }
             <div className="section-subtitle" >Trifinio</div>
             <div className="separator-auth-line-section" ></div>
+            <br/>
+            <br/>
             <img className="trifinio-imagen" src={trifinio} alt="imagen trifinio" loading="lazy" />
+            {/* <br/>
+            <br/> */}
             <ParanaStretches/>
+            <br/>
+            <br/>
+            <br/>
             <div className="stretches-place" ></div>
+
             <div className="section-subtitle" >Régimen fluvial y variedad climática</div>
             <div className="separator-auth-line-section" ></div>
+            <br/>
             <Regimen/>
+            <br/>
             <div className="section-subtitle" >Posibilidades de desarrollo económico</div>
             <br/>
             <div className="stretches-container" >

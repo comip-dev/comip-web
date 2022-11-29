@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import ItatiSlider from "../Proyectos/ItatiSlider";
 import Slider from '../Slider'
 const TrafficStat = ({slides}) =>{
     const [show, setShow] = React.useState(false)
@@ -37,7 +38,7 @@ const TrafficStat = ({slides}) =>{
             <span onClick={handleShow} class="material-symbols-outlined modal-close" >cancel</span>
                 
                 <div className='modal-content' >
-                    <Slider slides={slides}/>
+                    <ItatiSlider slides={slides}/>
                     
                 </div>
             </div>

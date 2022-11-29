@@ -8,11 +8,13 @@ import logo from '../../assets/images/LOGO-COMIP-blanco.png'
 import './Footer.css'
 import esc_arg from '../../assets/images/escudo-argentina.png'
 import esc_par from '../../assets/images/escudo-paraguay.png'
-
+import { useLocation } from "react-router-dom";
 
 const Footer = () =>{
+    const location = useLocation()
+    console.log(location)
     return(
-        <div className="footer-container" >
+        <div className={location.pathname==='/home'?'footer-container-home' :"footer-container"} >
             <div className="first-footer" >
                 <div className="middle-foot" >
                     <div className="footer-info-container">

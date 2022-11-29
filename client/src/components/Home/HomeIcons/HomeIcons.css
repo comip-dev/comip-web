@@ -26,13 +26,13 @@
 }
 #faunaIcon{
   width: 18%;
-  background-image:url('/public/images/homeicons/icono-fauna-itica.svg') ;
+  background-image:url('/public/images/homeicons/Botenes_1.svg') ;
   background-size: cover;
   
 }
 #faunaIcon:hover{
   width: 18%;
-  background-image:url('/public/images/homeicons/hover-icono-fauna-itica.svg') ;
+  background-image:url('/public/images/homeicons/Botenes_1-2.svg') ;
   background-size: cover;
   
 }
@@ -99,3 +99,4 @@
     height: 100%;
     left:0.5rem
   }
+  

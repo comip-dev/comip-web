@@ -17,6 +17,8 @@ const Esclusa = () => {
                 <img src='/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/esclusa_1.jpg' alt="esclusa"/>
                 <img src='/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/esclusa_2.jpg' alt="esclusa"/>
             </div>
+            <br/>
+            <br/>
             <table className='esclusa-table' >
                 <tr>
                     <th colspan="2" >ESCLUSA DE YACYRETÁ</th>
@@ -46,8 +48,12 @@ const Esclusa = () => {
                     <td>ancho: 27,00m; altura: 10,75m</td>
                 </tr>
             </table>
+            <br/>
+            <br/>
             <p><strong>Operación:</strong></p>
             <p>La navegación con trenes de barcazas encuentra en la esclusa una restricción importante. Sus dimensiones determinan que el máximo número de barcazas que pueden cruzar es de seis (6) en una formación de 2×3 más el empujador. Los convoyes con más de seis barcazas requieren más de una operación de esclusado, influyendo esto en el tiempo de pasaje.</p>
+            <br/>
+            <br/>
             <table className='esclusa-table' >
                 <tr>
                     <th>CONFORMACIÓN DEL CONVOY</th>

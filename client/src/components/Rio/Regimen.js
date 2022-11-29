@@ -37,6 +37,8 @@ const Regimen = () => {
                 
                 <p>Al desembocar en el Río de la Plata (considerando todos los brazos de su delta), su caudal da una media de entre 17.000 y 20.000m³/s.; comparable a la de ríos como el Misisipi (18 000 m³/s) y el Ganges (16 000 m³/s).</p>
             </div>
+            <br/>
+            <br/>
             <div className="reg-tables" >
                 <div className="reg-table" >
                     <div className="reg-table-header" >MÁXIMOS</div>

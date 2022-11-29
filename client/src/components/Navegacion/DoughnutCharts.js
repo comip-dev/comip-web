@@ -14,6 +14,10 @@ const DoughnutCharts = () =>{
       }
       return(
         <>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className="doughnuts-container" >
                 {
                     doughnutsData.map(item=>{

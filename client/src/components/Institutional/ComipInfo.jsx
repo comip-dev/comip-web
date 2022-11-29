@@ -20,12 +20,14 @@ const ComipInfo = ()=>{
                         comipInfo.text.map(p=>{
                             return <>
                                 <p dangerouslySetInnerHTML={{__html:p}}/>
-                                <br></br>
                             </>
                         })
                         
                     }
-                       
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 </div>
                 
                 <img className="convenios-img" src={convenios01} alt="convenios-links" />

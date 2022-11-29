@@ -7,7 +7,8 @@ import News from "../components/Home/News/News";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
 import { homeslides } from "../assets/data/homeslides";
 import ScrollToTop from "../components/ScrollToTop";
-import mouseIcon from "../assets/images/mouse-home-icon.svg"
+const mouseIcon = "/images/icons/Scroll.gif"
+// import mouseIcon from "../assets/images/mouse-home-icon.svg"
 const Home = () =>{
     var slideIndex = 0;
     const started = useRef(false)

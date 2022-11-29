@@ -15,6 +15,7 @@ const ItatiItacora = ()=>{
             <p>› Para actuar como compensador del aprovechamiento hidroeléctrico Yacyretá y flexibilizar sus condiciones de operación.</p>
             <p>› Para recuperar zonas inundables para el desarrollo agropecuario.</p>
             <p>› Para fortalecer y ampliar la integración Argentino Paraguaya.</p>
+            <br/>
             <p><i><strong>Estudio de prefactibilidad como paso previo a un exhaustivo estudio de factibilidad.<br/>Que permite definir posibilidades ambientales, sociales y económicas.<br/>Que proponga desarrollos y alternativas de crecimiento.</strong></i></p>
             <p>Y contemple un programa un programa de obras de compensación y resarcimiento:</p>
             <p>› Consensuadas con las autoridades regionales e integradas a planes de desarrollo.</p>

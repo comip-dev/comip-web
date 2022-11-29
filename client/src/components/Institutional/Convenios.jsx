@@ -89,6 +89,7 @@ const Convenios =() =>{
             <div  className="authorities-container" >
                 <div className="authorities-title" >Convenios de Cooperación</div>
                 <div className="separator-auth-line" ></div>
+                <br/>
                 <div className="convenios-container" >
                     {
                         conveniosList.map((convenio,index)=>{

@@ -18,4 +18,5 @@
 .trifinio-imagen{
     width: 100%;
     object-fit: contain;
+    margin-bottom: 5rem;
 }

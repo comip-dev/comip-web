@@ -36,8 +36,9 @@ const Final = () =>{
                     <div className="descarga-inf-button" ><a href="https://comip.org.ar/wp-content/uploads/2019/05/pp.pdf" target='blank' >Descarga distribución de ejemplares</a></div>
                     <div className="descarga-inf-button" ><a href="https://comip.org.ar/wp-content/uploads/2019/08/INFORME-Final-COMIP-UNNE.pdf" target='blank' >Descarga Informe Final</a></div>
                 </div>
-                <p><strong>Período 2018 – 2019 // Pesca recreativa y marcación de peces.</strong></p>
                 <br/>
+                <br/>
+                <p><strong>Período 2018 – 2019 // Pesca recreativa y marcación de peces.</strong></p>
                 <p>› Se da continuidad al Proyecto de Evaluación de Pesca Recreativa y se incorpora la marcación de peces.</p>
                 <p>› Objetivo: determinar patrones de movimiento de las especies blanco de la pesca recreativa.</p>
                 <p>› Metodología: captura, marcado y recaptura. Para ello se dictan talleres de capacitación destinados a los colaboradores del proyecto en la colocación de marcas.</p>

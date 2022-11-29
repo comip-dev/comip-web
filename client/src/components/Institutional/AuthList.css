@@ -41,14 +41,22 @@
     color:#5C5C5C
 }
 .authority-item{
-    margin-top: 4rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
     width: 100%;
     height: 25%;
     border-bottom:#5C5C5C solid 1px ;
+}
+.authority-item:last-child{
+    border-bottom:none
+
 }
 .authority-item:first-child{
     margin-top: 0rem;
 }
 .delegado{
     color:black
+}
+.country-person{
+    text-align: center;
 }

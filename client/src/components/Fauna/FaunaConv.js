@@ -9,6 +9,7 @@ const FaunaConv = () =>{
     }
     return(
         <>
+            <br/>
             <div className="conv-cards-container" >
             {
                 cards.map((card)=>{
@@ -33,9 +34,11 @@ const FaunaConv = () =>{
             }
             </div>
             <br/>
-            <div className="subsection" >
-
+            <br/>
+            <br/>
+            <div className="subsection" >                
                 <div className="subsection-title" >La Importancia de los Recursos Ícticos</div>
+                <br/>
                 <p className="subsection-text" >La conservación de la riqueza ictícola del Río Paraná es un objetivo central de la COMIP. A su vez, es una responsabilidad de los organismos municipales, provinciales, nacionales e internacionales pertinentes. Y su protección debe ser una condición primordial para quienes se relacionan con el Río.</p>
                 <p><strong>› Convenio sobre conservación de Fauna Ictica:</strong></p>
                 <p>La COMIP es Secretaria Permanente del Convenio sobre conservación y desarrollo de los recursos ícticos en los tramos limítrofes de los ríos Paraná y Paraguay.</p>

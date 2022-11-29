@@ -1,6 +1,6 @@
 .news-section{
     padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 .news-title{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .news-list{
     display: flex;
@@ -78,8 +78,9 @@
 }
 
 .news-button:hover{
-    color:black;
-    cursor:pointer
+    color:#05488C;
+    cursor:pointer;
+    background-color: #F5F5F5;
 }
 .new-overlay{
     position: absolute;
@@ -93,6 +94,9 @@
     height: 0%;
     /* transition: .5s ease; */
     
+}
+.new-container:hover{
+    background-color:  #E9F8FF;
 }
 .new-container:hover .new-overlay {
     height: 50%;

@@ -5,6 +5,10 @@ const Tramolist = ({list}) =>{
     
     return(
         <>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div>
             {
                 list.map(item=>{

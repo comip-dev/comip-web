@@ -17,13 +17,13 @@ const TableDet = () =>{
     const titles = headers.map(string=>titleCase(string)) 
     return(
     <>
-        <p>Fecha de actualización: 21/10/2022</p>
         <div className="determinanes-buttons" >
             <div onClick={()=>setData(Parana)} className={data===Parana?"det-btn-active":"det-btn"} >Río Paraná</div>
             <div onClick={()=>setData(Paraguay)} className={data===Paraguay?"det-btn-active":"det-btn"} >Río Paraguay</div>
         </div>
+        <p>Fecha de actualización: 21/10/2022</p>
         <br/>
-        <br/>
+        
         {
             <table className="det-table" >
                 <tr>
