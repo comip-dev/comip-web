@@ -9,7 +9,7 @@ const Contacto = () =>{
             <div className="institutional-pic" >                
                 <img className="heading-pic" src='/images/Encabezado-contacto.png' alt="encabezado"/>                
             </div>
-            <div className='comip-info-container' >
+            <div id='comip-info-container' >
                 <div className="authorities-title" >Contacto</div>
                 <div className="separator-auth-line" ></div>
                 <br/>
