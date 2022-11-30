@@ -12,7 +12,7 @@ const ComipInfo = ()=>{
             <div className="institutional-pic" >
                 <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
             </div>
-            <div  className="comip-info-container" >
+            <div  id="comip-info-container" >
                 <div className="authorities-title" >{comipInfo.title}</div>
                 <div className="separator-auth-line" ></div>
                 <div className="comip-info-text" >
