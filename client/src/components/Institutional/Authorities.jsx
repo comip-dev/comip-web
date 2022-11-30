@@ -4,12 +4,15 @@ import Footer from "../Footer/Footer";
 import AuthList from "./AuhtsList";
 import './Authorities.css'
 import HeadingPic from '../../assets/images/Encabezados-Autoridades.png'
+import ScrollToTop from "../ScrollToTop";
 
 const Authorities = () =>{
     
     // const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1666223907/comip/institucional/Cafiero_y_Acevedo_agenda_bilateral_y_regional_de_Argentina_y_..._imb8z7.jpg"
     return(
         <>
+        <div id="section-container" >
+
             <div className="institutional-pic" >
                 <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
             </div>
@@ -21,6 +24,8 @@ const Authorities = () =>{
                 </div>
             <Footer/>
             </div>
+            <ScrollToTop div='section-container' />
+        </div>
         </>
     )
 }

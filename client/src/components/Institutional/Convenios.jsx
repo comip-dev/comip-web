@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import './Convenios.css'
 import HeadingPic from '../../assets/images/inst/Encabezado Convenios.jpg'
+import ScrollToTop from "../ScrollToTop";
 const Convenios =() =>{
     const conveniosList=[
         {
@@ -83,36 +84,39 @@ const Convenios =() =>{
     }
     return(
         <>
-            <div className="institutional-pic" >
-                <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
-            </div>
-            <div  className="authorities-container" >
-                <div className="authorities-title" >Convenios de Cooperación</div>
-                <div className="separator-auth-line" ></div>
-                <br/>
-                <div className="convenios-container" >
-                    {
-                        conveniosList.map((convenio,index)=>{
-                            return (
-                                <div className="convenio-container" >
-                                    <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"convenio-title-active":"convenio-title"} >
-                                        {convenio.title}
-                                    </div>
-                                    <div  className={showQuestions[index]?"convenio-description-show":"convenio-description"} dangerouslySetInnerHTML={{__html: convenio.description}} >
+            <div id="section-container" >
+                <div className="institutional-pic" >
+                    <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
+                </div>
+                <div  className="authorities-container" >
+                    <div className="authorities-title" >Convenios de Cooperación</div>
+                    <div className="separator-auth-line" ></div>
+                    <br/>
+                    <div className="convenios-container" >
+                        {
+                            conveniosList.map((convenio,index)=>{
+                                return (
+                                    <div className="convenio-container" >
+                                        <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"convenio-title-active":"convenio-title"} >
+                                            {convenio.title}
+                                        </div>
+                                        <div  className={showQuestions[index]?"convenio-description-show":"convenio-description"} dangerouslySetInnerHTML={{__html: convenio.description}} >
+                                            
+                                        </div>
+                                        <div className="conv-btn-container" >
+                                            <a className={showQuestions[index]?  "convenio-download-btn":"convenio-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
+                                            Descargar convenio
+                                            </a>
+                                        </div>
                                         
                                     </div>
-                                    <div className="conv-btn-container" >
-                                        <a className={showQuestions[index]?  "convenio-download-btn":"convenio-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
-                                        Descargar convenio
-                                        </a>
-                                    </div>
-                                    
-                                </div>
-                            )
-                        })
-                    }
+                                )
+                            })
+                        }
+                    </div>
+                <Footer/>
                 </div>
-            <Footer/>
+                <ScrollToTop div='section-container' />
             </div>
         </>
     )

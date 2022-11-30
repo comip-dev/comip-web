@@ -2,14 +2,17 @@ import React,{useEffect, useState} from "react";
 import './Navbar.css'
 import logo from '../assets/images/logo-comip2.png'
 import logoblanco from '../assets/images/logo-comip2blanco.png'
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
 
 
 
 const Navbar = () => {
     const navigate= useNavigate()
-
+    const location = useLocation()
+    console.log(location)
+    const params = useParams()
+    console.log(params)
     const [white,setWhite] = useState(false)
     useEffect(function(){
         const onChange = (entries) =>{

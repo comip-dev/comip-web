@@ -3,9 +3,6 @@ import upButton from '../assets/images/Icon-up.svg'
 import './ScrollToTop.css'
 
 const ScrollToTop = ({div}) =>{
-
-    
-    const [scrollTop, setScrollTop] = useState(0);
     const [showButton, setShowButton] = useState(false)
     const onScroll = (e) => {
         let offsetY = document.getElementById(div).scrollTop
