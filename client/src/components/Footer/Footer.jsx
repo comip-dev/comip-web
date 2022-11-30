@@ -12,7 +12,6 @@ import { useLocation } from "react-router-dom";
 
 const Footer = () =>{
     const location = useLocation()
-    console.log(location)
     return(
         <div className={location.pathname==='/home'?'footer-container-home' :"footer-container"} >
             <div className="first-footer" >

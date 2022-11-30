@@ -2,7 +2,7 @@ import React,{useEffect, useState} from "react";
 import './Navbar.css'
 import logo from '../assets/images/logo-comip2.png'
 import logoblanco from '../assets/images/logo-comip2blanco.png'
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
 
 
@@ -11,8 +11,6 @@ const Navbar = () => {
     const navigate= useNavigate()
     const location = useLocation()
     console.log(location)
-    const params = useParams()
-    console.log(params)
     const [white,setWhite] = useState(false)
     useEffect(function(){
         const onChange = (entries) =>{
@@ -47,7 +45,7 @@ const Navbar = () => {
                     navOptions.map(item=>{
                         return(
                             <div className="dropdown" >
-                                <button onClick={item.id==='mapa' || item.id==='contacto'?()=>goTo(item.id):null} className={"dropbtn"}>{item.text}</button>
+                                <button onClick={item.id==='mapa' || item.id==='contacto'?()=>goTo(item.id):null} className={location.pathname.includes(item.id)?'dropbtn-active' :"dropbtn"}>{item.text}</button>
                                 {item.sections &&
                                 <div className="dropdown-content" >
                                     {
@@ -55,13 +53,13 @@ const Navbar = () => {
                                         return(
                                             <>
                                             <div className="nav-section-container" >
-                                                <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className=" nav-bg-hover" >{section.text}</a>
+                                                <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className={location.pathname.includes(section.id)?'nav-bg-hover-active':" nav-bg-hover"} >{section.text}</a>
 
                                                 {section.subsections && 
                                                     <div className="subsections-container" >
                                                         {
                                                     section.subsections.map(sub=>{
-                                                        return <a onClick={()=>goTo(item.id,sub.id)} key={sub.id} href={sub.href} className=" nav-subsection" >{sub.text}</a>
+                                                        return <a onClick={()=>goTo(item.id,sub.id)} key={sub.id} href={sub.href} className={location.pathname.includes(sub.id)?'nav-subsection-active':" nav-subsection"} >{sub.text}</a>
                                                     })
                                                             
                                                         }

@@ -36,7 +36,6 @@ function App() {
         <Route exact path={'/proyectos/:seccion'} element={[<NavObserver/>,<Navbar/>,<Proyectos/>]} />
         <Route exact path={'/agua/:seccion'} element={[<NavObserver/>,<Navbar/>,<Agua/>]} />
         <Route exact path={'/subtramo/:to'} element={[<NavObserver/>,<Navbar/>,<Subtramo/>]} />
-        <Route exact path={'/mapa'} element={[<NavObserver/>,<Navbar/>,<Mockup/>]} />
         <Route exact path={'/contacto'} element={[<NavObserver/>,<Navbar/>,<Contacto/>]} />
       </Routes>
     </Router>
