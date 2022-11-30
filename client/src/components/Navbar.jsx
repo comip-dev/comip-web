@@ -10,7 +10,6 @@ import { navOptions } from "../assets/data/navOptions";
 const Navbar = () => {
     const navigate= useNavigate()
     const location = useLocation()
-    console.log(location)
     const [white,setWhite] = useState(false)
     useEffect(function(){
         const onChange = (entries) =>{

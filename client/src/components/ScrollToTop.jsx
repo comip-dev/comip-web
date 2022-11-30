@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
 import upButton from '../assets/images/Icon-up.svg'
 import './ScrollToTop.css'
 
@@ -11,7 +12,10 @@ const ScrollToTop = ({div}) =>{
     useEffect(() => {
         document.getElementById(div).addEventListener('scroll',onScroll) 
       },[]);
-    
+      const params=useParams()
+    React.useEffect(()=>{
+        document.getElementById(div).scroll(0,0)
+    },[params])
 
     const goToTop = () => {
         document.getElementById(div).scroll(0,0)

@@ -3,7 +3,6 @@ import Footer from './Footer/Footer'
 import ScrollToTop from './ScrollToTop'
 import './Section.css'
 const Section = ({headingPic,title,children}) =>{
-    
     return(
         <>
             <div id='section-container' >
