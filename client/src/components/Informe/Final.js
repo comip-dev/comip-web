@@ -28,6 +28,7 @@ const Final = () =>{
                 <p>Las variaciones en su nivel pueden tener efecto sobre la pesca. Los niveles muy bajos dificultan la navegación y el desborde de los ríos estimula la dispersión de los peces. Las variaciones bruscas del nivel estimulan a los peces realizar migraciones ascendentes y descendentes.</p>
                 <DownloadTable/>
                 <br/>
+                <br/>
                 <p><strong>Distribución proporcional de ejemplares extraídos y devueltos discriminados por especie blanco y localidad.</strong></p>
                 <p>› La pesca con devolución es la modalidad más frecuente en la Argentina, especialmente aguas abajo de Yacyretá.</p>
                 <p>› En Paraguay la pesca con devolución es poco frecuente, predomina la modalidad extractiva. Con valores máximos para la boga y el salmón (no se registraron devoluciones en ningún puerto). Esto se replicó con el dorado y el pacú, aunque con diferencias entre los sitios. Se destaca el porcentaje de devolución para el surubí, el cual siendo bajo (20%) fue relativamente estable en los 4 sitios en los que se registraron capturas.</p>
@@ -42,12 +43,12 @@ const Final = () =>{
                 <p>› Se da continuidad al Proyecto de Evaluación de Pesca Recreativa y se incorpora la marcación de peces.</p>
                 <p>› Objetivo: determinar patrones de movimiento de las especies blanco de la pesca recreativa.</p>
                 <p>› Metodología: captura, marcado y recaptura. Para ello se dictan talleres de capacitación destinados a los colaboradores del proyecto en la colocación de marcas.</p>
-                <div className="final-slider-container" >
+                <div className="final-slider-wrapper" >
                     <div className="slider-content" >
                         <Slider slides={slides}/>
                     </div>
                 </div>
-                <div className="final-slider-height" ></div>
+                <div className="final-slider-height-wrapper" ></div>
             </div>
         </>
     )

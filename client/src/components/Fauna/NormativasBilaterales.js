@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import ScrollToTop from "../ScrollToTop";
 import './NormativasBilaterales.css'
 const NormativasBilaterales = () =>{
     
@@ -25,38 +26,41 @@ const NormativasBilaterales = () =>{
 
     return(
         <>
-        <div className='comip-info-container' >
-            <div className="normativas-title" >Normativas Bilaterales</div>
-            <div className="separator-auth-line" ></div>
-            <div className='normativas-container' >
+        <div id='section-container' >
+            <div className='comip-info-container' >
+                <div className="normativas-title" >Normativas Bilaterales</div>
+                <div className="separator-auth-line" ></div>
+                <div className='normativas-container' >
 
-            {
-                conveniosList.map((convenio,index)=>{
-                    return (
-                        <div className="normcard-container" >
-                            <div className="normcard-content" >
-                                <div  className="norm-card-title" >
-                                    {convenio.title}
+                {
+                    conveniosList.map((convenio,index)=>{
+                        return (
+                            <div className="normcard-container" >
+                                <div className="normcard-content" >
+                                    <div  className="norm-card-title" >
+                                        {convenio.title}
+                                    </div>
+                                    <div  className="norm-card-description" >
+                                        {convenio.description}
+                                    </div>
+                                    <div className="norm-btn-container" >
+                                        <a className="norm-pdf-download" href={convenio.link} target='_blank' rel="noreferrer nofollow" >
+                                        Ver / Descargar PDF
+                                        </a>
+                                    </div>
                                 </div>
-                                <div  className="norm-card-description" >
-                                    {convenio.description}
-                                </div>
-                                <div className="norm-btn-container" >
-                                    <a className="norm-pdf-download" href={convenio.link} target='_blank' rel="noreferrer nofollow" >
-                                    Ver / Descargar PDF
-                                    </a>
-                                </div>
+                                
                             </div>
-                            
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+                </div>
+                <div className="fauna-footline">
+                <p>Antecedentes del Reglamento Unificado (2019) : <a className="fauna-footline-link" href="https://comip.org.ar/wp-content/uploads/2022/05/pesca-reglamento.pdf" target='_blank' rel="noreferrer nofollow" >Reglamento único de pesca (2000)</a> y su <a className="fauna-footline-link" href="https://comip.org.ar/wp-content/uploads/2022/05/ACTA-20-Y-21-07-2006-ITUZAINGO-PROV-CORRIENTES.pdf" target='_blank' rel="noreferrer nofollow" >posterior modificación de 2006.&nbsp;</a></p>
+                </div>
+                <Footer/>
             </div>
-            <div className="fauna-footline">
-            <p>Antecedentes del Reglamento Unificado (2019) : <a className="fauna-footline-link" href="https://comip.org.ar/wp-content/uploads/2022/05/pesca-reglamento.pdf" target='_blank' rel="noreferrer nofollow" >Reglamento único de pesca (2000)</a> y su <a className="fauna-footline-link" href="https://comip.org.ar/wp-content/uploads/2022/05/ACTA-20-Y-21-07-2006-ITUZAINGO-PROV-CORRIENTES.pdf" target='_blank' rel="noreferrer nofollow" >posterior modificación de 2006.&nbsp;</a></p>
-            </div>
-            <Footer/>
+            <ScrollToTop div='section-container' />
         </div>
         </>
     )

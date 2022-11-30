@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import ScrollToTop from "../ScrollToTop";
 
 const EstudiosConvenio = () =>{
     
@@ -89,31 +90,34 @@ const EstudiosConvenio = () =>{
 
     return(
         <>
-        <div className='comip-info-container' >
-                <div className="authorities-title" >Estudios del convenio</div>
-                <div className="separator-auth-line" ></div>
-                <div className='content-container' >
+        <div id='section-container' >
+            <div className='comip-info-container' >
+                    <div className="authorities-title" >Estudios del convenio</div>
+                    <div className="separator-auth-line" ></div>
+                    <div className='content-container' >
 
-                {
-                            conveniosList.map((convenio,index)=>{
-                                return (
-                                    <div className="convenio-container" >
-                                        <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"fauna-title-active":"convenio-title"} >
-                                            {convenio.title}
+                    {
+                                conveniosList.map((convenio,index)=>{
+                                    return (
+                                        <div className="convenio-container" >
+                                            <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"fauna-title-active":"convenio-title"} >
+                                                {convenio.title}
+                                            </div>
+                                            <div className="conv-btn-container" >
+                                                <a className={showQuestions[index]?  "fauna-download-btn":"fauna-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
+                                                DESCARGAR PDF
+                                                </a>
+                                            </div>
+                                            
                                         </div>
-                                        <div className="conv-btn-container" >
-                                            <a className={showQuestions[index]?  "fauna-download-btn":"fauna-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
-                                            DESCARGAR PDF
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                )
-                            })
-                        }
+                                    )
+                                })
+                            }
                 </div>
                 <Footer/>
             </div>
+            <ScrollToTop div='section-container' />
+        </div>
         </>
     )
 }
