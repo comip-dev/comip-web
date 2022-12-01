@@ -13,12 +13,12 @@ app.use(cors());
 app.use( express.static( "public" ) );
 app.use(fileUpload({useTempFiles:true}))
 /*Routers used*/
-
+const alturasRouter = require('./routes/alturas')
 /* middlewares */
 
 
 /*Routes*/
-
+app.use('/alturas',alturasRouter)
 
 /* Invalid routes*/
 
