@@ -1,0 +1,22 @@
+.alturas-content{
+    width: 65%;
+    margin-left: 17.5%;
+}
+.km-cell{
+    width: 15%;
+}
+.trayecto-cell{
+    width: 20%;
+    text-align: center;
+}
+.alturas-cell{
+    width: 10%;
+    text-align: center;
+}
+.alturas-cell:first-child{
+    width: 15%;
+    padding-left: 1rem;
+}
+.alturas-cell:last-child{
+    width: 15%;
+}

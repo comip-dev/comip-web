@@ -17,6 +17,7 @@ import Agua from './containers/Agua';
 import Subtramo from './components/Agua/Subtramo';
 import Contacto from './containers/Contacto';
 import Alturas from './containers/Alturas';
+import Noticias from './containers/Noticias';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path={'/subtramo/:to'} element={[<NavObserver/>,<Navbar/>,<Subtramo/>]} />
         <Route exact path={'/contacto'} element={[<NavObserver/>,<Navbar/>,<Contacto/>]} />
         <Route exact path={'/alturas'} element={[<NavObserver/>,<Navbar/>,<Alturas/>]} />
+        <Route exact path={'/noticias'} element={[<NavObserver/>,<Navbar/>,<Noticias/>]} />
       </Routes>
     </Router>
   );

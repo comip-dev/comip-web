@@ -1,8 +1,8 @@
 import React from "react";
 
-const New = ({img,title, text}) =>{
+const New = ({img,title, text,containerStyle}) =>{
     return(
-        <div className="new-container" >
+        <div className={containerStyle} >
             <img src={img} alt="Ilustracion noticia" className="new-img" />
             <div className="new-description-container" >
                 <p className="new-title" >{title}</p>

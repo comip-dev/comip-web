@@ -36,7 +36,7 @@ const Trayectos = () =>{
                     lines.map((line,i)=>{
                         return(
                             <tr>
-                                <th className="trayecto-cell" >TRAYECTO {i}</th>
+                                <th className="trayecto-cell" >TRAYECTO {i+1}</th>
                                 {
                                     line.map((item,j)=>{
                                         return j!==2?<th className={j===0?"pasos-cell":"km-cell"}>{item}</th>:null

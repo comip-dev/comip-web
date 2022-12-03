@@ -1,37 +1,84 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop'
-import { getAlturas } from '../services.js/getAlturas'
+import { getAlturas } from '../services/getAlturas'
+import './Alturas.css'
 
 const Alturas = () =>{
     const [alturas,setAlturas] = useState([])
     const [loading,setLoading] = useState()
     const [error,setError] = useState(null)
-
+    // useEffect(()=>{
+    //     console.log(alturas)
+    // },[alturas])
+    
+    const headers=['ESTACIÓN','ALTURA','ALTURA ANTERIOR','VARIACIÓN','ALERTA','EVACUACIÓN', 'CAMBIO','FECHA']
     useEffect(()=>{
-        setLoading(true)
-        const [fetchAlturas] = Promise.all([
-            getAlturas()
-        ]).then(()=>{
-            setAlturas(fetchAlturas)
-            console.log(alturas)
-        }).catch(error=>{
-            new Error(error)
-            setError(error)
-        }).finally(()=>setLoading(false))
+        async function fetchData() {
+            setLoading(true)
+            try{
+                const fetchAlturas = await getAlturas()
+                setAlturas(fetchAlturas.data)
+            }catch(e){
+                setError(e)
+            }
+            setLoading(false)
+        }
+        fetchData();
     },[])
+    const formatDate = (date) =>{
+        let array = date.split('')
+        array.splice(-2,0,':').join('')
+        
+        return array
+    }
     return(
         <>
             <div id='section-container' >
-                <div className="institutional-pic" >                
-                    <img className="heading-pic" src='/images/Encabezado-contacto.png' alt="encabezado"/>                
-                </div>
+                
                 <div id='comip-info-container' >
                     <div className="authorities-title" >Alturas hidrométicas (en metros)</div>
                     <div className="separator-auth-line" ></div>
                     <br/>
                     <br/>
-                    
+                    <br/>
+                    <div className='alturas-content' >
+                        <table className="tramo-table" >
+                            <tr>
+                            {
+                                headers.map((item,i)=>{return <th className="alturas-cell" >{item}</th> })
+                            }
+                            </tr>
+                            {
+                                alturas.map((line,i)=>{
+                                    return(
+                                        <tr>
+                                            <th className={"alturas-cell"}>{line.PUERTO._text}</th>
+                                            <th className={"alturas-cell"}>{line.ULTIMOREGISTRO._text}</th>
+                                            <th className={"alturas-cell"}>{line.REGISTROANTERIOR._text}</th>
+                                            <th className={"alturas-cell"}>{line.VARIACION._text}</th>
+                                            <th className={"alturas-cell"}>{line.ALERTA._text}</th>
+                                            <th className={"alturas-cell"}>{line.EVACUACION._text}</th>
+                                            <th className={"alturas-cell"}>{line.ESTADO._text==='CRECE'?(
+                                                <span class="material-symbols-outlined">
+                                            arrow_upward
+                                            </span>
+                                            ):(
+                                                <span class="material-symbols-outlined">
+                                                arrow_downward
+                                                </span>
+                                            )}</th>
+                                            <th className={"alturas-cell"}>{formatDate(line.FECHAHORA._text)}</th>
+                                            
+                                            
+                                        </tr>
+
+                                    )
+                                })
+                            }
+                        </table>
+
+                    </div>
                     <Footer/>
                 </div>
                 <ScrollToTop div='section-container'  />

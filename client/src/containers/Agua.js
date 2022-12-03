@@ -15,21 +15,6 @@ const Agua = () =>{
             title:"Hidrometeorología",
             content:Hidrometeorología
         },
-        alturas:{
-            headingPic:"/images/El agua/1_Datos de Hidrología/Encabezado.png",
-            title:"Alturas",
-            content:""
-        },
-        r11:{
-            headingPic:"/images/El agua/2_Hidrometeorología/1_Hidrómetros del tramo/Encabezado.png",
-            title:"Estación R11",
-            content:""
-        },
-        historicos:{
-            headingPic:"/images/El agua/2_Hidrometeorología/2_Datos históricos/Encabezado.png",
-            title:"Datos históricos",
-            content:""
-        },
         meteorologia:{
             headingPic:"/images/El agua/3_Meteorología/Encabezado.png",
             title:"Pronóstico",
