@@ -43,10 +43,13 @@ const PescaRecreativa = () => {
             <p><strong>Autores: </strong>Sánchez, Sebastián; Silva, Natalia A.;Barrios, Carlos E.; Gonzáles, Alfredo O.;Aichino, Danilo R.; Masin, Andrés S.; Acosta, José; Florentín, Pedro; Rojas, María T.; Garrido, Gladis; Roux, Juan Pablo.</p>
             <p><strong>Coordinador: </strong>Director de Gestión del Tramo,  Lic. Enrique Guardo.</p>
             <br/>
+            <br/>
             <div className="faunaconv-buttons" >
                     <div onClick={()=>goTo("semestre")} className="faunaconv-button" >INFORME SEMESTRAL OCTUBRE 2017 - ABRIL 2018</div>
                     <div onClick={()=>goTo("final")} className="faunaconv-button" >INFORME FINAL OCTUBRE 2017 - OCTUBRE 2018</div>
             </div>
+            <br/>
+            <br/>
             <br/>
             <br/>
             <div className="final-slider-container" >

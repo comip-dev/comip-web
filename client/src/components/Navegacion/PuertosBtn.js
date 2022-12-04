@@ -9,6 +9,7 @@ const PuertosBtn = () =>{
     return(
     <>
         <p>Fecha de actualización: 21/10/2022</p>
+        <br/>
         <div className="determinanes-buttons" >
             <div onClick={()=>setImg(hidroviaImg)} className={img===hidroviaImg?"det-btn-active":"det-btn"} >Hidrovía</div>
             <div onClick={()=>setImg(puertosImg)} className={img===puertosImg?"det-btn-active":"det-btn"} >Puertos comerciales</div>

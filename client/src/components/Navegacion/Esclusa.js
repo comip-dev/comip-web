@@ -13,6 +13,8 @@ const Esclusa = () => {
             </div>
             <p><strong>¿Cómo funciona la Esclusa?</strong></p>
             <p>Como un "ascensor de barcos": salva el desnivel producido por la represa que iompide la libre navegacion de las embarcaciones. Al ingresar un barco, el agua sube o baja dentro del receptaculo o cuenco hasta igualar el nivel del lado de detino (embalse o rio).</p>
+            <br/>
+            <br/>
             <div className='esclusa-images' >
                 <img src='/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/esclusa_1.jpg' alt="esclusa"/>
                 <img src='/images/Navegacion/3_Transporte fluvial/2_Esclusa de Yacyretá/esclusa_2.jpg' alt="esclusa"/>

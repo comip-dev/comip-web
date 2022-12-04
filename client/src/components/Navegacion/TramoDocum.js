@@ -56,7 +56,6 @@ const TramoDocum = () =>{
     ]
     return(
         <>
-            <br/>
             <div className="subsection-title" >Documentación oficial</div>
             <br/>
             <br/>

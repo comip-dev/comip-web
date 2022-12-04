@@ -46,6 +46,7 @@ const OtrosEst = () => {
         <>
             <p>Recopilación de datos sobre estudios, informes y convenios; monitoreos y evaluación de la fauna íctica transferida por las instalaciones para peces de la Entidad Binacional Yacyretá, realizados en conjunto con UNNE (Universidad Nacional del Nordeste) y UNaM (Universidad Nacional de Misiones) y evaluaciones anuales de la situación del ictioplancton en el área de la represa.</p>
             <br/>
+            <br/>
             <div className="sitios-container" >
                 {list.map(item=>{return <OtrosCard details={item} />})}
             </div>

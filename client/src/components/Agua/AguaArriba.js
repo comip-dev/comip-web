@@ -48,15 +48,20 @@ const AguaArriba = () =>{
                 <p><strong>Estaciones</strong></p>
                 <br/>
                 <ResultsList list={data.estaciones}/>
+                <br/>
                 <p><strong>Resultados</strong><br/>Informe Semestral 2019</p>
                 <p>En su mayoría, los valores de demanda bioquímica de oxígeno se encontraron por debajo del límite de detección de la técnica utilizada (2mg/L).</p>
                 <p>No se detectaron sulfuros (límite de detección 0.1mg/L) ni sustancias fenólicas (límite de detección 0.001 mg/L).</p>
                 <p>Los valores de grasas y aceites (SSEE) se encontraron por debajo del límite de detección de la técnica utilizada (20 mg/L).</p>
                 <p>Acceda al informe: <a className="subtramo-link" href="https://comip.org.ar/wp-content/uploads/2020/11/483743069-Inf-de-Evaluacion-Semestral-COMIP-2019-comprimido.pdf" target="_blank" rel="noopener noreferrer">CLICK AQUÍ</a></p>
                 <br/>
+                <br/>
                 <ResultsList list={data.resultados} addEmpty={true} />
+                <br/>
+                <br/>
                 <p><strong>Análisis comparativo – Período 2015 – 2019</strong></p>
                 <p>› Se presenta un análisis comparativo de los resultados obtenidos en las campañas realizadas entre el año 2015 y 2019.</p>
+                <br/>
                 <br/>
                 <ResultsList list={data.comparativo} />
                 <br/>
@@ -68,6 +73,8 @@ const AguaArriba = () =>{
                 <p><strong>Campaña – octubre 2020</strong></p>
                 <p>› Se exponen los resultados obtenidos en la campaña octubre – 2020, en condiciones de bajante extraordinaria.</p>
                 <p>› Con el objetivo de contar con datos actualizados del estado general del río.</p>
+                <br/>
+                <br/>
                 <ResultsList list={data.octubre} addEmpty={true}/>
                 <br/>
                 <p><strong>Campaña – febrero 2021</strong></p>

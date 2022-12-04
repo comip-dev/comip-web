@@ -20,6 +20,7 @@ const Comercial = () =>{
             <p>Los Sistemas de Identificación Automática (AIS) son capaces de proporcionar información a barcos y autoridades costeras de forma automática, y en tiempo real.</p>
             <p><strong><a className="comer-ais" href="https://www.argentina.gob.ar/prefecturanaval/ais" target='blank'> ›Servidor Nacional AIS (acceder)</a></strong></p>
             <p>Respecto al tráfico comercial, resultan determinantes los datos de la operación de la <a className="comer-link-text" href="http://comip.org.ar/esclusa-yacyreta/"><strong>esclusa de Yacyretá</strong></a>. Se presentan a continuación las estadísticas obtenidas para el período <strong>agosto 2017 – marzo 2020 que brindan</strong>&nbsp;una aproximación a la situación actual de la actividad.</p>
+            <br/>
             <TrafficStats/>
             <Tramolist list={list}/>
             <DoughnutCharts/>

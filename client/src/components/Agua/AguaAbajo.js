@@ -47,35 +47,41 @@ const AguaAbajo = () =>{
                     <p>› Se presentan los registros de las alturas hidrométricas en puertos de referencia: Itatí, Itá Ibaté, Ituzaingó, Posadas y Puerto Libertador General San Martín.</p>
                     <p>› Se caracterizó por la ocurrencia de niveles bajos, particularmente entre julio y diciembre de 2019.</p>
                     <p>› La bajante extraordinaria registrada en octubre de 2019 determinó el aislamiento del valle de inundación respecto del cauce principal.</p>
+                    <br/>
+                    <br/>
+                    <br/>
                     <img className="width-100" src="/images/El agua/4_Calidad del agua/1_Subtramo Aguas Abajo/Variaciones del nivel hidrométrico.jpg" alt="niveles hidrometricos" />
                     <br/>
                     <br/>
                     <br/>
                     <p><strong>Resultados</strong></p>
                     <p>Se presentan los resultados obtenidos a partir del análisis de la calidad del agua realizados durante el periodo enero de 2019 - febrero 2020.</p>
-                <ResultsList list={data.results}/>
-                <p><strong>Campaña – Mayo 2020</strong></p>
-                <p>› Se exponen los resultados obtenidos en la campaña del mes de mayo del 2020, en condiciones de bajante extraordinaria.</p>
-                <p>› Con el objetivo de contar con datos actualizados del estado general del río.</p>
-                <p>› Se recolectaron muestras en dos localidades de la margen izquierda : Itatí y Paso de la Patria.</p>
-                <p>› Se analizaron parámetros físico – químicos, metales, fitoplancton – zooplancton, otros.</p>
-                <p>› En general, los resultados indicaron que todos los parámetros se encuentran dentro de los valores esperados para el tramo.</p>
-                <p>› Acceda a los resultados de laboratorio. <a href="https://comip.org.ar/wp-content/uploads/2021/04/mayo.pdf" target="_blank" rel="noreferrer noopener">CLICK AQUI.</a> </p>
-                <p>› A continuación, los resultados de los parámetros medidos in situ.</p>
-                <br/>
-                <ResultsList list={data.mayo}/>
-                <br/>
-                <br/>
-                <p><strong>Campaña - Agosto 2020</strong></p>
-                <p>› Se exponen los resultados obtenidos en la campaña del mes de agosto del 2020, en condiciones de bajante extraordinaria.</p>
-                <p>› Se recolectaron muestras en dos localidades de la margen izquierda : Itatí y Paso de la Patria.</p>
-                <p>› En general, los resultados indicaron que todos los parámetros se encuentran dentro de los valores esperados para el tramo.</p>
-                <p>› Acceda a los resultados de laboratorio. <a rel="noreferrer noopener" href="https://comip.org.ar/wp-content/uploads/2021/04/agosto-1.pdf" target="_blank">CLICK AQUI.</a></p>
-                <p>› A continuación, los resultados de los parámetros medidos in situ.</p>
-                <br/>
-                <ResultsList list={data.agosto} />
-                <br/>
-            </div>
+                    <br/>
+                    <br/>
+                    <ResultsList list={data.results}/>
+                    <br/>
+                    <p><strong>Campaña – Mayo 2020</strong></p>
+                    <p>› Se exponen los resultados obtenidos en la campaña del mes de mayo del 2020, en condiciones de bajante extraordinaria.</p>
+                    <p>› Con el objetivo de contar con datos actualizados del estado general del río.</p>
+                    <p>› Se recolectaron muestras en dos localidades de la margen izquierda : Itatí y Paso de la Patria.</p>
+                    <p>› Se analizaron parámetros físico – químicos, metales, fitoplancton – zooplancton, otros.</p>
+                    <p>› En general, los resultados indicaron que todos los parámetros se encuentran dentro de los valores esperados para el tramo.</p>
+                    <p>› Acceda a los resultados de laboratorio. <a href="https://comip.org.ar/wp-content/uploads/2021/04/mayo.pdf" target="_blank" rel="noreferrer noopener">CLICK AQUI.</a> </p>
+                    <p>› A continuación, los resultados de los parámetros medidos in situ.</p>
+                    <br/>
+                    <ResultsList list={data.mayo}/>
+                    <br/>
+                    <br/>
+                    <p><strong>Campaña - Agosto 2020</strong></p>
+                    <p>› Se exponen los resultados obtenidos en la campaña del mes de agosto del 2020, en condiciones de bajante extraordinaria.</p>
+                    <p>› Se recolectaron muestras en dos localidades de la margen izquierda : Itatí y Paso de la Patria.</p>
+                    <p>› En general, los resultados indicaron que todos los parámetros se encuentran dentro de los valores esperados para el tramo.</p>
+                    <p>› Acceda a los resultados de laboratorio. <a rel="noreferrer noopener" href="https://comip.org.ar/wp-content/uploads/2021/04/agosto-1.pdf" target="_blank">CLICK AQUI.</a></p>
+                    <p>› A continuación, los resultados de los parámetros medidos in situ.</p>
+                    <br/>
+                    <ResultsList list={data.agosto} />
+                    <br/>
+                </div>
 
         </>
     )

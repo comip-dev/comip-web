@@ -16,7 +16,7 @@ const ItatiItacora = ()=>{
             <p>› Para recuperar zonas inundables para el desarrollo agropecuario.</p>
             <p>› Para fortalecer y ampliar la integración Argentino Paraguaya.</p>
             <br/>
-            <p><i><strong>Estudio de prefactibilidad como paso previo a un exhaustivo estudio de factibilidad.<br/>Que permite definir posibilidades ambientales, sociales y económicas.<br/>Que proponga desarrollos y alternativas de crecimiento.</strong></i></p>
+            <p><strong>Estudio de prefactibilidad como paso previo a un exhaustivo estudio de factibilidad.<br/>Que permite definir posibilidades ambientales, sociales y económicas.<br/>Que proponga desarrollos y alternativas de crecimiento.</strong></p>
             <p>Y contemple un programa un programa de obras de compensación y resarcimiento:</p>
             <p>› Consensuadas con las autoridades regionales e integradas a planes de desarrollo.</p>
             <p>› Ejecutadas en forma anticipada y durante la construcción del proyecto.</p>
@@ -24,9 +24,12 @@ const ItatiItacora = ()=>{
             <p>› Con sustentabilidad y mantenimientos garantizados, una vez transferidas al dominio provincial o departamental.</p>
             <p>› Pensadas para la introducción de nuevas actividades productivas en la región.</p>
             <p>› Que potencien planes de desarrollo regional vinculados o no al aprovechamiento específico.</p>
-            <p><i><strong>
+            <p><strong>
             Trabajo realizado por instrucciones del Ministerio de Energía y Minería de la República Argentina y del Ministerio de Relaciones Exteriores de la República del Paraguay. COMIP implementó una estructura organizacional con asistencia técnica de EBISA, EBY y equipos de IGN, INA y UNNE. <br/> Y con una premisa fundamental: todo a favor del río, la región y su gente.<br/> COMIP como responsable del desarrollo del proyecto encomendó estudios alternativamente a Consorcio Lameyer- Harza y Asociados; a Knight Piesold; a Consorcio Harza-IATASA y Tecma; y a los Ingenieros Juan José Bossio y Oscar Vardé.
-            </strong></i></p>
+            </strong></p>
+            <br/>
+            <br/>
+            <br/>
             <div className="final-slider-container" >
                 <div className="slider-content" >
                     <ItatiSlider slides={slides}/>

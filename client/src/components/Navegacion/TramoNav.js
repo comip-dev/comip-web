@@ -44,6 +44,10 @@ const TramoNav = () =>{
             <br/>
             <Tramolist list={list}/>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className="final-slider-container" >
                 <div className="slider-content" >
                     <Slider slides={slides}/>
