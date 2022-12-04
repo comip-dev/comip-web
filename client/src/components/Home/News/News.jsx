@@ -17,8 +17,8 @@ const News = () =>{
                             return <New 
                                     img={item.img}
                                     title={item.title}
-                                    text={item.text}
                                     containerStyle="new-container"
+                                    id={item.id}
                             />
                         })
                     }

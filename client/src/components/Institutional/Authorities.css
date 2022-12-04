@@ -13,7 +13,7 @@
     color:#5C5C5C;
     margin-top: 5rem;
     margin-left: 17.5%;
-    
+    max-width: 65%;
 }
 
 .separator-auth-line{
@@ -29,9 +29,8 @@
 .lists-auth-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 17.5%;
-    
+    margin-left: 17.5%;    
     width: 65%;
-    /* margin-bottom: 3rem; */
+
     
 }

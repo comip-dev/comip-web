@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer/Footer'
-import { noticiasData } from "../assets/data/noticias";
 import ScrollToTop from '../components/ScrollToTop'
 import New from '../components/Home/News/New';
 import './Noticias.css'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import {getNews } from '../services/getNews'
+import {getNews } from '../services/news'
 const Noticias = () =>{
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
@@ -17,7 +16,6 @@ const Noticias = () =>{
         setLoading(true)
         try{
             const newItems= await getNews()
-            console.log(newItems)
             setNoticias([...noticias,...newItems])
         }catch(e){
             setError(e)
@@ -47,6 +45,7 @@ const Noticias = () =>{
                                     img={item.img}
                                     title={item.title}
                                     text={item.text}
+                                    id={item.id}
                                     containerStyle='noticia-item-container'
                             />
                         })

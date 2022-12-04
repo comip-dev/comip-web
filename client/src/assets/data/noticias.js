@@ -18,6 +18,11 @@ export const noticiasData=[
         id:'8527419634',
         img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664932261/comip/blog/Yacyreta-Represa-1-800x400_bwdvld.jpg",
         title:"Río Paraná: estado de situación al lunes 12 de octubre de 2022 (Aviso especial)"
+    },
+    {
+        id:'8527419635',
+        img:"/images/noticias/webinar/encabezado.jpeg",
+        title:"COMIP, en el webinar “Desafíos del Transporte Fluvial en el Paraguay y Paraná Superior”",
     },   
     {
         id:'8527419632',
@@ -38,13 +43,8 @@ export const noticiasData=[
         id:'8527419634',
         img:"https://res.cloudinary.com/diqcwn9e9/image/upload/v1664932261/comip/blog/Yacyreta-Represa-1-800x400_bwdvld.jpg",
         title:"Río Paraná: estado de situación al lunes 12 de octubre de 2022 (Aviso especial)"
-    },   
-    {
-        id:'8527419632',
-        img:"/images/noticias/encabezado.jpeg",
-        title:"COMIP, en el Segundo Simposio Internacional de Aguas Transfronterizas en América Latina y el Caribe",
     },
-    
+
 ]
 export const noticiasObject ={
     8527419632:{
@@ -66,7 +66,7 @@ export const noticiasObject ={
     8527419633:{
         id:'8527419633',
         date:'ON 28 DE NOVIEMBRE DE 2022',
-        linkpdf:'',
+        linkpdf:'https://comip.org.ar/wp-content/uploads/2021/11/CONVENIO-SSPVNyMM-COMIP-2021.pdf',
         slides:[],
         videoLink:'',
         img:"/images/noticias/parana2811/5ff766775b070-800x400.jpg",
@@ -95,5 +95,14 @@ export const noticiasObject ={
         html:'<div class="entry-content"><p>El día 15 de noviembre, se realizó en COMIP el Conversatorio Binacional “Perspectivas Actuales y Futuras de la Situación Hidrológica del río Paraná” con el ingeniero Juan Agustín Borús, Subgerente de Sistemas de Información y Alerta Hidrológico del INA (Instituto Nacional del Agua). </p><p>Durante el evento, el experto se explayó sobre las proyecciones a futuro de la situación en el Río Paraná, en un contexto de bajante crítica que azotó a la cuenca durante los últimos años. Asimismo, destacó el rol del INA y el trabajo interinstitucional e interjurisdiccional para lograr paliar el impacto de la crisis hidrológica en la vía navegable.</p><p>Del lado argentino, se contó con la presencia de representantes de la Entidad Binacional Yacyretá (EBY) Servicio Meteorológico Nacional (SMN), la Universidad Nacional de Misiones (UNAM), la Universidad Nacional del Nordeste (UNNE), de los ministerios de Ambiente y Agricultura, Ganadería y Pesca, de la Cancillería, de la Subsecretaría de Puertos, Vías Navegables y Marina Mercante (SSPVyMM), del Sistema Nacional para la Gestión Integral del Riesgo y la Protección Civil (Sinagir), y representantes de puertos de Misiones, Corrientes, Chaco y Formosa; así como la ya mencionada presencia del INA con su exponente y de la COMIP Argentina como anfitrión. </p><p>Por parte de Paraguay, asistieron a la charla integrantes de la Administración Nacional de Puertos (ANNP), ATRIA, CATERPPA, la Cancillería de ese país, la Armada Paraguaya y la Dirección de Meteorología e Hidrología de la DINAC, así como delegados de EBY Paraguay.</p><p>Para ver la exposición completa, <a rel="noreferrer noopener" href="https://youtu.be/XKsH92RMP4c" target="_blank">acced</a><a href="https://youtu.be/XKsH92RMP4c" target="_blank" rel="noreferrer noopener">a</a><a rel="noreferrer noopener" href="https://youtu.be/XKsH92RMP4c" target="_blank"> a nuestro canal de YouTube. </a></p>',
         finalImage:'/images/noticias/final.jpeg'
     },
-
+    8527419635:{
+        id:'8527419635',
+        date:'ON 29 DE AGOSTO DE 2022',
+        linkpdf:'',
+        slides:[],
+        videoLink:'https://www.youtube.com/embed/bdbEUk8HJoc?feature=oembed',
+        img:"/images/noticias/webinar/encabezado.jpeg",
+        title:'COMIP, en el webinar “Desafíos del Transporte Fluvial en el Paraguay y Paraná Superior”',
+        html:'<p>El día 25 de agosto de 2022, se llevó a cabo el webinar “Desafíos del Transporte Fluvial en el Paraguay y Paraná Superior”, transmitido por el canal de Youtube y redes del <a href="https://www.transportefluvial.com/" target="_blank" rel="noreferrer noopener">Encuentro Argentino de Transporte Fluvial (EATF). </a></p><p>El mismo fue presentado y moderado por Juan Carlos Venesia, promotor del EATF y contó con las intervenciones de: <strong>Enrique Guardo</strong>&nbsp;(Director de Gestión del Tramo compartido de la Comisión Mixta Argentino – Paraguaya del Río Paraná), <strong>Constanza Prause</strong>&nbsp;(Administradora del Puerto Las Palmas, Chaco) y&nbsp;<strong>Ricardo Babiak</strong>&nbsp;(Presidente de la Administración Portuaria Posadas – Santa Ana). </p><p><strong>Aquí, el webinar completo: </strong></p>'
+    }
 }
