@@ -4,7 +4,8 @@ import NavObserver from '../components/NavObserver'
 import ScrollToTop from '../components/ScrollToTop'
 import { getAlturas } from '../services/getAlturas'
 import './Alturas.css'
-
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 const Alturas = () =>{
     const [alturas,setAlturas] = useState([])
     const [loading,setLoading] = useState()
@@ -41,10 +42,11 @@ const Alturas = () =>{
                     <div className="authorities-title" >Alturas hidrométicas (en metros)</div>
                     <div className="separator-auth-line" ></div>
                     <br/>
-                    <br/>
-                    <br/>
+                    {loading && <Box className='loading-container' sx={{ display: 'flex' }}>
+                        <CircularProgress />
+                    </Box>}
                     <div className='alturas-content' >
-                        <table className="tramo-table" >
+                        {!loading && <table className="tramo-table" >
                             <tr>
                             {
                                 headers.map((item,i)=>{return <th className="alturas-cell" >{item}</th> })
@@ -78,7 +80,7 @@ const Alturas = () =>{
                                 })
                             }
                         </table>
-
+}
                     </div>
                     <Footer/>
                 </div>
