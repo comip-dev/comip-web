@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import NavObserver from "../NavObserver";
 import ScrollToTop from "../ScrollToTop";
 import './NormativasBilaterales.css'
 const NormativasBilaterales = () =>{
@@ -27,6 +28,7 @@ const NormativasBilaterales = () =>{
     return(
         <>
         <div id='section-container' >
+        <NavObserver/>
             <div className='comip-info-container' >
                 <div className="normativas-title" >Normativas Bilaterales</div>
                 <div className="separator-auth-line" ></div>

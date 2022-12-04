@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer/Footer';
+import NavObserver from '../components/NavObserver';
 import ScrollToTop from '../components/ScrollToTop';
 import './Contacto.css'
 const Contacto = () =>{
@@ -8,6 +9,7 @@ const Contacto = () =>{
     return(
         <>
             <div id='section-container' >
+                <NavObserver/>
                 <div className="institutional-pic" >                
                     <img className="heading-pic" src='/images/Encabezado-contacto.png' alt="encabezado"/>                
                 </div>

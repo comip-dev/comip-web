@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import NavObserver from "../NavObserver";
+import ScrollToTop from "../ScrollToTop";
 import AguaAbajo from "./AguaAbajo";
 import AguaArriba from "./AguaArriba";
 
@@ -11,7 +13,8 @@ const Subtramo = () =>{
     return(
         <>
             <>
-        <div className='comip-info-container' >
+        <div id='section-container' >
+            <NavObserver/>
             {
                 to === 'abajo' && <AguaAbajo/>
             }
@@ -20,6 +23,7 @@ const Subtramo = () =>{
             }
                 <Footer/>
             </div>
+        <ScrollToTop div="section-container" />
         </>
         </>
     )

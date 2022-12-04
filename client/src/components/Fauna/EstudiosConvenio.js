@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import NavObserver from "../NavObserver";
 import ScrollToTop from "../ScrollToTop";
 
 const EstudiosConvenio = () =>{
@@ -91,6 +92,7 @@ const EstudiosConvenio = () =>{
     return(
         <>
         <div id='section-container' >
+            <NavObserver/>
             <div className='comip-info-container' >
                     <div className="authorities-title" >Estudios del convenio</div>
                     <div className="separator-auth-line" ></div>

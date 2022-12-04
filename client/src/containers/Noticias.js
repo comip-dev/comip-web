@@ -6,6 +6,7 @@ import './Noticias.css'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import {getNews } from '../services/news'
+import NavObserver from '../components/NavObserver';
 const Noticias = () =>{
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
@@ -30,7 +31,7 @@ const Noticias = () =>{
     return(
         <>
             <div id='section-container' >
-                
+                <NavObserver/>
                 <div id='comip-info-container' >
                     <div className="authorities-title" >Últimas entradas</div>
                     <div className="separator-auth-line" ></div>

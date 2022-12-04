@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer/Footer'
+import NavObserver from '../components/NavObserver'
 import ScrollToTop from '../components/ScrollToTop'
 import { getAlturas } from '../services/getAlturas'
 import './Alturas.css'
@@ -35,7 +36,7 @@ const Alturas = () =>{
     return(
         <>
             <div id='section-container' >
-                
+                <NavObserver/>
                 <div id='comip-info-container' >
                     <div className="authorities-title" >Alturas hidrométicas (en metros)</div>
                     <div className="separator-auth-line" ></div>

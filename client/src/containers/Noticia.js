@@ -7,6 +7,7 @@ import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop'
 import './Noticia.css'
 import ItatiSlider from '../components/Proyectos/ItatiSlider';
+import NavObserver from '../components/NavObserver';
 
 
 const Noticia = () =>{
@@ -34,7 +35,8 @@ const Noticia = () =>{
     },[])
     return(
         <>
-        <div id='section-container' >                
+        <div id='section-container' >
+                <NavObserver/>
                 <div className='noticia-content' >
                     {!loading &&(
                         <>

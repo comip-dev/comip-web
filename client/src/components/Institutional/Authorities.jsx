@@ -5,6 +5,7 @@ import AuthList from "./AuhtsList";
 import './Authorities.css'
 import HeadingPic from '../../assets/images/Encabezados-Autoridades.png'
 import ScrollToTop from "../ScrollToTop";
+import NavObserver from "../NavObserver";
 
 const Authorities = () =>{
     
@@ -12,7 +13,7 @@ const Authorities = () =>{
     return(
         <>
         <div id="section-container" >
-
+            <NavObserver/>
             <div className="institutional-pic" >
                 <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
             </div>

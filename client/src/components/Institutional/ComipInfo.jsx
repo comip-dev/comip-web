@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import './ComipInfo.css'
 import convenios01 from '../../assets/images/inst/interactivo.png'
 import ScrollToTop from "../ScrollToTop";
+import NavObserver from "../NavObserver";
 const ComipInfo = ()=>{
     
     const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1663102914/comip/institucional/Portadas-02_1_ubegq5.png"
@@ -14,6 +15,7 @@ const ComipInfo = ()=>{
                 <div className="institutional-pic" >
                     <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
                 </div>
+                <NavObserver/>
                 <div  id="comip-info-container" >
                     <div className="authorities-title" >{comipInfo.title}</div>
                     <div className="separator-auth-line" ></div>

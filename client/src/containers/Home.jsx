@@ -7,6 +7,7 @@ import News from "../components/Home/News/News";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
 import { homeslides } from "../assets/data/homeslides";
 import ScrollToTop from "../components/ScrollToTop";
+import NavObserver from "../components/NavObserver";
 const mouseIcon = "/images/icons/Scroll.gif"
 // import mouseIcon from "../assets/images/mouse-home-icon.svg"
 const Home = () =>{
@@ -37,6 +38,7 @@ const Home = () =>{
     return(
         <>
         <div id="home-container" >
+            <NavObserver/>
             {
                 homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
                 )

@@ -177,7 +177,7 @@
     color: black;
 }
 #navObserver{
-    height:  4rem;
+    height:  10rem;
     z-index: 15;
     background: transparent;
     position: absolute;

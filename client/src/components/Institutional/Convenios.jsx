@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import './Convenios.css'
 import HeadingPic from '../../assets/images/inst/Encabezado Convenios.jpg'
 import ScrollToTop from "../ScrollToTop";
+import NavObserver from "../NavObserver";
 const Convenios =() =>{
     const conveniosList=[
         {
@@ -85,6 +86,7 @@ const Convenios =() =>{
     return(
         <>
             <div id="section-container" >
+                <NavObserver/>
                 <div className="institutional-pic" >
                     <img className="heading-pic" src={HeadingPic} alt="encabezado"/>
                 </div>

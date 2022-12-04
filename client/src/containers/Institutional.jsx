@@ -4,6 +4,7 @@ import Authorities from "../components/Institutional/Authorities";
 import ComipInfo from "../components/Institutional/ComipInfo";
 import {  useParams } from "react-router-dom";
 import Convenios from "../components/Institutional/Convenios";
+import NavObserver from "../components/NavObserver";
 
 
 
@@ -13,6 +14,7 @@ const Institutional = (props) =>{
     const {seccion} = params
     return(
         <>
+           
             {
                 seccion==="autoridades" ? 
                 <Authorities  /> : (
