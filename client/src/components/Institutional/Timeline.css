@@ -1,0 +1,55 @@
+.my-title{
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    
+}
+.my-card{
+    width: 100%;
+    overflow:visible;
+    display: flex;
+    align-items: center;
+}
+.card-tl-container{
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.db-tl{
+    justify-content: space-around;
+}
+.tl-convenio-link{
+    text-decoration: none;
+    color: #464647;
+    font-size: 1.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 2rem;
+    width: 100%;
+}
+.tl-item-container{
+    width: 40%;
+    height: 60%;
+}
+.separator-tl-line{
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+    width:5.7rem;
+    height: 0px;
+    border:2px solid #5C5C5C;
+    background-color: #5C5C5C;
+}
+@media (max-width:1400px) {
+    .card-tl-container{
+        width: 900px;
+       
+    }
+    .card-tl-container-db{
+        width: 900px;
+       
+    }
+  }
