@@ -5,6 +5,8 @@ import './ComipInfo.css'
 import convenios01 from '../../assets/images/inst/interactivo.png'
 import ScrollToTop from "../ScrollToTop";
 import NavObserver from "../NavObserver";
+import { Chrono } from "react-chrono";
+import Timeline from "./Timeline";
 const ComipInfo = ()=>{
     
     const HeadingPic = "https://res.cloudinary.com/diqcwn9e9/image/upload/v1663102914/comip/institucional/Portadas-02_1_ubegq5.png"
@@ -33,8 +35,12 @@ const ComipInfo = ()=>{
                     <br/>
                     <br/>
                     </div>
+                    <div className='time-line-container' >
+                        <Timeline/>
+                    </div>
                     
-                    <img className="convenios-img" src={convenios01} alt="convenios-links" />
+                    
+                    {/* <img className="convenios-img" src={convenios01} alt="convenios-links" /> */}
                     <Footer/>
                 </div>
             </div>

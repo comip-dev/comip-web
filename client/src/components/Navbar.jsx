@@ -15,15 +15,11 @@ const Navbar = () => {
         const onChange = (entries) =>{
             // console.log(entries)
             const el = entries[0]
-            
             !el.isIntersecting ? setWhite(true) : setWhite(false)
-            console.log(white)
         }
         const observer = new IntersectionObserver(onChange,{
             
         })
-        const observeving=document.getElementById("navObserver")
-        console.log(observeving)
         observer.observe(document.getElementById("navObserver"))
     })
 

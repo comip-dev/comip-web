@@ -1,3 +1,11 @@
+.time-line-container{
+    width: 90%;
+    margin-left: 5%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    /* padding-top:5rem ; */
+}   
     
     #comip-info-container{
     width: 100%;
