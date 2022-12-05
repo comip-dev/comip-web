@@ -59,8 +59,8 @@ const Noticias = () =>{
                     <button onClick={fetchData} className="mas-noticias-btn" >Ver más Noticias</button>
                     <Footer/>
                 </div>
-                <ScrollToTop div='section-container'  />
             </div>
+                <ScrollToTop div='section-container'  />
         </>
     )
 }

@@ -25,8 +25,8 @@ const Authorities = () =>{
                 </div>
             <Footer/>
             </div>
-            <ScrollToTop div='section-container' />
         </div>
+            <ScrollToTop div='section-container' />
         </>
     )
 }

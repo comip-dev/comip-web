@@ -20,8 +20,8 @@ const Section = ({headingPic,title,children}) =>{
                 <div className='content-container' >{children}</div>
                 <Footer/>
             </div>
-            <ScrollToTop div='section-container' id={true} />
             </div>
+            <ScrollToTop div='section-container' id={true} />
         </>
     )
 }

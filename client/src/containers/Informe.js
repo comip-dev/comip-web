@@ -17,8 +17,8 @@ const Informe = () =>{
             {period==="semestre" && <Semestral/>}
             {period==="final" && <Final/>}
             <Footer/>
-            <ScrollToTop div='section-container' />
         </div>
+            <ScrollToTop div='section-container' />
         </>
     )
 }

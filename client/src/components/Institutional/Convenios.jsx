@@ -76,12 +76,9 @@ const Convenios =() =>{
     const [showQuestions, setShowQuestions] = React.useState(falseState)
     const toggleShow = (i) =>{
         const currentState=showQuestions[i]
-        console.log(currentState)
         let items = [...falseState]
-        console.log(items)
         items[i] = !currentState
         setShowQuestions(items)
-        console.log(showQuestions)
     }
     return(
         <>
@@ -118,8 +115,8 @@ const Convenios =() =>{
                     </div>
                 <Footer/>
                 </div>
-                <ScrollToTop div='section-container' />
             </div>
+                <ScrollToTop div='section-container' />
         </>
     )
 }

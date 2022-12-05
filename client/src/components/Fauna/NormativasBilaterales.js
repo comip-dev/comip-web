@@ -62,8 +62,8 @@ const NormativasBilaterales = () =>{
                 </div>
                 <Footer/>
             </div>
-            <ScrollToTop div='section-container' />
         </div>
+            <ScrollToTop div='section-container' />
         </>
     )
 }

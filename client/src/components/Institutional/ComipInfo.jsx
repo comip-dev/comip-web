@@ -37,8 +37,8 @@ const ComipInfo = ()=>{
                     <img className="convenios-img" src={convenios01} alt="convenios-links" />
                     <Footer/>
                 </div>
-                <ScrollToTop div='section-container' />
             </div>
+                <ScrollToTop div='section-container' />
         </>
     )
 }

@@ -63,8 +63,8 @@ const Noticia = () =>{
                     
                 </div>
                 <Footer/>
-                <ScrollToTop div='section-container'  />
             </div>
+                <ScrollToTop div='section-container'  />
         </>
     )
 }
