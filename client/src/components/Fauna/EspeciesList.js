@@ -9,6 +9,7 @@ const EspeciesList = () => {
                 {
                     especies.map(item=>{return <Especie details={item} />})
                 }
+                <div className="especie-container empty-item" ></div>
             </div>
         </>
     )

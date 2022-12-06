@@ -28,6 +28,7 @@ const Especie = ({details}) => {
         <div onClick={handleShow} className='especie-container' >
             <img className='especie-img' src={details.img} alt={`Imagen ${details.name}` } />
             <div className='especie-overlay' >
+                <span class="material-symbols-outlined">search</span>
                 <div className='especie-name' >{details.name}</div>
                 <div className='especie-scname' ><i>{details.scientificName}</i></div>
             </div>

@@ -23,16 +23,20 @@ const Piscicultura = () => {
             <p>› La producción de arroz es una actividad productiva muy importante en esta zona denominada Paraná Norte.</p>
             <p>› Se dispone de 30.000 ha para cultivo de cultivo de arroz.</p>
             <p>› Desde el año 2009, se implementan las Buenas Practicas para el Cultivo del Arroz (INTA – Asociación Correntina Plantadores de Arroz).</p>
+            <br/>
             <img className="pisci-img" src="/images/Fauna/3_Estudios/2_Piscicultura/gráfico 1.jpg" alt="grafico"/>
+            <br/>
             <br/>
             <p><strong>Calidad del Agua en afluentes</strong></p>
             <p>› Se tomaron muestras en los cuatro arroyos (Arg) de mayor caudal afluentes del río Paraná.</p>
             <p>› Se constata la ausencia de aportes alóctonos que pudieran generar la eutrofización u otro tipo de alteración de la calidad del agua.</p>
+            <br/>
+            <br/>
             <WaterQuality/>
             <br/>
             <br/>
             <p><strong>Piscicultura e Infraestructura</strong></p>
-            <br/>
+            
             <p>› Se evidenció un escaso conocimiento sobre esta actividad productiva.</p>
             <p><strong>Se analizó la demanda comercial de carne de pescado:</strong></p>
             <p>› Existe una fuerte demanda de pescado de río en la región.</p>

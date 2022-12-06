@@ -192,6 +192,67 @@ export const especies = [
         img:"/images/Fauna/2_Especies/fotos/19. vieja del agua - Megalancistrus parananus .jpg"
     },
     {
+        name:"Bagre Blanco",
+        scientificName:"Pimelodus albicans",
+        length:"60 cm.",
+        diet:"Omnívoro.",
+        habit:"Hábitos migratorios. Asociados a fondos fangosos.",
+        manRelation:"Posee cierto valor para la pesca comercial. Los pobladores ribereños lo utilizan en sus dietas como recurso alimenticio. Apreciado en la pesca deportiva.",
+        distribution:"Cuencas de los ríos Paraguay, Paraná, Uruguay y Río de la Plata.",
+        img:"/images/Fauna/2_Especies/fotos/bagre blanco.jpg"
+    },
+    {
+        name:"Bagre Fajado",
+        scientificName:"Pimelodus ornatus",
+        length:"Hasta 34 cm.",
+        diet:"Omnívora.",
+        habit:"Especie migratoria. Hábitos alimenticios similares a Pimelodus maculatus.",
+        manRelation:"",
+        distribution:"Cuencas de los ríos Paraguay y Paraná.",
+        img:"/images/Fauna/2_Especies/fotos/Bagre Fajado.jpg"
+    },
+    {
+        name:"Manduré Pico de Pato / Cucharón",
+        scientificName:"Sorubim lima",
+        length:"Hasta 50 cm.",
+        diet:"Se alimentan de invertebrados y pequeños peces.",
+        habit:" Especie migratoria. Pez de fondo, nocturno.",
+        manRelation:"Los pobladores ribereños lo utilizan en sus dietas como recurso alimenticio.",
+        distribution:"Cuencas de los ríos Paraguay, Uruguay, Paraná y Río de la Plata.",
+        img:"/images/Fauna/2_Especies/fotos/Mandure-pico-pato.jpg"
+    },
+    {
+        name:"Manduré",
+        scientificName:"Ageneiosus militaris",
+        length:"40 cm.",
+        diet:"Se alimenta preferentemente de peces y crustáceos.",
+        habit:"Dimorfismo sexual. Machos con estructuras adaptadas para la cópula. Fecundación interna.",
+        manRelation:"Valorada por la calidad de su carne.",
+        distribution:"Cuencas de los ríos Uruguay, Paraná y Río de la Plata.",
+        img:"/images/Fauna/2_Especies/fotos/Mandure.jpg"
+    },
+    {
+        name:"Manduré Tres Puntos",
+        scientificName:"Hemisorubim plathyrhynchos",
+        length:"Hasta 50 cm",
+        diet:"Invertebrados bentónicos y pequeños peces.",
+        habit:"Especie migratoria. Desova entre diciembre y enero aprovechando períodos de inundación. Se lo encuentra en aguas profundas y lentas del río.",
+        manRelation:"Apreciado por su carne. Es utilizada para consumo por los pobladores locales.",
+        distribution:"Cuenca de los ríos Paraguay y Paraná.",
+        img:"/images/Fauna/2_Especies/fotos/mandure-tres-puntos.jpg"
+    },
+    {
+        name:"Pacú",
+        scientificName:"Piaractus mesopotamicus",
+        length:"Hasta 80 cm",
+        weight:'Hasta 20kg.',
+        diet:"Omnívoro",
+        habit:" En ambientes de agua bien oxigenadas. Especie migratoria. Asciende por los cursos de agua en los meses de otoño y desciende a mediados de primavera.",
+        manRelation:"Muy apreciado por su carne y para la pesca recreativa. Especie utilizada por productores ictícolas.",
+        distribution:"Río Paraná medio. Río Uruguay medio e inferior. Río Paraguay superior y medio. ",
+        img:"/images/Fauna/2_Especies/fotos/Pacu.jpg"
+    },
+    {
         name:"Bagre amarillo",
         scientificName:"Pimelodus maculatus",
         length:"Hasta 40 cm.",

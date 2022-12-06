@@ -42,6 +42,7 @@
   .especie-name{
     font-size: 1.25rem;
     font-weight: 700;
+    text-align: center;
 }
 .especie-scname{
     font-size: 1rem;

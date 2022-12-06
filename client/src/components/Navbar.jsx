@@ -10,6 +10,7 @@ import { navOptions } from "../assets/data/navOptions";
 const Navbar = () => {
     const navigate= useNavigate()
     const location = useLocation()
+    console.log(location.pathname)
     const [white,setWhite] = useState(false)
     useEffect(function(){
         const onChange = (entries) =>{
@@ -29,6 +30,14 @@ const Navbar = () => {
         // navigate(`/${route}`)
         else navigate(`/${route}`)
     }
+    const isActive = (item) =>{
+        if(location.pathname.includes(item.id)) return true
+        let active = false
+        item.subsections?.forEach(element => {
+            if(location.pathname.includes(element.id)) active= true
+        });
+        return active
+    }
     return(
         <>
             
@@ -36,7 +45,6 @@ const Navbar = () => {
 
                 <div onClick={()=>goTo("home")} className="nav-logo">
                     <img className="comip-logo-container" src={white?logo:logoblanco} alt="logo-COMIP" ></img>
-
                 </div>
                 <div className="nav-options" >
                     {
@@ -51,7 +59,7 @@ const Navbar = () => {
                                         return(
                                             <>
                                             <div className="nav-section-container" >
-                                                <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className={location.pathname.includes(section.id)?'nav-bg-hover-active':" nav-bg-hover"} >{section.text}</a>
+                                                <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className={isActive(section) ?'nav-bg-hover-active':" nav-bg-hover"} >{section.text}</a>
 
                                                 {section.subsections && 
                                                     <div className="subsections-container" >

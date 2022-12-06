@@ -172,9 +172,16 @@
     transform:translate(0,1);
     background-color: #F5F5F5F5;
 }
-    
+
 .white button{
     color: black;
+}
+.white .dropbtn:hover{
+    border-bottom: 0.35rem solid #5C5C5C;
+}
+.white .dropbtn-active{
+    border-bottom: 0.35rem solid #5C5C5C;
+
 }
 #navObserver{
     height:  10rem;

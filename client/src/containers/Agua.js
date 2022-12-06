@@ -15,7 +15,7 @@ const Agua = () =>{
             title:"Hidrometeorología",
             content:Hidrometeorología
         },
-        meteorologia:{
+        pronostico:{
             headingPic:"/images/El agua/3_Meteorología/Encabezado.png",
             title:"Pronóstico",
             content:Meteorologia

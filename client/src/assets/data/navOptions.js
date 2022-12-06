@@ -64,7 +64,7 @@ export const navOptions=[
     text:"El agua",
     sections:[
         {id:'hidrometeorologia',text:"Hidrometeorología"},
-        {id:'meteorologia',text:"Meteorología"},
+        {id:'pronostico',text:"Meteorología"},
         {id:'calidad',text:"Calidad del Agua"},
     ]
 },
