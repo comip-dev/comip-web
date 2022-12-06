@@ -1,19 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './HomeIcons.css'
 
 
 const HomeIcons = () =>{
-    
-    return(
+    const navigate = useNavigate()
+    const goTo = (section,sub) =>{
+        navigate(`/${section}/${sub}`)
+    }
+        return(
         <div id="icons-container" >
 
-            <div id="faunaIcon" ></div>
-            <div id="riverIcon" ></div>
-            <div id="methIcon" ></div>
-            <div id="navigationIcon" ></div>
-            <div id="waterIcon" ></div>
-            
-            
+            <div id="faunaIcon"  onClick={()=>goTo('fauna','convenio')} ></div>
+            <div id="riverIcon"  onClick={()=>goTo('rio','cuencadelplata')} ></div>
+            <div id="methIcon"  onClick={()=>goTo('agua','pronostico')} ></div>
+            <div id="navigationIcon" onClick={()=>goTo('nav','navegacion')}  ></div>
+            <div id="waterIcon"  onClick={()=>goTo('agua','calidad')} ></div>
         </div>
     )
 }

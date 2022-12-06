@@ -57,6 +57,9 @@ const Home = () =>{
                             img={post.img}
                             imgSide={post.imgSide}
                             text={post.text}
+                            navigar={post.navigate}
+                            to={post.to}
+                            href={post.href}
                             />
                         )
                     })

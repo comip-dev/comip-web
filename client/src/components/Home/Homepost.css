@@ -1,6 +1,8 @@
 .post-container{
     width: 32%;
     height: 11.5rem;
+    text-decoration: none;
+    color:black
 }
 .post-container:hover .carta{
     transform: rotateY(180deg);
