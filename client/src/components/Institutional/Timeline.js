@@ -7,12 +7,12 @@ const Timeline = () =>{
             year:'1971',
             // text:'CONVENIO PARA EL ESTUDIO DEL APROVECHAMIENTO DE LOS RECURSOS DEL RÍO PARANA',
             text:'Convenio para el estudio del aprovechamiento de los recursos del Río Paraná',
-            link:'https://comip.org.ar/quienessomos/#:~:text=CONVENIO%20PARA%20EL%20ESTUDIO%20DEL%20APROVECHAMIENTO%20DE%20LOS%20RECURSOS%20DEL%20R%C3%8DO%20PARANA'
+            link:'https://www.comip.org.ar/wp-content/uploads/2017/05/Convenio-para-el-estudio-del-aprovechamiento-de-los-recursos-del-río-paraná..pdf'
         },
         {
             year:'1979',
             text:'CONVENIO TRIPARTITO',
-            link:'Convenio Tripartito'
+            link:'https://www.comip.org.ar/wp-content/uploads/2017/05/acuerdo-tripartito-1979.pdf'
         },
         {
             year:'1989',
@@ -106,11 +106,6 @@ const Timeline = () =>{
                 }}
                 classNames={{
                     card: 'my-card',
-                    // cardMedia: 'my-card-media',
-                    // cardSubTitle: 'my-card-subtitle',
-                    // cardText: 'my-card-text',
-                    // cardTitle: 'my-card-title',
-                    // controls: 'my-controls',
                     title: 'my-title',
                     titleActive:'my-titleActive'
                 }}
@@ -129,25 +124,33 @@ const Timeline = () =>{
                         {
                             item.list.map(conv=>{
                                 return <div className='tl-item-container' >
-                                        <div className='separator-tl-line' ></div>
-                                        <a className='tl-convenio-link' href={conv.link} target='blank' >{conv.text}</a>
+                                            <div>
+                                                <div className='separator-tl-line' ></div>
+                                                <a className='tl-convenio-link' href={conv.link} target='blank' rel="noreferrer nofollow noopener" >{conv.text}</a>
+                                            </div>
+                                            <div className="tl-ver-btn-container" >
+                                                <a className="norm-pdf-download" href={conv.link} target='_blank' rel="noreferrer nofollow noopener" >Ver / Descargar PDF</a>
+                                            </div>
                                     </div>
                             })
                         }
                         </>
                     ):
                     <div className='tl-item-container' >
-                        <div className='separator-tl-line' ></div>
-                        <a className='tl-convenio-link' href={item.link} target='blank' >{item.text}</a>
+                            <div>
+                                <div className='separator-tl-line' ></div>
+                                <a className='tl-convenio-link' href={item.link} target='blank' rel="noreferrer nofollow noopener"
+                                >{item.text}</a>
+                            </div>
+                            <div className="tl-ver-btn-container" >
+                                <a className="norm-pdf-download" href={item.link} target='_blank' rel="noreferrer nofollow" >Ver / Descargar PDF</a>
+                            </div>
                     </div>
                 }
                 </div>
                 )
-
         })
-
         }
-
         </Chrono> 
         </>
     )

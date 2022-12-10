@@ -38,10 +38,10 @@ const RioParana =()=>{
             <br/>
             <div className="section-subtitle" >Posibilidades de desarrollo económico</div>
             <br/>
-            <div className="stretches-container" >
-                    <p >El Paraná y la cuenca del Plata ocupan el área más poblada e industrializada de América del Sur, y el río vincula, a su vez, las dos mayores áreas económicas del subcontinente: por un lado, el Estado de São Paulo, en el norte y, por el otro, el eje fluvial industrial Santa Fe-La Plata en el sur. Esto le otorga al río una gran importancia estratégica tanto a nivel político como económico y lo convierte en la principal vía de integración del Mercosur. A su vez es una de las principales reservas de agua dulce del mundo, al estar vinculada con el Acuífero Guaraní.</p>
-                    <img src={image4} alt="" loading="lazy" />
-                </div>
+            <div className="desarrollo-economico" >
+                <p >El Paraná y la cuenca del Plata ocupan el área más poblada e industrializada de América del Sur, y el río vincula, a su vez, las dos mayores áreas económicas del subcontinente: por un lado, el Estado de São Paulo, en el norte y, por el otro, el eje fluvial industrial Santa Fe-La Plata en el sur. Esto le otorga al río una gran importancia estratégica tanto a nivel político como económico y lo convierte en la principal vía de integración del Mercosur. A su vez es una de las principales reservas de agua dulce del mundo, al estar vinculada con el Acuífero Guaraní.</p>
+                <img src={image4} alt="" loading="lazy" />
+            </div>
         </>
     )
 }

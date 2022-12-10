@@ -32,8 +32,10 @@
     width: 100%;
 }
 .tl-item-container{
-    width: 40%;
-    height: 60%;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .separator-tl-line{
     /* margin-top: 1rem; */
@@ -42,6 +44,12 @@
     height: 0px;
     border:2px solid #5C5C5C;
     background-color: #5C5C5C;
+}
+.tl-ver-btn-container{
+    height: 10%;
+    margin-top: 3rem;
+    bottom: 0px;
+    
 }
 @media (max-width:1400px) {
     .card-tl-container{

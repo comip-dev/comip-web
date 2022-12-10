@@ -80,6 +80,7 @@ const Convenios =() =>{
         items[i] = !currentState
         setShowQuestions(items)
     }
+    
     return(
         <>
             <div id="section-container" >
