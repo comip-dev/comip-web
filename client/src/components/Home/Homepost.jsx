@@ -1,15 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import useWindowSize from '../../hooks/useWindowSize'
 import './Homepost.css'
-const image=`../../assets/homepostsimgs/determinantes.svg`
-
 
 const Homepost = ({title, img, imgSide, text, navigar,to,href}) =>{
+    const windowSize = useWindowSize()
     const navigate = useNavigate()
     const image = require( `../../assets/homepostsimgs/${img}`)
     if(href){
         return(
-        <a href={href} target='blank' className={'post-container'} >
+        <a href={href} target='blank' className={windowSize.innerWidth>720 ?'post-container':'post-container-res'} >
             <div className='carta' >
                 <div className='cara' >
                     <img className='article-img' src={image} alt="related img"/>
@@ -25,7 +25,7 @@ const Homepost = ({title, img, imgSide, text, navigar,to,href}) =>{
         )
     }
     return(
-        <div onClick={navigar?()=>navigate(to):null} className={'post-container'} >
+        <div onClick={navigar?()=>navigate(to):null} className={windowSize.innerWidth>720 ?'post-container':'post-container-res'} >
             <div className='carta' >
                 <div className='cara' >
                     <img className='article-img' src={image} alt="related img"/>

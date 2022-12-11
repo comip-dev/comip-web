@@ -8,12 +8,14 @@ import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
 import { homeslides } from "../assets/data/homeslides";
 import ScrollToTop from "../components/ScrollToTop";
 import NavObserver from "../components/NavObserver";
+import useWindowSize from "../hooks/useWindowSize";
 const mouseIcon = "/images/icons/Scroll.gif"
-// import mouseIcon from "../assets/images/mouse-home-icon.svg"
+
 const Home = () =>{
+    const windowSize = useWindowSize()
     var slideIndex = 0;
     const started = useRef(false)
-
+    
     React.useEffect(()=>{
         let x = document.getElementsByClassName("mySlides");
         if(x.length>0 && started.current=== false) {
@@ -32,7 +34,7 @@ const Home = () =>{
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 10000); // Change image every 2 seconds
+    setTimeout(carousel, 10000); 
     }
 
     return(
@@ -43,15 +45,13 @@ const Home = () =>{
                 homeslides.map(item=> <img src={item.uri} className="mySlides" alt="home slide"  />
                 )
             }
-            <img src={mouseIcon} alt="mouse icon" className="mouse-icon"/>
+            <img src={mouseIcon} alt="mouse icon" className={windowSize.innerWidth>720 ?"mouse-icon":'res-mouse-icon'}/>
             <HomeIcons/>
-            <div className="post-list" >
+            <div className={windowSize.innerWidth>720 ? "post-list":"pl-column"} >
                 {
                     
-                    homeposts?.map(post=>{
-                        
+                    homeposts?.map(post=>{                        
                         return(
-
                         <Homepost
                             title={post.title} 
                             img={post.img}

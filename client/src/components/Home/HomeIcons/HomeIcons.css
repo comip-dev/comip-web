@@ -1,4 +1,4 @@
-#icons-container{
+.icons-container{
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -6,97 +6,92 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
-#waterIcon{
+.column-icons{
+  flex-direction: column;
+  align-items: center;
+}
+.column-icons div{
+  width: 85%;
+  aspect-ratio:3.24;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.column-icons div:last-child{
+  margin-bottom: 0px;
+
+}
+.column-icons div:hover{
+  width: 85%;
+  aspect-ratio:3.2;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.waterIcon{
   width: 18%;
   height: 4.5rem;
   background-image:url('/public/images/homeicons/icono-calidad-agua.svg') ;
   background-size: cover;
 }
-#riverIcon{
+.riverIcon{
   width: 18%;
+  height: 4.5rem;
   background-image:url('/public/images/homeicons/icono-estado-rio.svg') ;
   background-size: cover;
   
 }
-#riverIcon:hover{
+.riverIcon:hover{
   width: 18%;
+  height: 4.5rem;
   background-image:url('/public/images/homeicons/hover-icono-estado-rio.svg') ;
   background-size: cover;
   
 }
-#faunaIcon{
+.faunaIcon{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/Botenes_1.svg') ;
   background-size: cover;
+  height: 4.5rem;
   
 }
-#faunaIcon:hover{
+.faunaIcon:hover{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/Botenes_1-2.svg') ;
   background-size: cover;
   
 }
-#methIcon{
+.methIcon{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/icono-meteorologia.svg') ;
   background-size: cover;
 }
-#methIcon:hover{
+.methIcon:hover{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/hover-icono-meteorologia.svg') ;
   background-size: cover;
 }
-#navigationIcon{
+.navigationIcon{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/icono-navegacion.svg') ;
   background-size: cover;
 }
-#navigationIcon:hover{
+.navigationIcon:hover{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/hover-icono-navegacion.svg') ;
   background-size: cover;
 }
-#waterIcon:hover{
+.waterIcon:hover{
+  height: 4.5rem;
   width: 18%;
   background-image:url('/public/images/homeicons/hover-icono-calidad-agua.svg') ;
   object-fit: cover;
   background-size: cover;
 }
-.icon-container{
-    width: 18%;
-    height: 4rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border:solid 1px #B3B3B3;
-    border-radius: 1rem;
 
-}
-.icon-container:hover{
-  background-color: rgb(220, 240, 246);
-  cursor:pointer
-}
-.icon-text {
-    color: #010101;
-    font-size: 0.9rem;
-    font-family: 'Raleway';
-    font-weight: 700;
-    width: 60%;
-    text-align: center;
-    letter-spacing: -0.015em;
-    position: absolute;
-    right: 0px;
-  }
-  .icon-img{
-    width: 18%;
-    height: 110%;
-    object-fit: contain;
-    /* position: absolute; */
-    left: 0px;
-}
-  .rio-icon{
-    height: 100%;
-    left:0.5rem
-  }
-  
+

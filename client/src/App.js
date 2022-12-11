@@ -26,8 +26,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={[<Navbar/>,<Home/>]}/>
-        <Route exact path={'/home'} element={[<Navbar/>,<Home/>]} />
+        <Route path='/' element={[<Navbar/>, <Home/>]}/>
+        <Route exact path={'/home'} element={[<Navbar/>, <Home/>]} />
         <Route exact path={'/Institucional/:seccion'} element={[<Navbar/>,<Institutional/>]} />
         <Route exact path={'/rio/:seccion'} element={[<Navbar/>,<Rio/>]} />
         <Route exact path={'/fauna/:seccion'} element={[<Navbar/>,<Fauna/>]} />

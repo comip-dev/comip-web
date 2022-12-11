@@ -8,7 +8,6 @@ const Especie = ({details}) => {
         function useOutsideAlerter(ref) {
         React.useEffect(() => {
             function handleClickOutside(event) {
-                console.log(ref.current)
             if ( ref.current &&!ref.current.classList.contains("not-visible") && !ref.current.contains(event.target)) {
                 
                 setShow(false)

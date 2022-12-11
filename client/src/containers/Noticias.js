@@ -7,7 +7,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import {getNews } from '../services/news'
 import NavObserver from '../components/NavObserver';
+import useWindowSize from '../hooks/useWindowSize';
 const Noticias = () =>{
+    const windowSize = useWindowSize()
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
     const [error,setError] = useState(null)
@@ -33,12 +35,12 @@ const Noticias = () =>{
             <div id='section-container' >
                 <NavObserver/>
                 <div id='comip-info-container' >
-                    <div className="authorities-title" >Últimas entradas</div>
-                    <div className="separator-auth-line" ></div>
+                    <div className={windowSize.innerWidth>720?"section-title":"res-section-title"} >Últimas entradas</div>
+                    <div className={windowSize.innerWidth>720?"separator-line":"res-separator-line"} ></div>
                     <br/>
                     <br/>
                     <br/>
-                    <div className='noticias-list' >
+                    <div className={windowSize.innerWidth>720?'noticias-list':'res-noticias-list'} >
                     
                     {
                         noticias?.map(item=>{

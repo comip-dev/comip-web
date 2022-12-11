@@ -4,17 +4,18 @@ import logo from '../assets/images/logo-comip2.png'
 import logoblanco from '../assets/images/logo-comip2blanco.png'
 import { useLocation, useNavigate } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
+import useWindowSize from "../hooks/useWindowSize";
+import DrawerAppBar from "./ResNavbar";
 
 
 
 const Navbar = () => {
     const navigate= useNavigate()
     const location = useLocation()
-    console.log(location.pathname)
     const [white,setWhite] = useState(false)
+    const windowSize = useWindowSize()
     useEffect(function(){
         const onChange = (entries) =>{
-            // console.log(entries)
             const el = entries[0]
             !el.isIntersecting ? setWhite(true) : setWhite(false)
         }
@@ -38,11 +39,10 @@ const Navbar = () => {
         });
         return active
     }
+    if(windowSize.innerWidth<720) return <DrawerAppBar goTo={goTo} white={white}/>
     return(
         <>
-            
             <div className={white?"navbar-container white":"navbar-container "} >
-
                 <div onClick={()=>goTo("home")} className="nav-logo">
                     <img className="comip-logo-container" src={white?logo:logoblanco} alt="logo-COMIP" ></img>
                 </div>

@@ -66,8 +66,7 @@ export const noticiasObject ={
     8527419633:{
         id:'8527419633',
         date:'ON 28 DE NOVIEMBRE DE 2022',
-        linkpdf:'https://comip.org.ar/wp-content/uploads/2021/11/CONVENIO-SSPVNyMM-COMIP-2021.pdf',
-        slides:[],
+        linkpdf:'https://drive.google.com/file/d/1cZI7kaoX60bAgBPZhE3nPxUBCFTYi5GS/view?usp=share_link',
         videoLink:'',
         img:"/images/noticias/parana2811/5ff766775b070-800x400.jpg",
         title:`Río Paraná: estado de situación al lunes 28 de noviembre de 2022`,

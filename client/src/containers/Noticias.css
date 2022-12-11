@@ -6,6 +6,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.res-noticias-list{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .noticia-item-container{
     width: 31%;
     height: 17rem ;
@@ -16,6 +24,11 @@
     border-left: solid 1px #B3B3B3;
     margin-bottom: 3rem;   
 }
+@media (max-width:720px) {
+    .noticia-item-container{
+        width: 45%;
+    }
+  }
 .noticia-item-container:hover{
     background-color:  #E9F8FF;
 }
