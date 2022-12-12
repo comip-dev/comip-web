@@ -8,31 +8,46 @@ import logo from '../../assets/images/LOGO-COMIP-blanco.png'
 import './Footer.css'
 import esc_arg from '../../assets/images/escudo-argentina.png'
 import esc_par from '../../assets/images/escudo-paraguay.png'
-import { useLocation } from "react-router-dom";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const Footer = () =>{
-    const location = useLocation()
+    const windowSize = useWindowSize()
     return(
-        <div className={location.pathname==='/home'?'footer-container-home' :"footer-container"} >
+        <div className="footer-container" >
             <div className="first-footer" >
                 <div className="middle-foot" >
                     <div className="footer-info-container">
                         <p>{footerInfo.info}</p>
                     </div>
-                    <div className="contact-icons">
+                    {windowSize.innerWidth>720 && <div className="contact-icons">
                         <img className="footer-social-icon" src={twitterIcon} alt="Twitter icon"/>
                         <img className="footer-social-icon" src={linkedinIcon} alt="Linkedin icon"/>
                         <img className="footer-social-icon" src={mailIcon} alt="Mail icon"/>
+                    </div>}
+                </div>
+                {
+                    windowSize.innerWidth>720 ?<>
+                        <div className="third-foot" >
+                            <img className="shield-img" alt="escudo del pais" src={esc_arg} ></img>
+                            <CountryInfo country="Argentina" info={footerInfo.argentina} esc={esc_arg} />
+                        </div>
+                        <div className="third-foot" >
+                            <img className="shield-img" alt="escudo del pais" src={esc_par} ></img>
+                            <CountryInfo country="Paraguay" info={footerInfo.paraguay} esc={esc_par} />
+                        </div>
+
+                    </>: <div className="res-third-foot">
+                            <div className="third-foot" >
+                                <img className="shield-img" alt="escudo del pais" src={esc_arg} ></img>
+                                <CountryInfo country="Argentina" info={footerInfo.argentina} esc={esc_arg} />
+                            </div>
+                            <div className="third-foot" >
+                                <img className="shield-img" alt="escudo del pais" src={esc_par} ></img>
+                                <CountryInfo country="Paraguay" info={footerInfo.paraguay} esc={esc_par} />
+                            </div>
                     </div>
-                </div>
-                <div className="third-foot" >
-                    <img className="shield-img" alt="escudo del pais" src={esc_arg} ></img>
-                    <CountryInfo country="Argentina" info={footerInfo.argentina} esc={esc_arg} />
-                </div>
-                <div className="third-foot" >
-                    <img className="shield-img" alt="escudo del pais" src={esc_par} ></img>
-                    <CountryInfo country="Paraguay" info={footerInfo.paraguay} esc={esc_par} />
-                </div>
+                }
+
             </div>
             <div className="second-footer">
                 <img className="logo-footer" src={logo} alt="logo comip"/>

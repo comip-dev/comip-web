@@ -170,7 +170,7 @@
 
 .white{
     transform:translate(0,1);
-    background-color: hwb(0deg 85% 15%);
+    background-color: rgb(217, 217, 217);
 }
 
 .white button{
