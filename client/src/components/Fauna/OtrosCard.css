@@ -43,3 +43,8 @@
     color:#777777
 
 }
+@media (max-width:720px) {
+    .otroscard-button{
+        width: 40%;
+    }
+  }

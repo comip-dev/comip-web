@@ -51,6 +51,7 @@
 .conv-card-title{
     font-family: 'Raleway', sans-serif ;
     margin-top: 0.5rem;
+    text-align: center;
 }
 .convcard-title-back{
     text-align: center;
@@ -93,6 +94,7 @@
     border: solid 1px transparent;
     font-family: 'Noto Sans';
     font-weight: 700;
+    text-align: center;
 }
 .faunaconv-button:active{
     background-color: white;
@@ -125,4 +127,35 @@
     padding: 1.5rem;
     align-items: center;
     border-radius: 0.5rem;
+}
+.estudio-convenio-title{
+    width: 100%;
+    border: solid 1px #5C5C5C;
+    color: #5C5C5C;
+    font-family: 'Raleway';
+    font-weight: 700;
+    display: flex;
+    padding: 1.5rem;
+
+    align-items: center;
+    /* margin-bottom: 1rem; */
+    border-radius: 0.5rem;
+}
+@media (max-width:720px) {
+    .fauna-title-active{
+        padding: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 90%;
+        padding-left:3% ;
+        padding-right:3% ;
+    }
+    .estudio-convenio-title{
+        padding: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 90%;
+        padding-left:3% ;
+        padding-right:3% ;
+    }
 }

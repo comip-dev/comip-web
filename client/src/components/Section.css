@@ -12,6 +12,12 @@
     font-family: 'Noto Sans';
     
 }
+@media (max-width:720px) {
+    .content-container{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
 #section-container{
     overflow: scroll;
     overflow-x: hidden;

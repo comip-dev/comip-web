@@ -6,6 +6,7 @@
     font-weight: 700;
     color: #464647;
 }
+
 .contact-form-container{
     width: 65%;
     margin-left: 17.5%;
@@ -41,4 +42,10 @@
     border: none;
     border-radius: 1rem;
     color:white
+}
+@media (max-width:720px) {
+    .contact-form-container{
+        width: 90%;
+        margin-left: 5%;
+    }
 }

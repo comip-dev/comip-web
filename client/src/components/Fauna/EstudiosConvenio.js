@@ -97,24 +97,23 @@ const EstudiosConvenio = () =>{
                     <div className="authorities-title" >Estudios del convenio</div>
                     <div className="separator-auth-line" ></div>
                     <div className='content-container' >
-
                     {
-                                conveniosList.map((convenio,index)=>{
-                                    return (
-                                        <div className="convenio-container" >
-                                            <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"fauna-title-active":"convenio-title"} >
-                                                {convenio.title}
-                                            </div>
-                                            <div className="conv-btn-container" >
-                                                <a className={showQuestions[index]?  "fauna-download-btn":"fauna-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
-                                                DESCARGAR PDF
-                                                </a>
-                                            </div>
-                                            
-                                        </div>
-                                    )
-                                })
-                            }
+                        conveniosList.map((convenio,index)=>{
+                            return (
+                                <div className="convenio-container" >
+                                    <div onClick={()=>toggleShow(index)} className={showQuestions[index]?"fauna-title-active":"estudio-convenio-title"} >
+                                        {convenio.title}
+                                    </div>
+                                    <div className="conv-btn-container" >
+                                        <a className={showQuestions[index]?  "fauna-download-btn":"fauna-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
+                                        DESCARGAR PDF
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            )
+                        })
+                    }
                 </div>
                 <Footer/>
             </div>

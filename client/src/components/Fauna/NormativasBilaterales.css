@@ -81,3 +81,19 @@
       font-size: 0.8rem;
     }
   }
+@media (max-width:720px) {
+    .normativas-container{
+      width: 90%;
+      margin-left: 5%;
+      flex-direction: column;
+      gap:2rem
+    }
+    .normcard-container{
+        width: 100%;
+        height: 12rem;
+    }
+    .fauna-footline{
+        width: 90%;
+        margin-left: 5%;
+    }
+  }

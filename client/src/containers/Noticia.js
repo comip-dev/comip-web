@@ -8,7 +8,7 @@ import ScrollToTop from '../components/ScrollToTop'
 import './Noticia.css'
 import ItatiSlider from '../components/Proyectos/ItatiSlider';
 import NavObserver from '../components/NavObserver';
-import { Document, Page } from 'react-pdf';
+
 
 const Noticia = () =>{
     const params = useParams()

@@ -21,6 +21,7 @@
     border-radius: 1rem;
     color: white;
     font-weight: 700;
+    text-align: center;
 }
 .calidad-btn:hover{
     color: #777777;
@@ -39,4 +40,9 @@
 .subtramo-link:hover{
     font-weight: 700;
     cursor: pointer;
+}
+@media (max-width:720px) {
+    .calidad-btn{
+        width: 47%;
+    }
 }

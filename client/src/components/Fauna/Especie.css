@@ -121,4 +121,23 @@
     .modal-close:hover{
         cursor: pointer;
     }
+@media (max-width:720px) {
+    .especie-modal-container{
+        width: 85%;
+        height: 70%;
+    }
+    .esp-modal-img{
+        width: 90%;
+    }
+    .modal-content{
+        width: 90%;
+    }
+  }
+@media (max-width:350px) {
+    .especie-modal-container{
+        width: 85%;
+        height: 70%;
+        overflow: scroll;
+    }
     
+  }

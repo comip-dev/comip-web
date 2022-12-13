@@ -67,43 +67,8 @@
       .not-visible{
         display: none;
     }
-    .esp-modal-img{
-        width: 80%;
-        height: 50%;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-    .modal-content{
-        margin-top: 2rem;
-        width: 75%;
-    }
-    .modal-title{
-        display: flex;
-        font-family: 'Raleway';
-        align-items: baseline;
-    }
-    .modal-name{
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-right: 1rem;
-    }
-    .modal-scname{
-        font-size: 1.3rem;
-    }
-    .modal-line-separator{
-        width: 2rem;
-        height: 3px;
-        background-color: #464647;
-    }
-    .modal-close{
-        position: absolute;
-        right: -12px;
-        top: -12px;
-        color: #04488B;
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    .modal-close:hover{
-        cursor: pointer;
-    }
+    
+    
+    
+    
     

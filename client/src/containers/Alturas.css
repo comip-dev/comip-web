@@ -20,3 +20,10 @@
 .alturas-cell:last-child{
     width: 15%;
 }
+@media (max-width:720px) {
+    .alturas-content{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}

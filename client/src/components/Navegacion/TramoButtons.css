@@ -52,3 +52,21 @@
     border-top: #5C5C5C 1px solid;
 
 }
+@media (max-width:720px) {
+    .tramo-btn{
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .tramo-btn-active{
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+  }
