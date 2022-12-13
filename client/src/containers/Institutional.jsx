@@ -14,7 +14,6 @@ const Institutional = (props) =>{
     const {seccion} = params
     return(
         <>
-           
             {
                 seccion==="autoridades" ? 
                 <Authorities  /> : (

@@ -86,28 +86,30 @@ const Timeline = () =>{
     return(
         <>
         <Chrono
+            className="my-timeline"
             mode="HORIZONTAL"
             cardPositionHorizontal='TOP'
             disableClickOnCircle={false}
             scrollable={false}
             lineWidth='2'
             // cardWidth='1000rem'
-            cardHeight='300'
+            // cardHeight='00'
+            enableOutline
             borderLessCards
             theme={{
                 primary:"#969696",secondary:"#05488C",
                 titleColorActive: 'white',
                 }}
-            fontSizes={{
-                    cardSubtitle: '0.85rem',
-                    cardText: '0.8rem',
-                    cardTitle: '1rem',
-                    title: '1.1rem',
-                }}
+            // fontSizes={{
+            //         cardSubtitle: '0.85rem',
+            //         cardText: '0.8rem',
+            //         cardTitle: '1rem',
+            //         title: '1.1rem',
+            //     }}
                 classNames={{
                     card: 'my-card',
                     title: 'my-title',
-                    titleActive:'my-titleActive'
+                    
                 }}
             items={myList.map((item,i)=>{
             return{title:item.year,}

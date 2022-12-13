@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { comipInfo } from "../../assets/data/institucional/comipInfo";
 import Footer from "../Footer/Footer";
 import './ComipInfo.css'
-import convenios01 from '../../assets/images/inst/interactivo.png'
 import ScrollToTop from "../ScrollToTop";
 import NavObserver from "../NavObserver";
-import { Chrono } from "react-chrono";
 import Timeline from "./Timeline";
 const ComipInfo = ()=>{
     

@@ -11,3 +11,13 @@
     /* height:31rem; */
     width: 100%;
 }
+@media (max-width:720px) {
+    .institutional-pic{
+        height: 30vh;
+    }
+    .heading-pic{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+  }

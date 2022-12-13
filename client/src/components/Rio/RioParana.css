@@ -35,3 +35,14 @@
     object-fit: contain;
     border-radius: 1rem;
 }
+@media (max-width:720px) {
+    .desarrollo-economico{
+        flex-direction: column-reverse;
+    }
+    .desarrollo-economico p{
+        width: 100%;
+    }
+    .desarrollo-economico img{
+        width: 100%;
+    }
+  }

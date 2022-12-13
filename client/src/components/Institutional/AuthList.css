@@ -21,7 +21,12 @@
     width: 50%;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    /* color:#36A9E1; */
+}
+@media (max-width:720px) {
+    .authority-country{
+        height: 6rem;
+        width: 45%;
+    }
 }
 .auth-position{
     font-family: 'Raleway';

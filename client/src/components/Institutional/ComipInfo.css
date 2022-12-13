@@ -4,7 +4,7 @@
     height: 35rem;
     display: flex;
     align-items: center;
-    /* padding-top:5rem ; */
+    font-size: 10px;                 
 }   
     
     #comip-info-container{
@@ -18,10 +18,14 @@
     transition: height 1s;
     width: 65%;
     margin-left: 17.5%;
-    font-family: 'Noto Sans';
-    /* height: 70rem; */
+    font-family: 'Noto Sans';    
 }
-
+@media (max-width:720px) {
+    .comip-info-text{
+        width: 90%;
+        margin-left: 5%;
+    }
+  }
 .info-hidden{
     height: 10rem;
     overflow:hidden;
