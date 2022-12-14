@@ -46,7 +46,8 @@ function DrawerAppBar(props) {
     const handleClick = (id,subId) => {
         console.log(id,subId)
         if(subId){
-            if(!state[id][subId]) goTo(id,subId)
+            if(!state[id][subId]) {goTo(id,subId)
+            handleDrawerToggle()}
             else setState({
                 ...state,
                 [id]: {
@@ -57,7 +58,9 @@ function DrawerAppBar(props) {
                 }
             })
         }else {
-            if(!state[id]) goTo(id)
+            if(!state[id]) {
+                handleDrawerToggle()
+                goTo(id)}
             setState({
                     ...initialOpenState,
                     [id]: {
