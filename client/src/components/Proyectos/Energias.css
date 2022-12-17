@@ -14,9 +14,14 @@
     aspect-ratio: 16/9;
 
 }
-/* .question-video{
-    display: none;
-} */
+.energias-container{
+    width: 100%;
+}
 .gap-box{
     margin-bottom: 0.5rem;
+}
+@media (max-width:720px){
+    .energias-container{
+        width: 94%;
+    }
 }

@@ -34,35 +34,20 @@ const CorpusChristi = () =>{
             <br/>
             <br/>
             <div className="publicaciones-container" >
-            {/* {
-                libros.map(item=>{
-                    return(
-                        <div  className='proy-container' >
-                            <img className='proy-img' src={item.img} alt="estadistica trafico comercial" />
-                            <a href={item.link} target='blank' >
-                                <div className='proy-overlay' >
-                                    <span class="material-symbols-outlined">download</span>
-                                    <div>Descargar PDF</div>
-                                </div>
-                            </a>
-                        </div>
-                    )
-                })
-            } */}
             <div className="esp-libros-container" >
                 <div className="esp-libros-title" >Síntesis Ejecutiva</div>                
                 <p className='libros-line-separator' ></p>                
                 <div className="libros-list" >
-                    <div className="libro-cont" >
+                    <div className="libro-cc-cont" >
                         <div className="libro-title" >(Español)</div>
                         <a href="https://comip.org.ar/wp-content/uploads/2020/11/La-Fauna-Ictica-del-Rio-Parana_compressed-1.pdf" target='blank'>
-                            <img src="/images/Proyectos/3_Corpus Christi - Situación actual/Recurso1.png" alt="portada de libro" />
+                            <img className="libro-CC-img" src="/images/Proyectos/3_Corpus Christi - Situación actual/librocastellano.png" alt="portada de libro" />
                         </a>
                     </div>
-                    <div className="libro-cont" >
+                    <div className="libro-cc-cont" >
                         <div className="libro-title" >(Inglés)</div>
                         <a href="https://comip.org.ar/wp-content/uploads/2020/11/GuiadelospecesdelParqueNacionalPre-Delta__AlmirnCasciottaCiotekyGiorgis2015_compressed-1.pdf" target='blank'> 
-                            <img src="/images/Fauna/2_Especies/Libro02.png" alt="portada de libro" />
+                            <img className="libro-CC-img" src="/images/Proyectos/3_Corpus Christi - Situación actual/libroIngles.png" alt="portada de libro" />
                         </a>
                     </div>
                 </div>

@@ -19,6 +19,7 @@
 .convenio-title:hover{
     color: #05488C;
     background-color:white;
+    cursor:pointer
 }
 .convenio-title-active{
     background-color: #5AA1E2;

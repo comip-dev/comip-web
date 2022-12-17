@@ -52,6 +52,8 @@ const Energias = ()=>{
     }
     return(
         <>
+            <div className="energias-container">
+
             {
                 conveniosList.map((convenio,index)=>{
                     return (
@@ -95,6 +97,7 @@ const Energias = ()=>{
                     )
                 })
             }
+            </div>
         </>
     )
 }

@@ -39,4 +39,15 @@
     border-radius: 1rem;
     /* border: solid 1px #F9E8E8; */
 }
-   
+
+.libro-CC-img{
+    width: 75%;
+}
+.libro-cc-cont{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+.libro-cc-cont div{
+    width: 50%;
+}

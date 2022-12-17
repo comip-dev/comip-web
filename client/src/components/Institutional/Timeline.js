@@ -1,7 +1,9 @@
 import React from 'react'
 import { Chrono } from "react-chrono";
+import useWindowSize from '../../hooks/useWindowSize';
 import './Timeline.css'
 const Timeline = () =>{
+    const windowSize = useWindowSize()
     const myList = [
         {
             year:'1971',
@@ -89,12 +91,12 @@ const Timeline = () =>{
             className="my-timeline"
             mode="HORIZONTAL"
             cardPositionHorizontal='TOP'
-            disableClickOnCircle={false}
-            scrollable={false}
+            // disableClickOnCircle={false}
             lineWidth='2'
             // cardWidth='1000rem'
             // cardHeight='00'
-            enableOutline
+            itemWidth={windowSize.innerWidth>720?'150':'70'}
+            enableOutline={true}
             borderLessCards
             theme={{
                 primary:"#969696",secondary:"#05488C",

@@ -44,7 +44,7 @@ const Calidad = () =>{
             <br/>
             <div className="final-slider-container" >
                 <div className="slider-content" >
-                    <ItatiSlider slides={slides}/>
+                    <Slider slides={slides}/>
                 </div>
             </div>
             <div className="final-slider-height" ></div>

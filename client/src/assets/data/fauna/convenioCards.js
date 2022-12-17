@@ -19,4 +19,9 @@ export const cards = [
         img:"/images/Fauna/1_Convenio/Imagen 4.jpg",
         pdf:""
     },
+    {
+        zone:"Formosa",
+        img:"/images/Fauna/1_Convenio/Imagen 4.jpg",
+        pdf:"https://comip.org.ar/wp-content/uploads/2022/11/Dispo-Veda-pesca-102-22-1.pdf"
+    },
 ]

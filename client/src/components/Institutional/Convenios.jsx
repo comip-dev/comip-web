@@ -67,7 +67,7 @@ const Convenios =() =>{
             link:"https://comip.org.ar/wp-content/uploads/2020/11/Convenio-de-Cooperación-UNI-COMIP-2.pdf"
         },
         {
-            title:"CONVENIO MARCO ENTRE YACIRETÁ Y COMIP 02/03/2001",
+            title:"CONVENIO MARCO ENTRE YACYRETÁ Y COMIP 02/03/2001",
             description:"Su objetivo es la participación conjunta de ambos organismos para el intercambio de información, formación de recursos humanos y la implementación de iniciativas, con especial énfasis en el ambiente, estudios hidrológicos y manejo de la cuenca.",
             link:"https://comip.org.ar/wp-content/uploads/2017/11/002CONV-EBY-COMIP-2001-RENOVAC-AUTOMAT.pdf"
         },
@@ -105,7 +105,7 @@ const Convenios =() =>{
                                         </div>
                                         <div className="conv-btn-container" >
                                             <a className={showQuestions[index]?  "convenio-download-btn":"convenio-description"}href={convenio.link} target='_blank' rel="noreferrer nofollow" >
-                                            Descargar convenio
+                                            Ver convenio
                                             </a>
                                         </div>
                                         

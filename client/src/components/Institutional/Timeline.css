@@ -1,7 +1,7 @@
 .my-title{
     margin-top: 0.6rem;
     margin-bottom: 2rem;
-    
+    z-index: 3000;
 }
 .my-card{
     width: 100%;

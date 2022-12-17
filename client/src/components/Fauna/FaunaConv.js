@@ -21,7 +21,7 @@ const FaunaConv = () =>{
                                 </div>
                                 <div className='conv-cara cc-detras' >
                                     <a className='convcard-title-back' href={card.pdf} target='_blank' rel="noreferrer nofollow" >
-                                    VER + INFO 
+                                    ABRIR PDF
                                     </a>
                                 </div>
 
