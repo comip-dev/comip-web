@@ -34,9 +34,12 @@
     border-radius: 0.5rem;
 }
 .convenio-description{
+    
     height: 0rem;
-    visibility:hidden;
-    transition: height 0.5s;
+    overflow:hidden;
+    transition: 0.5s
+    /* visibility:hidden;     */
+    /* transition: 0.02s ; */
 }
 .convenio-description-show{
     display: block;
@@ -44,8 +47,9 @@
     padding: 1.5rem;
     font-family: 'Noto Sans';
     color:#5C5C5C;
-    transition: height 0.5s;
-    height: 3rem;
+    transition:  0.5s ;
+    max-height:  100rem;
+    
 }
 .convenio-download-btn{
     background-color: #05488C;

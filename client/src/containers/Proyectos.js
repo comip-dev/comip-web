@@ -1,16 +1,16 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
 import CorpusChristi from '../components/Proyectos/CorpusChristi';
-import Estudios from '../components/Proyectos/Estudios';
+import Energias from '../components/Proyectos/Energias';
 import ItatiItacora from '../components/Proyectos/ItatiItacora';
 import Section from '../components/Section';
 
 const Proyectos = ( )=>{
     const sections ={
-        estudios:{
-            headingPic:"/images/Proyectos/1_El porqué de los estudios/Encabezado.png",
-            title:"El Porqué de los Estudios",
-            content:Estudios
+        energias:{
+            headingPic:"/images/Proyectos/1_La-energia/Encabezado-Energía.jpg",
+            title:"La Energía",
+            content:Energias
         },
         itatiItacora:{
             headingPic:"/images/Proyectos/2_Itatí-Itacorá/Encabezados.png",

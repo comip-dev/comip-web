@@ -1,0 +1,22 @@
+.question-video-show{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.question-video-show iframe{
+    width: 70%;
+    aspect-ratio: 16/9;
+    margin-bottom: 2rem;
+}
+.question-video-show img{
+    width: 100%;
+    aspect-ratio: 16/9;
+
+}
+/* .question-video{
+    display: none;
+} */
+.gap-box{
+    margin-bottom: 0.5rem;
+}

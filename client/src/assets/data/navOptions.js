@@ -54,7 +54,7 @@ export const navOptions=[
     id:"proyectos", 
     text:"Proyectos",
     sections:[
-        {id:"estudios",text:"El Porqué de los Estudios"},
+        {id:"energias",text:"La Energía"},
         {id:"itatiItacora",text:"Itatí-Itacorá"},
         {id:'corpusChristi',text:"Corpus Christi - Situación actual"},
     ]
