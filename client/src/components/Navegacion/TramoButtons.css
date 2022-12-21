@@ -43,7 +43,9 @@
 
 }
 .tramo-list-line{
-    height: 6rem;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     border-bottom: #5C5C5C 1px solid;

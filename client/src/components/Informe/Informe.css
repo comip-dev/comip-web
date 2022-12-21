@@ -37,6 +37,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 .descarga-inf-button{
     width: 40%;
