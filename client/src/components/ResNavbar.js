@@ -19,7 +19,11 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 const drawerWidth = 240;
 
-
+const styles = theme => ({
+    listItemText:{
+      fontSize:20,
+    }
+  });
 function DrawerAppBar(props) {
     let initialOpenState = {}
     navOptions.forEach(item=>{
@@ -73,16 +77,16 @@ function DrawerAppBar(props) {
 
     const drawer = (
         
-        <Box  sx={{ textAlign: 'center' }}>
+        <Box  sx={{ textAlign: 'center',  }}>
             {/* <Typography variant="h6" sx={{ my: 2 }}>
                 MUI
             </Typography>
             <Divider /> */}
 
-            <List>
+            <List  >
                 {navOptions.map((item) => (<>
                     <ListItemButton onClick={()=>handleClick(item.id)}>
-                        <ListItemText primary={item.text} />
+                        <ListItemText primaryTypographyProps={{fontSize: '1.3rem'}}  primary={item.text} />
                         {item.sections.length>0 && (state[item.id].open ? <ExpandLess /> : <ExpandMore />)}
                     </ListItemButton>
                     {
@@ -92,7 +96,7 @@ function DrawerAppBar(props) {
                                     item.sections.map((section)=>(
                                     <>
                                         <ListItemButton onClick={()=>handleClick(item.id,section.id)} sx={{ pl: 4 }}>
-                                            <ListItemText primary={section.text} />
+                                            <ListItemText primaryTypographyProps={{fontSize: '1.2rem'}} primary={section.text} />
                                         </ListItemButton>
                                         {
                                             section.subsections && <Collapse in={state[item.id][section.id].open} timeout="auto" unmountOnExit>
@@ -100,7 +104,7 @@ function DrawerAppBar(props) {
                                                 {
                                                     section.subsections.map(sub=>(<>
                                                         <ListItemButton onClick={()=>handleClick(item.id,sub.id)} sx={{ pl: 6 }}>
-                                                            <ListItemText primary={sub.text} />
+                                                            <ListItemText primaryTypographyProps={{fontSize: '1.1rem'}} primary={sub.text} />
                                                         </ListItemButton>
                                                     </>
                                                     ))

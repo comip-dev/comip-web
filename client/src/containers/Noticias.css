@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap:2rem
 }
 .noticia-item-container{
     width: 31%;
@@ -24,11 +25,6 @@
     border-left: solid 1px #B3B3B3;
     margin-bottom: 3rem;   
 }
-@media (max-width:720px) {
-    .noticia-item-container{
-        width: 45%;
-    }
-  }
 .noticia-item-container:hover{
     background-color:  #E9F8FF;
 }
@@ -80,3 +76,13 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+    @media (max-width:720px) {
+        .noticia-item-container{
+            width: 45%;
+        }
+        .mas-noticias-btn{
+            margin-top:5rem;
+            width: 30%;
+            margin-left: 35%;
+        }
+      }

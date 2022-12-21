@@ -49,7 +49,7 @@ const Noticias = () =>{
                                     title={item.title}
                                     text={item.text}
                                     id={item.id}
-                                    containerStyle='noticia-item-container'
+                                    containerStyle={windowSize.innerWidth>720?'noticia-item-container':'res-new-container'}
                             />
                         })
                     }
