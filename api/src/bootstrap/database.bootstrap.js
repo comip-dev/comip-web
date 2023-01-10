@@ -11,7 +11,8 @@ const getConnectionString = async () => {
   const dbName = process.env.DB_NAME;
   //   TODO: alternative of setting up env variables through env.yaml or .env
   
-  connectionString= `mongodb+srv://${dbUser}:${dbPassword}@cluster0.bcqln3e.mongodb.net/?retryWrites=true&w=majority`
+  connectionString= `mongodb+srv://${dbUser}:${dbPassword}@cluster0.y8vnc8l.mongodb.net/?retryWrites=true&w=majority`
+  
   // connectionString= `mongodb+srv://${dbUser}:${dbPassword}@cluster0.ba8evxr.mongodb.net/?retryWrites=true&w=majority`
   return connectionString;
 };
@@ -39,14 +40,6 @@ const dbMongoose = () => {
         .then(() => {
           console.log("Connection Database successful");
           resolve("Connection Database successful");
-          // feelingsLoader()
-          // reasonsLoader()
-          // therapistsLoader()
-          // affGroupLoader()
-          // clubsLoader()
-          // appsLoader()
-          // crisisLinesLoader()
-          // internalResourcesLoader()
         })
         .catch((err) => {
           console.log("there was an error connecting mongoose");

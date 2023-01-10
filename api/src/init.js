@@ -8,20 +8,20 @@ const appDatabase = database();
 try {
     
     appServer.initialize(app);
-    // appDatabase
-    // .initialize()
-    // .then()
-    // .catch((reason) => {
-    // console.log("couldn't connect with db because of " + reason);
-    // })
-    // .finally(async()=>{
-    //     // const transporter = await createTransporter()
-    //     // transporter.verify((err, success) => {
-    //     //     err
-    //     //       ? console.log(err)
-    //     //       : console.log(`=== Server is ready to send messages: ${success} ===`);
-    //     //    });
-    // })
+    appDatabase
+    .initialize()
+    .then()
+    .catch((reason) => {
+    console.log("couldn't connect with db because of " + reason);
+    })
+    .finally(async()=>{
+        // const transporter = await createTransporter()
+        // transporter.verify((err, success) => {
+        //     err
+        //       ? console.log(err)
+        //       : console.log(`=== Server is ready to send messages: ${success} ===`);
+        //    });
+    })
     ;
 } catch (e) {
 //TODO: Catch error and disconnect db

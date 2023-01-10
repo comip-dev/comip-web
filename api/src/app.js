@@ -14,11 +14,13 @@ app.use( express.static( "public" ) );
 app.use(fileUpload({useTempFiles:true}))
 /*Routers used*/
 const alturasRouter = require('./routes/alturas')
+const newsRouter = require('./routes/news')
 /* middlewares */
 
 
 /*Routes*/
 app.use('/alturas',alturasRouter)
+app.use('/news',newsRouter)
 
 /* Invalid routes*/
 
