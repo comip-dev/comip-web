@@ -10,6 +10,9 @@
 .heading-pic{
     /* height:31rem; */
     width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3.36
+    ;
 }
 @media (max-width:720px) {
     .institutional-pic{
