@@ -48,7 +48,7 @@ const add = async(data) =>{
             newNew.save(async function(err, line){
                 if(err){
                     console.log('Error saving', err)
-                    reject(e)
+                    reject(err)
                 }else{
                     console.log('New new saved')
                     resolve(newNew)
