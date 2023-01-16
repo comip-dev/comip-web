@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addnew, cleanState } from '../../redux/reducer/newsReducer';
 import Loading from '../Loading';
 import { Box, CircularProgress } from '@mui/material';
+import TextEditor from './TextEditor';
 
 export default function AddNew() {
     const success = useSelector(state => state.news.successAction)
@@ -25,6 +26,13 @@ export default function AddNew() {
         videoLink:"",
         linkPdf:""
     })
+    
+    const setBody = (richText) =>{
+        setState({
+            ...state,
+            html:richText
+        })
+    }
     const handleClickOpen = () => {
         setOpen(true);
     };
@@ -95,19 +103,7 @@ export default function AddNew() {
                         fullWidth
                         variant="standard"
                     />
-                    <TextField
-                        autoFocus
-                        name='html'
-                        // value={state.title}
-                        multiline
-                        onChange={handleChange}
-                        margin="dense"
-                        id="html"
-                        label="Cuerpo de texto"
-                        type="text"
-                        fullWidth
-                        variant="standard"
-                    />
+                    
                     <TextField
                         autoFocus
                         name='videoLink'
@@ -132,6 +128,10 @@ export default function AddNew() {
                         fullWidth
                         variant="standard"
                     />
+                    <DialogContentText sx={{m:2, fontSize:16}} >
+                        Cuerpo del contenido
+                    </DialogContentText>
+                    <TextEditor setBody={setBody} />
                 </>
                     )
                 }
