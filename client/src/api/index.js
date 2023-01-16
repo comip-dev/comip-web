@@ -12,7 +12,7 @@ const getAccessToken = async () => {
 }
 
 const getConfig = async () => {
-    const token = await getAccessToken();
+  const token = await getAccessToken();
     const config = {
       baseUrl: "http://localhost:4000",
       headers: {
@@ -60,9 +60,18 @@ const getConfig = async () => {
   
   const requestData = async (method, url, data) => {
     return await base({method, url, data})
-      .then(res => {
-        console.log(res)
-        return Promise.resolve(res)
+    .then(async(res) => {
+      if(res.status===403){
+        return await base({method:'post',url:'/user/refresh'})
+        .then(async(response) => {
+          if(response.status===403) return Promise.reject('Please Login')
+          else {
+            localStorage.setItem("comipToken", JSON.stringify(response.data.token))
+            return await base({method, url, data})
+              .then(last => Promise.resolve(last))
+            }
+          })
+        } else return Promise.resolve(res)
       })
       .catch(err => Promise.reject(err));
     };

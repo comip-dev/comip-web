@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { bloginfo } from "../../../assets/data/bloginfo";
-import useWindowSize from "../../../hooks/useWindowSize";
+import { bloginfo } from "../../assets/data/bloginfo";
+import useWindowSize from "../../hooks/useWindowSize";
 import New from "./New";
 import './News.css'
 

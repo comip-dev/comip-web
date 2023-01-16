@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop'
-import New from '../components/Home/News/New';
+import New from '../components/News/New';
 import './Noticias.css'
 import {getNews } from '../services/news'
 import NavObserver from '../components/NavObserver';
 import useWindowSize from '../hooks/useWindowSize';
 import Loading from '../components/Loading';
-import { useDispatch, useSelector } from 'react-redux';
-import { Button } from '@mui/material';
 import useLoggedIn from '../hooks/useLoggedIn';
-import { refresh } from '../redux/reducer/authReducer';
+import AddNew from '../components/News/AddNew';
 const Noticias = () =>{
     const windowSize = useWindowSize()
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
     const [error,setError] = useState(null)
     const isLoggedIn = useLoggedIn()
-    console.log(isLoggedIn)
     
     async function fetchData() {
         setLoading(true)
@@ -45,11 +42,7 @@ const Noticias = () =>{
                     <br/>
                     {isLoggedIn ? (
                         <div className='add-new-button' >
-                            <Button
-                                size='medium'
-                                variant="contained"
-                                sx={{ mt: 3, mb: 2 }}
-                            >Agregar Noticia</Button>
+                            <AddNew/>
                         </div>
                     ): <br/>}
                     <div className={windowSize.innerWidth>720?'noticias-list':'res-noticias-list'} >

@@ -3,7 +3,7 @@ import './Home.css'
 import Footer from "../components/Footer/Footer";
 import Homepost from '../components/Home/Homepost.jsx'
 import {homeposts} from '../assets/data/homeposts.js'
-import News from "../components/Home/News/News";
+import News from "../components/News/News";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons";
 import { homeslides } from "../assets/data/homeslides";
 import ScrollToTop from "../components/ScrollToTop";

@@ -19,10 +19,11 @@ export const refresh = createAsyncThunk(
     'refresh',
     async (_,{rejectWithValue })=>{
         try{
-            console.log('should be refreshing')
             const refresshing = await axios.request('post','/user/refresh')
-            console.log(refresshing)
-            if(refresshing.data.status === 'ok' ) return refresshing.data.token
+            if(refresshing.data.status === 'ok' ) {
+                localStorage.setItem("comipToken", JSON.stringify(refresshing.data.token))
+                return refresshing.data.token
+            }
             else return rejectWithValue(false)
         }catch(e){
             console.log(e)
@@ -39,7 +40,6 @@ export const login = createAsyncThunk(
                 contraseña
             }
             const user = await axios.requestData('post',`/user/login`,data)
-            // const user = await axios.post(`/users/login`,data,headers)
             console.log(user)
             if (user.data.status==='error') return rejectWithValue({message:user.data.error})
             localStorage.setItem("comipToken", JSON.stringify(user.data.token))
@@ -64,8 +64,15 @@ const authSlice = createSlice({
         cleanError: (state)=>{
             state.error = null
         },
-        setCredentials:(state)=>{
-            state.isLoggedIn = true
+        setCredentials:{
+            reducer:(state,action)=>{
+                state.isLoggedIn = true;
+                state.token= action.payload;
+            },
+            prepare:(token)=>{
+                return {payload:token}
+            }
+
         }
     },
     extraReducers: {
@@ -91,13 +98,12 @@ const authSlice = createSlice({
             state.loading = false;
         },
         [refresh.fulfilled]: (state, {payload}) => {
-            console.log('succeed')
             state.isLoggedIn=true;
             state.token=payload
         },
         [refresh.rejected]: (state, {payload}) => {
-            console.log('failed')
             state.loading = false;
+            state.isLoggedIn=false;
         }
         
 

@@ -28,21 +28,16 @@ const loginUser = async(req,res) => {
         const refreshToken = jwt.sign(
             {'email':email},
             process.env.REFRESH_SECRET,
-            {expiresIn:'7d'}
+            {expiresIn:'1d'}
         )
-        //create secure cookie with refresh token
         res.cookie('jwt',refreshToken,{
             httpOnly:true,
             secure:true,
             sameSite:'None',
-            maxAge:7*24*60*60*1000
+            maxAge:24*60*60*1000
         })
         return res.json({
-            token,
-            // user:{
-            //     id:user._id,
-            //     email:user.email
-            // }
+            token
         })
     }catch(e){
         res.status(500).json({status:"error",error:e.message||e})

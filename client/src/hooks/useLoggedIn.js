@@ -9,7 +9,6 @@ let token = (localStorage.getItem("comipToken")&&localStorage.getItem("comipToke
 const useLoggedIn = () => {
     
     const isLogged = useSelector(state=>state.auth.isLoggedIn)
-    // const[shouldRefresh,setShouldRefresh] = useState(false)
     const dispatch = useDispatch()
 
     useEffect(()=>{

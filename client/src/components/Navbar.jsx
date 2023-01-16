@@ -50,14 +50,14 @@ const Navbar = () => {
                     {
                     navOptions.map(item=>{
                         return(
-                            <div className="dropdown" >
+                            <div key={item.id} className="dropdown" >
                                 <button onClick={item.id==='mapa' || item.id==='contacto'?()=>goTo(item.id):null} className={location.pathname.includes(item.id)?'dropbtn-active' :"dropbtn"}>{item.text}</button>
                                 {item.sections &&
                                 <div className="dropdown-content" >
                                     {
                                     item.sections.map((section)=>{
                                         return(
-                                            <>
+                                            
                                             <div className="nav-section-container" >
                                                 <a onClick={!section.subsections?()=>goTo(item.id,section.id):null} key={section.id} href={section.href} className={isActive(section) ?'nav-bg-hover-active':" nav-bg-hover"} >{section.text}</a>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
                                                     </div>
                                                 }
                                             </div>
-                                            </>
+                                            
                                         )
                                     })
                                     }
