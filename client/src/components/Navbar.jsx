@@ -6,10 +6,15 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { navOptions } from "../assets/data/navOptions";
 import useWindowSize from "../hooks/useWindowSize";
 import DrawerAppBar from "./ResNavbar";
+import useLoggedIn from "../hooks/useLoggedIn";
+import { useDispatch } from "react-redux";
+import { logout } from "../redux/reducer/authReducer";
 
 
 
 const Navbar = () => {
+    const dispatch = useDispatch()
+    const isLogged = useLoggedIn()
     const navigate= useNavigate()
     const location = useLocation()
     const [white,setWhite] = useState(false)
@@ -24,7 +29,7 @@ const Navbar = () => {
         })
         observer.observe(document.getElementById("navObserver"))
     })
-
+    
     const goTo = (route,seccion) => {
         if(route==='mapa') return window.open("http://mapa.comip.ar/",'_blank');
         if(route==="institucional" || route==="rio"|| route==="fauna"|| route==="nav"|| route==="proyectos" || route==="agua") navigate(`/${route}/${seccion}`)
@@ -82,6 +87,11 @@ const Navbar = () => {
                         )
                     })
 
+                    }
+                    {
+                        isLogged && <span onClick={()=>dispatch(logout())} className="logout material-symbols-outlined">
+                            logout
+                            </span>
                     }
                 </div>
 

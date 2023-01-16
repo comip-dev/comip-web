@@ -52,8 +52,14 @@ export const login = createAsyncThunk(
     )
 export const logout = createAsyncThunk(
     'logout',
-    async ()=>{
-        localStorage.removeItem("comipToken")
+    async (_,{rejectWithValue})=>{
+        try{
+            const logout = await axios.request('get', '/user/logout')
+            if(logout.status===200 || logout.status ===204) return localStorage.removeItem("comipToken")
+            else rejectWithValue('error')
+        }catch(e){
+            rejectWithValue(e)
+        }
     }
 )
 

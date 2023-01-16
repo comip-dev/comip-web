@@ -233,6 +233,14 @@
     margin-top: 0.5rem;
     display: none;
 }
+.logout{
+    color:white
+}
+
+.logout:hover{
+    cursor: pointer;
+    color:black
+}
 .nav-section-container div a:hover{
     font-weight: 700;
     cursor: pointer;
