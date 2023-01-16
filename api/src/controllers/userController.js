@@ -21,14 +21,14 @@ const loginUser = async(req,res) => {
         const {email, contraseña} = req.body
         if(!email || !contraseña) return res.status(400).json({status:"error",error:"Debe enviar mail y contraseña"})
         const user = await userService.findUserByEmail(email)
-        if(!user) return res.status(401).json({status:"error",error:"Usuario no encontrado"})
+        if(!user) return res.status(401).json({status:"error",error:"Usuario o contraseña inválidos"})
         const isValid = await bcrypt.compare(contraseña, user.contraseña);
-        if(!isValid)  return res.status(401).json({status:"error",error:"Alguno de los datos no es válido"})
-        const token = jwt.sign({id:user._id,email},process.env.TOKEN_SECRET,{expiresIn:'300s'})
+        if(!isValid)  return res.status(401).json({status:"error",error:"Usuario o contraseña inválidos"})
+        const token = jwt.sign({id:user._id,email},process.env.TOKEN_SECRET,{expiresIn:'30m'})
         const refreshToken = jwt.sign(
             {'email':email},
             process.env.REFRESH_SECRET,
-            {expiresIn:'1d'}
+            {expiresIn:'7d'}
         )
         //create secure cookie with refresh token
         res.cookie('jwt',refreshToken,{
@@ -50,7 +50,7 @@ const loginUser = async(req,res) => {
 }
 const refresh = (req,res) => {
     const cookies = req.cookies
-    
+    console.log(cookies)
     if(!cookies?.jwt) return res.status(401).json({message:'Unauthorized'})
     const refreshToken = cookies.jwt
     jwt.verify(
@@ -61,9 +61,9 @@ const refresh = (req,res) => {
             const foundUser = await userService.findUserByEmail(decoded.email)
             if(!foundUser) return res.status(401).json({message:'Unauthorized'})
             const accessToken = jwt.sign(
-                {id:foundUser._id,email: foundUser.email},process.env.TOKEN_SECRET,{expiresIn:'10s'}
+                {id:foundUser._id,email: foundUser.email},process.env.TOKEN_SECRET,{expiresIn:'30m'}
             )
-            res.json({accessToken})
+            res.json({status:'ok',token:accessToken})
         })
     )
 }
@@ -73,9 +73,13 @@ const logout = (req,res) => {
     res.clearCookie('jwt',{httpOnly:true, sameSite:'None',secure:true})
     res.json({message:'Cookie cleared'})
 }
+const isLogged = (req,res) => {
+    res.json({status:'ok',message:'Logged in'})
+}
 module.exports = {
     loginUser,
     registerUser,
     refresh,
-    logout
+    logout,
+    isLogged
 }

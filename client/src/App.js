@@ -3,8 +3,6 @@ import './App.css';
 import Home from './containers/Home';
 import Navbar from './components/Navbar';
 import Institutional from './containers/Institutional';
-import Mockup from './containers/Mockup';
-import NavObserver from './components/NavObserver';
 import Rio from './containers/Rio';
 import Fauna from './containers/Fauna';
 import EstudiosConvenio from './components/Fauna/EstudiosConvenio';
@@ -19,6 +17,8 @@ import Contacto from './containers/Contacto';
 import Alturas from './containers/Alturas';
 import Noticias from './containers/Noticias';
 import Noticia from './containers/Noticia';
+import PrivateRoute from './components/PrivateRoute';
+import Login from './containers/Login/Login';
 
 
 
@@ -27,6 +27,10 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={[<Navbar/>, <Home/>]}/>
+        <Route exact path='/login' element={<Login/>}/>
+        <Route path='/private' element={<PrivateRoute/>} >
+            {/* <Route exact path='/private/comercio/:commerceId' element={[<LoggedCommerce/>]} /> */}
+        </Route>
         <Route exact path={'/home'} element={[<Navbar/>, <Home/>]} />
         <Route exact path={'/Institucional/:seccion'} element={[<Navbar/>,<Institutional/>]} />
         <Route exact path={'/rio/:seccion'} element={[<Navbar/>,<Rio/>]} />

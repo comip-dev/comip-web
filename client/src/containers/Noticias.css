@@ -53,6 +53,10 @@
     cursor:pointer;
     background-color: #F5F5F5;
 }
+.add-new-button{
+    width: 15rem;
+    margin-left: 17.5%;
+}
 @keyframes rotate {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
 @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
@@ -84,5 +88,8 @@
             margin-top:5rem;
             width: 30%;
             margin-left: 35%;
+        }
+        .add-new-button{
+            margin-left: 5%;
         }
       }

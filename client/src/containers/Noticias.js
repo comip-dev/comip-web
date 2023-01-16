@@ -3,17 +3,21 @@ import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop'
 import New from '../components/Home/News/New';
 import './Noticias.css'
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
 import {getNews } from '../services/news'
 import NavObserver from '../components/NavObserver';
 import useWindowSize from '../hooks/useWindowSize';
+import Loading from '../components/Loading';
+import { useDispatch, useSelector } from 'react-redux';
+import { Button } from '@mui/material';
+import useLoggedIn from '../hooks/useLoggedIn';
+import { refresh } from '../redux/reducer/authReducer';
 const Noticias = () =>{
     const windowSize = useWindowSize()
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
     const [error,setError] = useState(null)
-
+    const isLoggedIn = useLoggedIn()
+    console.log(isLoggedIn)
     
     async function fetchData() {
         setLoading(true)
@@ -39,12 +43,21 @@ const Noticias = () =>{
                     <div className={windowSize.innerWidth>720?"separator-line":"res-separator-line"} ></div>
                     <br/>
                     <br/>
-                    <br/>
+                    {isLoggedIn ? (
+                        <div className='add-new-button' >
+                            <Button
+                                size='medium'
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                            >Agregar Noticia</Button>
+                        </div>
+                    ): <br/>}
                     <div className={windowSize.innerWidth>720?'noticias-list':'res-noticias-list'} >
                     
                     {
-                        noticias?.map(item=>{
+                        noticias?.map((item,i)=>{
                             return <New 
+                                    key={i}
                                     img={item.img}
                                     title={item.title}
                                     text={item.text}
@@ -55,9 +68,7 @@ const Noticias = () =>{
                     }
                     </div>
                     
-                    {loading && <Box className='loading-container' sx={{ display: 'flex' }}>
-                        <CircularProgress />
-                    </Box>}
+                    {loading && <Loading/> }
                     <button onClick={fetchData} className="mas-noticias-btn" >Ver más Noticias</button>
                     <Footer/>
                 </div>

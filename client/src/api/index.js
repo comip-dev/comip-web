@@ -1,24 +1,22 @@
 import axios from "axios";
 
-// const getAccessToken = async () => {
-//     try {
-//         const value = await localStorage.getItem('token');
-//         if(value !== null) {
-//          return JSON.parse(value)
-//         }
-//       } catch(e) {
-//       return null
-//       }
-// }
+const getAccessToken = async () => {
+    try {
+        const value = await localStorage.getItem('comipToken');
+        if(value !== null) {
+         return JSON.parse(value)
+        }
+      } catch(e) {
+      return null
+      }
+}
 
 const getConfig = async () => {
-    // const token = await getAccessToken();
-    // console.log("🚀 ~ file: index.ts ~ line 17 ~ getConfig ~ token", token)
+    const token = await getAccessToken();
     const config = {
-      // baseUrl: "http://localhost:4000",
-      baseUrl: "https://comip-server.onrender.com",
+      baseUrl: "http://localhost:4000",
       headers: {
-        // 'Authorization': 'Bearer ' + token,
+        'Authorization': 'Bearer ' + token,
       },
     }
     return config;
@@ -40,6 +38,7 @@ const getConfig = async () => {
       headers: config.headers,
       cancelToken: source.token,
       data: param.data,
+      withCredentials:true
     })
     .then(res => {
       return Promise.resolve(res);
@@ -61,9 +60,12 @@ const getConfig = async () => {
   
   const requestData = async (method, url, data) => {
     return await base({method, url, data})
-      .then(res => Promise.resolve(res))
+      .then(res => {
+        console.log(res)
+        return Promise.resolve(res)
+      })
       .catch(err => Promise.reject(err));
-  };
+    };
   
   const data = {
       request,
