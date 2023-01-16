@@ -1,16 +1,12 @@
 import { noticiasObject, noticiasData } from "../assets/data/noticias"
+import axios from '../api/index'
 export const getNews = async () =>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve(noticiasData)
-        },1000)
-    })
-}
-export const getNewDetail = ({id})=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            noticiasObject[id]? resolve(noticiasObject[id]):reject('No existe la noticia seleccionada')
-        },1000)
-    })
+    return await axios.request('get','/news/all')
+        .then(res => Promise.resolve(res.data.data))
+    }
+export const getNewDetail = async ({id})=>{
+    return await axios.request('get',`/news/id/${id}`)
+        .then(res => Promise.resolve(res.data.data))
+    
     
 }

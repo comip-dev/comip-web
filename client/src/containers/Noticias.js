@@ -20,6 +20,7 @@ const Noticias = () =>{
         setLoading(true)
         try{
             const newItems= await getNews()
+            console.log(newItems)
             setNoticias([...noticias,...newItems])
         }catch(e){
             setError(e)
@@ -54,7 +55,7 @@ const Noticias = () =>{
                                     img={item.img}
                                     title={item.title}
                                     text={item.text}
-                                    id={item.id}
+                                    id={item._id}
                                     containerStyle={windowSize.innerWidth>720?'noticia-item-container':'res-new-container'}
                             />
                         })

@@ -10,8 +10,7 @@ import Swal from 'sweetalert2';
 import AddImageNew from './AddImageNew';
 import { useDispatch, useSelector } from 'react-redux';
 import { addnew, cleanState } from '../../redux/reducer/newsReducer';
-import Loading from '../Loading';
-import { Box, CircularProgress } from '@mui/material';
+import { Alert, Box, CircularProgress } from '@mui/material';
 import TextEditor from './TextEditor';
 
 export default function AddNew() {
@@ -19,6 +18,7 @@ export default function AddNew() {
     const loading = useSelector(state => state.news.loading)
     const dispatch = useDispatch()
     const [open, setOpen] = React.useState(false);
+    const [warning, setWarning] = React.useState(false)
     const [state,setState] = React.useState({
         title:"",
         html:"",
@@ -46,7 +46,8 @@ export default function AddNew() {
             [e.target.name]: e.target.value
         })
     }
-    const handleSubmit = (event) => {
+    const handleSubmit = () => {
+        if(!state.titulo || !state.html) return handleWarning()
         dispatch(addnew({data:state}))
         // setOpen(false)
     };
@@ -55,6 +56,10 @@ export default function AddNew() {
             ...state,
             img: img
         })
+    }
+    const handleWarning = () =>{
+        setWarning(true)
+        setTimeout(()=>setWarning(false),3000)
     }
     React.useEffect(()=>{
         if(success) {
@@ -72,8 +77,10 @@ export default function AddNew() {
         <Button variant="outlined" onClick={handleClickOpen}>
             Agregar Contenido
         </Button>
+        
         <Dialog open={open} onClose={handleClose}>
             <DialogTitle>Agregar Contenido</DialogTitle>
+            {warning?<Alert severity="warning">Debes completar título y cuerpo de contenido</Alert>: null}
             <DialogContent 
                 sx={{
                     marginTop: 2,
