@@ -1,4 +1,3 @@
-import { noticiasObject, noticiasData } from "../assets/data/noticias"
 import axios from '../api/index'
 export const getNews = async (page) =>{
     return await axios.request('get',`/news/all?page=${page}`)
