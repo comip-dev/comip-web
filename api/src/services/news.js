@@ -1,9 +1,15 @@
 const News = require('../models/New')
 
-const getAll = async() =>{
+const getAll = async(page) =>{
+    const paginationOptions = {
+        page,
+        limit:9,
+        sort: { createdAt: -1 }
+    }
     return new Promise(async(resolve,reject)=>{
+        
         try{
-            const list = await News.find({})
+            const list = await News.paginate({},paginationOptions)
             resolve(list)
         }catch(e){
             reject(e.message || e )

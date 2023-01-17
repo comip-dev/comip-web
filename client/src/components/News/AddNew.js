@@ -13,7 +13,7 @@ import { addnew, cleanState } from '../../redux/reducer/newsReducer';
 import { Alert, Box, CircularProgress } from '@mui/material';
 import TextEditor from './TextEditor';
 
-export default function AddNew() {
+export default function AddNew({fetchData}) {
     const success = useSelector(state => state.news.successAction)
     const loading = useSelector(state => state.news.loading)
     const dispatch = useDispatch()
@@ -47,16 +47,11 @@ export default function AddNew() {
         })
     }
     const handleSubmit = () => {
-        if(!state.titulo || !state.html) return handleWarning()
+        if(!state.title || !state.html) return handleWarning()
         dispatch(addnew({data:state}))
         // setOpen(false)
     };
-    const handleImage = (img) =>{
-        setState({
-            ...state,
-            img: img
-        })
-    }
+    
     const handleWarning = () =>{
         setWarning(true)
         setTimeout(()=>setWarning(false),3000)
@@ -68,10 +63,16 @@ export default function AddNew() {
                 icon:'success',
                 title:'Contenido agregado',
                 timer:1500
+        }).then(()=>{
+            dispatch(cleanState())
+            window.location.reload()
+
         })
-        dispatch(cleanState())
     }
     },[success])
+    React.useEffect(()=>{
+        console.log(state)
+    },[state])
   return (
     <div>
         <Button variant="outlined" onClick={handleClickOpen}>
@@ -97,11 +98,11 @@ export default function AddNew() {
                     <DialogContentText>
                         Los campos "titulo y cuerpo" son requeridos, y el resto opcionales 
                     </DialogContentText>
-                    <AddImageNew handleImage={handleImage} />
+                    <AddImageNew state={state} setState={setState} />
                     <TextField
                         autoFocus
                         name='title'
-                        // value={state.title}
+                        value={state.title}
                         onChange={handleChange}
                         margin="dense"
                         id="title"
@@ -114,7 +115,7 @@ export default function AddNew() {
                     <TextField
                         autoFocus
                         name='videoLink'
-                        // value={state.title}
+                        value={state.videoLink}
                         onChange={handleChange}
                         margin="dense"
                         id="videoLink"
@@ -126,7 +127,7 @@ export default function AddNew() {
                     <TextField
                         autoFocus
                         name='linkPdf'
-                        // value={state.title}
+                        value={state.linkPdf}
                         onChange={handleChange}
                         margin="dense"
                         id="linkPdf"

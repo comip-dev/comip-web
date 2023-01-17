@@ -2,7 +2,8 @@ const newsServices = require('../services/news')
 
 const getAll = async (req,res) =>{
     try{
-        const list = await newsServices.getAll()
+        const {page } = req.query
+        const list = await newsServices.getAll(page)
         return res.json({status:'ok',data:list})
     }catch(e){
         res.status(500).json({status:'error', error:e.message || e})

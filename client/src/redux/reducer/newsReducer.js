@@ -4,6 +4,7 @@ import axios from '../../api/index'
   
   const initialState = {
     error:null,
+    successUploaded: false,
     successAction:false,
     successDeleted:false,
     newImage:'',
@@ -52,6 +53,9 @@ const newsSlice = createSlice({
     name:'newsSlice',
     initialState,
     reducers:{
+        cleanSuccesUploaded: (state)=>{
+            state.successUploaded = false
+        },
         cleanSuccess: (state)=>{
             state.successAction = false
         },
@@ -65,6 +69,7 @@ const newsSlice = createSlice({
     },
     extraReducers:{
         [uploadImage.fulfilled]: (state, {payload}) => {
+            state.successUploaded = true
             state.newImage = payload;
             state.loading = false;
         },
@@ -100,5 +105,5 @@ const newsSlice = createSlice({
     }
 })
 
-export const {cleanError, cleanState, cleanSuccess,cleanSuccessDeleted} = newsSlice.actions
+export const {cleanError, cleanState, cleanSuccess, cleanSuccessDeleted, cleanSuccesUploaded} = newsSlice.actions
 export default newsSlice.reducer

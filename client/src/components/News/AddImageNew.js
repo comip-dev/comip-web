@@ -1,11 +1,11 @@
 import React from 'react'
 import { Avatar, Box, Button, Input } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { cleanSuccess, uploadImage } from '../../redux/reducer/newsReducer';
+import { cleanSuccess, cleanSuccesUploaded, uploadImage } from '../../redux/reducer/newsReducer';
 
-const AddImageNew = ({handleImage}) => {
+const AddImageNew = ({state,setState}) => {
 
-    const success = useSelector(state=> state.news.successAction)
+    const success = useSelector(state=> state.news.successUploaded)
     const newImage = useSelector(state => state.news.newImage)
     const dispatch = useDispatch()
     const [addImage,setAddImage]=React.useState(false)
@@ -18,8 +18,15 @@ const AddImageNew = ({handleImage}) => {
     }
     React.useEffect(()=>{
         if(success) {
-            handleImage(newImage)
-            dispatch(cleanSuccess())
+            console.log(newImage)
+            setTimeout(()=>{
+                setState({
+                    ...state,
+                    img:newImage
+                })
+
+            },500)
+            // dispatch(cleanSuccesUploaded())
         }
         setAddImage(false)
     },[success])

@@ -11,7 +11,7 @@ import useLoggedIn from '../hooks/useLoggedIn';
 import AddNew from '../components/News/AddNew';
 import { useDispatch, useSelector } from 'react-redux';
 import Swal from "sweetalert2";
-import { cleanSuccessDeleted } from '../redux/reducer/newsReducer';
+import { cleanState, cleanSuccessDeleted } from '../redux/reducer/newsReducer';
 
 const Noticias = () =>{
     const dispatch = useDispatch()
@@ -19,16 +19,18 @@ const Noticias = () =>{
     const windowSize = useWindowSize()
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
+    const [page, setPage] = useState(1)
+    const [hasNextPage, setHasNextPage] = useState(false)
     const [error,setError] = useState(null)
     const isLoggedIn = useLoggedIn()
-    
+
     async function fetchData() {
         setLoading(true)
         try{
-            const newItems= await getNews()
-            console.log(newItems)
-            // setNoticias([...noticias,...newItems])
-            setNoticias(newItems)
+            const newItems= await getNews(page)
+            setPage(page+1)
+            setNoticias([...noticias,...newItems.docs])
+            setHasNextPage(newItems.hasNextPage)
         }catch(e){
             setError(e)
         }
@@ -47,11 +49,12 @@ const Noticias = () =>{
             }).then(value=>{
                 if(value){
                     dispatch(cleanSuccessDeleted())
-                    fetchData()
+                    window.location.reload()
                 }
             })
         }
     },[successDeleted])
+    
     return(
         <>
             <div id='section-container' >
@@ -63,7 +66,7 @@ const Noticias = () =>{
                     <br/>
                     {isLoggedIn ? (
                         <div className='add-new-button' >
-                            <AddNew/>
+                            <AddNew />
                         </div>
                     ): <br/>}
                     <div className={windowSize.innerWidth>720?'noticias-list':'res-noticias-list'} >
@@ -84,7 +87,7 @@ const Noticias = () =>{
                     </div>
                     
                     {loading && <Loading/> }
-                    <button onClick={fetchData} className="mas-noticias-btn" >Ver más Noticias</button>
+                    {hasNextPage && <button onClick={fetchData} className="mas-noticias-btn" >Ver más Noticias</button>}
                     <Footer/>
                 </div>
             </div>
