@@ -146,6 +146,14 @@
     margin-left: 35%;
 
 }
+.del-new-button{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem
+}
+.del-new-button:hover{
+    cursor: pointer
+}
     @media (max-width:600px) {
         .res-new-container{
             width: 100%;

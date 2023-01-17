@@ -9,7 +9,13 @@ import useWindowSize from '../hooks/useWindowSize';
 import Loading from '../components/Loading';
 import useLoggedIn from '../hooks/useLoggedIn';
 import AddNew from '../components/News/AddNew';
+import { useDispatch, useSelector } from 'react-redux';
+import Swal from "sweetalert2";
+import { cleanSuccessDeleted } from '../redux/reducer/newsReducer';
+
 const Noticias = () =>{
+    const dispatch = useDispatch()
+    const successDeleted = useSelector(state => state.news.successDeleted)
     const windowSize = useWindowSize()
     const [noticias,setNoticias] = useState([])
     const [loading,setLoading] = useState()
@@ -21,7 +27,8 @@ const Noticias = () =>{
         try{
             const newItems= await getNews()
             console.log(newItems)
-            setNoticias([...noticias,...newItems])
+            // setNoticias([...noticias,...newItems])
+            setNoticias(newItems)
         }catch(e){
             setError(e)
         }
@@ -31,7 +38,20 @@ const Noticias = () =>{
     useEffect(()=>{
         fetchData();
     },[])
-
+    React.useEffect(()=>{
+        if(successDeleted){
+            Swal.fire({
+                title:'Artículo Eliminado con éxito',
+                icon:'success',
+                confirmButtonText:'Ok'
+            }).then(value=>{
+                if(value){
+                    dispatch(cleanSuccessDeleted())
+                    fetchData()
+                }
+            })
+        }
+    },[successDeleted])
     return(
         <>
             <div id='section-container' >
@@ -57,6 +77,7 @@ const Noticias = () =>{
                                     text={item.text}
                                     id={item._id}
                                     containerStyle={windowSize.innerWidth>720?'noticia-item-container':'res-new-container'}
+                                    isLogged={isLoggedIn}
                             />
                         })
                     }

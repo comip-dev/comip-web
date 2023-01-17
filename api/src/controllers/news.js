@@ -40,6 +40,7 @@ const add = async (req,res) =>{
 const remove = async (req,res) =>{
     try{
         const {id} = req.body
+        if(!id) return res.status(400).json({status:'error', error:'Enviar parámetro id' })
         const deleted = await newsServices.remove(id)
         return res.json({status:'ok',data:deleted})
     }catch(e){

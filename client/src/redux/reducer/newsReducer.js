@@ -23,6 +23,19 @@ export const addnew = createAsyncThunk(
         }
     }
 )
+export const deletenew = createAsyncThunk(
+    'deletenew',
+    async(data,{rejectWithValue})=>{
+        try{
+            const added = await axios.requestData('post','/news/remove',data)
+            if(added.data.status === 'ok' ) return added.data
+            else return rejectWithValue(added.data.error || false)
+        }catch(e){
+            console.log(e)
+            return rejectWithValue({message:e.response.data.error||e.message})
+        }
+    }
+)
 export const uploadImage = createAsyncThunk(
     'uploadImage',
     async ({formdata}, {rejectWithValue})=>{
@@ -73,8 +86,19 @@ const newsSlice = createSlice({
             state.loading = false;;
             state.error = payload
         },
+        [deletenew.fulfilled]: (state, {payload}) => {
+            state.loading = false;
+            state.successDeleted=true
+        },
+        [deletenew.pending]: (state, {payload}) => {
+            state.loading = true;
+        },
+        [deletenew.rejected]: (state, {payload}) => {
+            state.loading = false;;
+            state.error = payload
+        },
     }
 })
 
-export const {cleanError, cleanState, cleanSuccess} = newsSlice.actions
+export const {cleanError, cleanState, cleanSuccess,cleanSuccessDeleted} = newsSlice.actions
 export default newsSlice.reducer
