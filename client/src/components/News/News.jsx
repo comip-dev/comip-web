@@ -28,7 +28,7 @@ const News = () =>{
                                     img={item.img}
                                     title={item.title}
                                     containerStyle={windowSize.innerWidth>720?"new-container":'res-new-container'}
-                                    id={item.id}
+                                    id={item._id}
                             />
                         })
                     }
